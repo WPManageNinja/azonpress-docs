@@ -1,0 +1,61 @@
+---
+layout: home
+
+hero:
+  name: "AzonPress"
+  text: "Documentation"
+  tagline: Everything you need to integrate Amazon products into your WordPress site
+  image:
+    src: /logo.png
+    alt: AzonPress
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /guide/getting-started/azonpress-introduction
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com
+
+features:
+  - icon: 🚀
+    title: Getting Started
+    details: Learn the basics of AzonPress and set up your first Amazon product integration
+    link: /guide/getting-started/azonpress-introduction
+    linkText: Get Started →
+  - icon: ⚙️
+    title: Configure Amazon API
+    details: Set up and configure your Amazon Product Advertising API credentials
+    link: /guide/configuring-amazon-api/configure-amazon-api
+    linkText: Configure →
+  - icon: 📊
+    title: Product Tables
+    details: Create and customize Amazon product tables to display products on your site
+    link: /guide/product-tables-module/how-to-create-an-amazon-product-table
+    linkText: Learn More →
+  - icon: 🔄
+    title: Comparison Tables
+    details: Build comparison tables to help visitors compare multiple Amazon products
+    link: /guide/amazon-comparison-tables/how-to-create-an-amazon-comparison-table
+    linkText: Explore →
+  - icon: 🎨
+    title: Product Templates
+    details: Choose from various templates to display Amazon products beautifully
+    link: /guide/available-products-templates/grid-template
+    linkText: View Templates →
+  - icon: 📦
+    title: Custom Products
+    details: Add and manage custom products alongside Amazon products
+    link: /guide/custom-product/custom-products-and-its-dashboard
+    linkText: Manage Products →
+  - icon: 📈
+    title: Reports & Analytics
+    details: Track performance and view detailed reports for your product integrations
+    link: /guide/reports/reports-overview
+    linkText: View Reports →
+  - icon: 🛠️
+    title: Settings & Configuration
+    details: Customize appearance, affiliate links, geo-targeting, and more
+    link: /guide/miscellaneous/appearance-settings
+    linkText: Configure →
+
+---
