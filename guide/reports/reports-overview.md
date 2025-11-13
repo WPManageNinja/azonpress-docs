@@ -25,4 +25,4 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Reports Overview with AzonPress](https://wpmanageninja.com/docs/azonpress/reports/reports-overview-with-azonpress/)
+
