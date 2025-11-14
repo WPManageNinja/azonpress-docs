@@ -1,6 +1,6 @@
 # AzonPress Introduction
 
-![Logo of AzonPress Plugin](/guide/public/images/azonpress-logo.png)
+![Logo of AzonPress Plugin](/guide/public/images/getting-started/azonpress-introduction/azonpress-logo.webp)
 
 Welcome to AzonPress documentation. AzonPress plugin is the most advanced responsive WordPress Affiliate Solution that enables users to manage affiliate links that are highly customizable and efficient enough to earn revenue. The wide array of customization allows its users to manage their stores of affiliate products within less time and effort.
 
