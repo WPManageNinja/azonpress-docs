@@ -19,7 +19,7 @@ Besides, the configuration fields, you will also get two more interesting settin
 
 Once you are done, click on the **Update** button to save your **Amazon API Configuration** and your configuration will be complete successfully.
 
-![Configuring Amazon API](/guide/public/images/configuring-amazon-api.png)
+![Configuring Amazon API](/guide/public/images/configuring-amazon-api/configure-amazon-api/coonfiguring-amazon-api.webp)
 
 This is how you can set up your API key and other relevant issues using the AzonPress plugin!
 

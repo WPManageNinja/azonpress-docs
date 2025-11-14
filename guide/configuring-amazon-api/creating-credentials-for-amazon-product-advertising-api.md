@@ -18,11 +18,11 @@ But, you need to meet all the requirements below first, to request and get acces
 
 Once you get the PA API access, go to the **Dashboard** of your created **Amazon Associate Account**, click on the **Tools** located on the top navigation bar, and press the **Product Advertising API** from the drop-down menu.
 
-![Azonpress - Create API](/guide/public/images/azonpress-create-api.png)
+![Azonpress - Create API](/guide/public/images/configuring-amazon-api/creating-credentials-for-amazon-product-advertising-api/product-advertising-api.webp)
 
 Next, you will have the option to create your credentials by clicking the **Add Credentials** button.
 
-![Add credential](/guide/public/images/add-credential.png)
+![Add credential](/guide/public/images/configuring-amazon-api/creating-credentials-for-amazon-product-advertising-api/add-credential.webp)
 
 After creating all your credentials properly, you can download them including **Access Key** and **Secret Key** by clicking the **Download Credentials** button.
 
@@ -30,7 +30,7 @@ Now, you can Configure Amazon API in the AzonPress plugin.
 
 Remember one thing, if you are using a local Association program, your URL might be different.
 
-![Download Credentials](/guide/public/images/download-credentials.png)
+![Download Credentials](/guide/public/images/configuring-amazon-api/creating-credentials-for-amazon-product-advertising-api/download-credentials.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 

@@ -12,15 +12,15 @@ From your **WordPress Dashboard**, go to the desired **Posts/Pages** where you w
 
 First, go to the **Posts** from **WordPress Dashboard** & click on the **Add New Post**.
 
-![Adding new post from WordPress dashboard](/guide/public/images/adding-new-post-from-wordpress-dashboard.png)
+![Adding new post from WordPress dashboard](/guide/public/images/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block/adding-new-post-from-wordpress-dashboard.webp)
 
 Then, **add** a suitable **title** for the post you want to work on and click over the **Plus (+) icon** of the Gutenberg editor & select the **Classic** WordPress editor.
 
-![Select Classic Editor by clicking Plus Icon](/guide/public/images/select-classic-editor-by-clicking-plus-icon.png)
+![Select Classic Editor by clicking Plus Icon](/guide/public/images/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block/select-classic-editor-by-clicking-plus-icon.webp)
 
 Next, click the **Add Media** option from the **classic editor** bar, and a pop-up window appears with a couple of options.
 
-![Add media option from the classic editor](/guide/public/images/add-media-option-from-the-classic-editor.png)
+![Add media option from the classic editor](/guide/public/images/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block/add-media-option-from-the-classic-editor.webp)
 
 Press **AzonPress** from the left sidebar and you will get **Five** different **Tabs** with various **settings options** for **showcasing** your **Amazon products**. These are –
 
@@ -32,7 +32,7 @@ Press **AzonPress** from the left sidebar and you will get **Five** different **
 
 But, to get all these tabs, you need to configure the Amazon API key into the AzonPress plugin first. To learn how you can do it, read this [Documentation](/guide/configuring-amazon-api/configure-amazon-api).
 
-![5 major options under AzonPress](/guide/public/images/5-major-options-under-azonpress.png)
+![5 major options under AzonPress](/guide/public/images/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block/5-major-options-under-azonpress.webp)
 
 **A detailed explanation of these five settings options mentioned above is given below:**
 
@@ -54,7 +54,7 @@ Under the **Product Templates** tab, you will find various types of settings opt
 
 If you want to **showcase the same products** in **another post/s**, you can also do it simply by **copying** the **Shortcode** visible **right before** the **Insert Shortcode** button and **pasting** it into the desired post/s.
 
-![Product Templates](/guide/public/images/product-templates.png)
+![Product Templates](/guide/public/images/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block/product-templates.webp)
 
 ### Product Elements
 
@@ -62,7 +62,7 @@ Product Elements will give you the **Text Link**, **Product Image Link**, **CTA 
 
 To learn about the Product Elements in detail, read this [Documentation](/guide/available-products-templates/product-elements).
 
-![Product Elements](/guide/public/images/product-elements.png)
+![Product Elements](/guide/public/images/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block/product-elements.webp)
 
 ### BestSeller Lists
 
@@ -74,7 +74,7 @@ In this Bestseller Lists option, you will find different settings options. These
 * **Select Layout**: Under this option, you will get some templates for your product showing. These are **Grid**, **Box**, **List**, **Table**, **Widget**, and **Widget Small**.
 * **Insert Shortcode**: Finally, hit the **Insert Shortcode** button to showcase the BestSeller Amazon Products in your post.
 
-![Best Seller](/guide/public/images/best-seller.png)
+![Best Seller](/guide/public/images/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block/best-seller.webp)
 
 ### Comparison Table
 
@@ -82,7 +82,7 @@ On this tab, you can add your existing comparison tables by clicking the **Inser
 
 If you don't have any existing comparison tables, read this [Documentation](/guide/amazon-comparison-tables/how-to-create-an-amazon-comparison-table) to learn how to create comparison tables.
 
-![Comparison Tables](/guide/public/images/comparison-tables.png)
+![Comparison Tables](/guide/public/images/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block/comparison-tables.webp)
 
 ### Product Table
 
@@ -90,7 +90,7 @@ The last tab will allow you to add your existing product tables by clicking the 
 
 If you don't have any existing product tables, read this [Documentation](/guide/product-tables-module/how-to-create-an-amazon-product-table) to learn how to create product tables.
 
-![Products Tables](/guide/public/images/products-tables.png)
+![Products Tables](/guide/public/images/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block/products-tables.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 

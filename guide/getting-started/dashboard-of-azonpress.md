@@ -22,7 +22,7 @@ Here, you will get all the options of AzonPress Dashboard for all your Products.
 
 4. **View Usage Guide**: By clicking this button, you will go to the **Usage Guide** section where you can get a few necessary documentation providing proper guidelines to use this plugin.
 
-![Dashboard of AzonPress](/guide/public/images/dashboard-of-azonpress.png)
+![Dashboard of AzonPress](/guide/public/images/getting-started/dashboard-of-azonpress/dashboard-of-azonpress.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 

@@ -12,11 +12,11 @@ First, go to **Amazon Products** from the **WordPress Sidebar** or **Product Tab
 
 Now, click on the **Create Your First Product Table** button.
 
-![Create your first Product table](/guide/public/images/create-your-first-product-table.png)
+![Create your first Product table](/guide/public/images/product-tables-module/how-to-create-a-product-table/create-your-first-product-table.webp)
 
 But, If you have already created product tables with AzonPress, you'll find the **Add Product Table** button to create a new table. Click on it and a pop-up page will appear.
 
-![Add Product Table button](/guide/public/images/add-product-table-button.png)
+![Add Product Table button](/guide/public/images/product-tables-module/how-to-create-a-product-table/add-product-table-button.webp)
 
 Give your table a **Title**. Now **search** for your desired **products** with **keywords** and a list of products will appear on the window.
 
@@ -24,7 +24,7 @@ Give your table a **Title**. Now **search** for your desired **products** with *
 
 Now, select the ones you want to display, or can select all by clicking the **Select All** button. Finally, click on the **Create Table** button.
 
-![Create New Product Table popup page](/guide/public/images/create-new-product-table-popup-page.png)
+![Create New Product Table popup page](/guide/public/images/product-tables-module/how-to-create-a-product-table/create-new-product-table-popup-page.webp)
 
 Now, you can see that a default product table has been created in your back end.
 
@@ -34,11 +34,11 @@ Once you are done customizing the table, click the **Save Changes** button, and 
 
 You can also see how your table will appear in your front end by clicking the **Preview** button.
 
-![Save changes and Preview button](/guide/public/images/save-changes-and-preview-button.png)
+![Save changes and Preview button](/guide/public/images/product-tables-module/how-to-create-a-product-table/save-changes-and-preview-button.webp)
 
 Here is a preview of what your table will look like in the front end.
 
-![Preview of Product table](/guide/public/images/preview-of-product-table.png)
+![Preview of Product table](/guide/public/images/product-tables-module/how-to-create-a-product-table/preview-of-product-table.webp)
 
 This is how you can create a product table efficiently using AzonPress!
 
