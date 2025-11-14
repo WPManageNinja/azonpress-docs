@@ -35,4 +35,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Widget Template](https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/featured-widget/)

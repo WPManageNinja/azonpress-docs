@@ -46,4 +46,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [How to Create an Amazon Product Table With AzonPress](https://wpmanageninja.com/docs/azonpress/product-tables-module/how-to-create-a-product-table-with-azonpress/)

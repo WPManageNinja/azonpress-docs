@@ -72,4 +72,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Appearance Settings](https://wpmanageninja.com/docs/azonpress/miscellaneous/appearance-settings/)

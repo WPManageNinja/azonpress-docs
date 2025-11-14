@@ -23,4 +23,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Geo Location Report](https://wpmanageninja.com/docs/azonpress/reports/geo-location-reports/)

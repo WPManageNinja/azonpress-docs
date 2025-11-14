@@ -22,7 +22,7 @@ Now, you can see that your desired product table has been opened where you will 
 
 ![Opened Table with three major option](/guide/public/images/amazon-comparison-tables/customization-of-comparison-tables/opened-table.webp)
 
-**Here is a brief explanation of all the settings options on the pop-up page given below –**
+### Here is a brief explanation of all the settings options on the pop-up page given below –
 
 ### Compared Rows
 
@@ -85,5 +85,3 @@ You can also **change the Table name** anytime by clicking the **Pencil Icon** r
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
-
-**Reference:** [Customization Of Comparison Tables](https://wpmanageninja.com/docs/azonpress/amazon-comparison-tables/customization-of-comparison-tables/)

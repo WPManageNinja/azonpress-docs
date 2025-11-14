@@ -42,4 +42,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Custom Products And Its Dashboard](https://wpmanageninja.com/docs/azonpress/custom-product-in-azonpress/custom-product-dashboard-overview/)

@@ -40,4 +40,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Custom CSS In Product/Comparison Tables](https://wpmanageninja.com/docs/azonpress/product-tables-module/custom-css-in-product-tables/)

@@ -70,4 +70,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [How to Install, Activate, and Update the AzonPress](https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/how-to-install-upgrade-and-activate-license/)

@@ -76,4 +76,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Customization of Product Tables](https://wpmanageninja.com/docs/azonpress/product-tables-module/customize-product-tables/)

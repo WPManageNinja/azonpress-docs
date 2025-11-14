@@ -44,4 +44,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Geo Tracking (Targeting) Settings](https://wpmanageninja.com/docs/azonpress/setting-up-with-azonpress/configure-custom-geo-targeting-in-azonpress/)

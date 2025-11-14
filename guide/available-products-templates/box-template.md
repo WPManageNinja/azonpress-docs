@@ -35,4 +35,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Box Template](https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/box-template/)

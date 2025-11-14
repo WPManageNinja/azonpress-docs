@@ -9,5 +9,3 @@ Besides Amazon products, with the **Custom Products** feature of **AzonPress**, 
 Without further ado, keep reading the article to see how you can Install, Upgrade, and use this all-in-one Amazon link management plugin for WordPress. Also, you can see all the Features of this plugin to make your user journey smooth and effective.
 
 ---
-
-**Reference:** [AzonPress Introduction](https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/azonpress-introduction/)

@@ -27,4 +27,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Other Settings in AzonPress](https://wpmanageninja.com/docs/azonpress/miscellaneous/other-settings-in-azonpress/)

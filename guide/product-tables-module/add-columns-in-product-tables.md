@@ -52,4 +52,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Add Columns in Product Tables](https://wpmanageninja.com/docs/azonpress/product-tables-module/add-columns-in-product-tables/)

@@ -35,4 +35,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [List Template](https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/list-template/)

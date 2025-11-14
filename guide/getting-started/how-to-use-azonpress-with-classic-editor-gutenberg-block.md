@@ -96,4 +96,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [How to use AzonPress with Classic Editor (Gutenberg Block)](https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/how-to-use-azonpress-with-gutenberg/)

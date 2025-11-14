@@ -73,4 +73,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Affiliate Link Configuration](https://wpmanageninja.com/docs/azonpress/miscellaneous/global-affiliate-link-configuration/)

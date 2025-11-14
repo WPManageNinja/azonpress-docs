@@ -67,4 +67,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [How to Add Multiple Custom Products](https://wpmanageninja.com/docs/azonpress/custom-product-in-azonpress/how-to-add-multiple-custom-products/)

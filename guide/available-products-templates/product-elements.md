@@ -81,4 +81,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Product Elements](https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/product-elements/)

@@ -27,5 +27,3 @@ Here, you will get all the options of AzonPress Dashboard for all your Products.
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
-
-**Reference:** [Dashboard of AzonPress](https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/dashboard-of-azonpress/)

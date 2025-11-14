@@ -36,4 +36,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Grid Template](https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/grid-template/)

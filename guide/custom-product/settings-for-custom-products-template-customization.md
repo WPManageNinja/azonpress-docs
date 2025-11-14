@@ -66,4 +66,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Settings for Custom Products' Template Customization](https://wpmanageninja.com/docs/azonpress/custom-product-in-azonpress/settings-for-custom-products-template-customization/)

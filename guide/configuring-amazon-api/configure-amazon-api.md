@@ -27,4 +27,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Configure Amazon API in AzonPress](https://wpmanageninja.com/docs/azonpress/setting-up-with-azonpress/configure-api-in-azonpress/)

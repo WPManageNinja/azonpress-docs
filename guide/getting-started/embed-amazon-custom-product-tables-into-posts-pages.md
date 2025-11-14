@@ -70,4 +70,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Embed Amazon/Custom Product Tables into Posts/Pages](https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/embed-amazon-custom-product-tables-into-posts-pages-of-wordpress/)

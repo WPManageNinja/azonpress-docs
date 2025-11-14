@@ -61,4 +61,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [How to Add a Single Custom Product](https://wpmanageninja.com/docs/azonpress/custom-product-in-azonpress/create-a-custom-product/)

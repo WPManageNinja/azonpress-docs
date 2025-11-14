@@ -51,5 +51,3 @@ This is how you can create a comparison table efficiently using AzonPress!
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
-
-**Reference:** [How to Create an Amazon Comparison Table with AzonPress](https://wpmanageninja.com/docs/azonpress/amazon-comparison-tables/how-to-create-a-comparison-table-with-azonpress/)

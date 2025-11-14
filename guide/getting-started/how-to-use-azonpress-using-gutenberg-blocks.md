@@ -109,4 +109,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [How To Use AzonPress With Gutenberg Blocks](https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/azonprress-gutenberg-blocks/)

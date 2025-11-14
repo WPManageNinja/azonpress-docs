@@ -32,4 +32,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [BestSeller Lists](https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/bestseller-templates/)
