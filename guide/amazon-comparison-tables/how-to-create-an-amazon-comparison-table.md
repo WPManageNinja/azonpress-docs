@@ -10,15 +10,15 @@ First, go to the **Amazon Comparisons** from the **WordPress Sidebar** or **Comp
 
 **Remember**, you need to **connect** your **AzonPress** with your **Amazon Associate Account API** to get the **Amazon dropdown** option in the **AzonPress Navbar**.
 
-![Amazon Comparisons Table option from AzonPress Dashboard](/guide/public/images/amazon-comparisons-table-option-from-azonpress-dashboard.png)
+![Amazon Comparisons Table option from AzonPress Dashboard](/guide/public/images/amazon-comparison-tables/how-to-create-an-amazon-comparison-table/amazon-comparisons-table-from-azonpress-dashboard.webp)
 
 Click on the **Create Your First Comparison Table** button.
 
-![Create your first comparison table button](/guide/public/images/create-your-first-comparison-table-button.png)
+![Create your first comparison table button](/guide/public/images/amazon-comparison-tables/how-to-create-an-amazon-comparison-table/create-your-first-comparison-table-button.webp)
 
 If you have already created comparison tables with AzonPress, you'll find the **Add New Comparison Table** button to create a new table. Click on it and a pop-up page will appear.
 
-![Add new comparison table button](/guide/public/images/add-new-comparison-table-button.png)
+![Add new comparison table button](/guide/public/images/amazon-comparison-tables/how-to-create-an-amazon-comparison-table/add-new-comparison-table-button.webp)
 
 Give your table a **Title**. Now **search** for your desired **products** with **keywords** and a list of products will appear on the window.
 
@@ -26,11 +26,11 @@ Give your table a **Title**. Now **search** for your desired **products** with *
 
 Now, select the ones you want to compare, or can select all by clicking the **Select All** button. Finally, click on the **Create Table** button.
 
-![Create new comparison table Pop-up Page](/guide/public/images/create-new-comparison-table-pop-up-page.png)
+![Create new comparison table Pop-up Page](/guide/public/images/amazon-comparison-tables/how-to-create-an-amazon-comparison-table/create-new-comparison-table-pop-up-page.webp)
 
 To add more products to your comparison table again if needed, go to the bottom of the page and press **Search Product using Amazon API** button. It will take you to the product search pop-up page again.
 
-![Add more product for comparisons](/guide/public/images/add-more-product-for-comparisons.png)
+![Add more product for comparisons](/guide/public/images/amazon-comparison-tables/how-to-create-an-amazon-comparison-table/add-more-product-for-comparisons.webp)
 
 Now, you can see that a default comparison table has been created in your back end.
 
@@ -40,11 +40,11 @@ Once you are done customizing the table, click the **Update** or **Update Settin
 
 Also, see how your table will appear on your front end by clicking the **Preview** button.
 
-![Update Preview button](/guide/public/images/update-preview-button.png)
+![Update Preview button](/guide/public/images/amazon-comparison-tables/how-to-create-an-amazon-comparison-table/update-&-preview-button.webp)
 
 Here is a preview of what your table will look like in the front end.
 
-![Preview of Comparison table](/guide/public/images/preview-of-comparison-table.png)
+![Preview of Comparison table](/guide/public/images/amazon-comparison-tables/how-to-create-an-amazon-comparison-table/preview-of-comparison-table.webp)
 
 This is how you can create a comparison table efficiently using AzonPress!
 

@@ -17,7 +17,7 @@ First, go to **Reports** from the **AzonPress Navbar**, click the **Geo Location
 3. You can also see how many clicks you got from each country by clicking on the **Show Click From Each Country** button.
 4. With this **Plus** and **Minus** icon, you can zoom out and zoom in on your Geo Tracking Map.
 
-![Geo Tracking Map under Geo Location from AzonPress dashboard](/guide/public/images/geo-tracking-map-under-geo-location-from-azonpress-dashboard.png)
+![Geo Tracking Map under Geo Location from AzonPress dashboard](/guide/public/images/reports/geo-location-report/geo-tracking-map-under-geo-location-from-azonpress-dashboard.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
