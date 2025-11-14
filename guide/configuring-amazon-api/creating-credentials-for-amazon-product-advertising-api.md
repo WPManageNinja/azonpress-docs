@@ -22,7 +22,7 @@ Once you get the PA API access, go to the **Dashboard** of your created **Amazon
 
 Next, you will have the option to create your credentials by clicking the **Add Credentials** button.
 
-![Add credential](/guide/public/images/configuring-amazon-api/creating-credentials-for-amazon-product-advertising-api/add-credential.webp)
+![Add credential](/guide/public/images/configuring-amazon-api/creating-credentials-for-amazon-product-advertising-api/aawp-amazon-associates-credentials-1.webp)
 
 After creating all your credentials properly, you can download them including **Access Key** and **Secret Key** by clicking the **Download Credentials** button.
 
@@ -34,6 +34,3 @@ Remember one thing, if you are using a local Association program, your URL might
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
----
-
-**Reference:** [Creating Credentials for Amazon Product Advertising API](https://wpmanageninja.com/docs/azonpress/setting-up-with-azonpress/creating-api-credentials/)
