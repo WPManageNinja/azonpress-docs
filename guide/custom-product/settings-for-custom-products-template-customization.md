@@ -30,11 +30,11 @@ Now, all the available **Settings** options for customization are briefly explai
 
 **Add Link Query Params**: This option is for Adding Query Params on your affiliate link. To know more read this [Documentation](/guide/miscellaneous/affiliate-link-configuration).
 
-![Single products Settings option](/guide/public/images/custom-product/settings-for-custom-products-template-customization/single-products'-settings-option.webp)
+![Single products Settings option](/guide/public/images/custom-product/settings-for-custom-products-template-customization/single-products-settings-option.webp)
 
 After setting up all the customization, click the **Save Template** or **Update & Save Template** button to make sure all the changes must appear on your site.
 
-![Single products Save Template or Update & Save Template button](/guide/public/images/custom-product/settings-for-custom-products-template-customization/single-products'-save-template-or-update-&-save-template-button.webp)
+![Single products Save Template or Update & Save Template button](/guide/public/images/custom-product/settings-for-custom-products-template-customization/single-products-save-template-or-update-&-save-template-button.webp)
 
 ## Settings for Multiple Custom Products
 
@@ -54,11 +54,11 @@ The **Settings** options of **Multiple Custom Products** are **almost the same a
 
 **Button Settings**: With this option, you **can modify the text** of the "**Buy Now**" button. Additionally, you can **Disable** and **Enable** this button by clicking the orange **Toggle**.
 
-![Multiple Products Settings options](/guide/public/images/custom-product/settings-for-custom-products-template-customization/multiple-products'-settings-options.webp)
+![Multiple Products Settings options](/guide/public/images/custom-product/settings-for-custom-products-template-customization/multiple-products-settings-options.webp)
 
 Once you are setting up all the customization, click the **Save Template** or **Update & Save Template** button to make sure all the changes appear on your site.
 
-![Multiple Products Save Template or Update & Save Template button](/guide/public/images/custom-product/settings-for-custom-products-template-customization/multiple-products'-save-template-or-update-&-save-template-button.webp)
+![Multiple Products Save Template or Update & Save Template button](/guide/public/images/custom-product/settings-for-custom-products-template-customization/multiple-products-save-template-or-update-&-save-template-button.webp)
 
 This is how you can customize the Template of your Single or Multiple Custom Products!
 
