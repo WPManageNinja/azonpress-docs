@@ -3,12 +3,18 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'AzonPress Docs',
   description: 'Everything you need to integrate Amazon products into your WordPress site',
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }]
+  ],
   themeConfig: {
-    logo: '/logo.png',
+    logo: {
+      light: '/logo-light.png',
+      dark: '/logo-dark.png'
+    },
     siteTitle: 'AzonPress',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/getting-started/azonpress-introduction' },
+      { text: 'User Docs', link: '/guide/getting-started/azonpress-introduction' },
     ],
     sidebar: {
       '/guide/': [
@@ -87,13 +93,8 @@ export default defineConfig({
         }
       ]
     },
-    socialLinks: [
-      // Add your social links here
-      // { icon: 'github', link: 'https://github.com' },
-    ],
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024 AzonPress'
+      copyright: 'Copyright © 2025 AzonPress'
     },
     search: {
       provider: 'local'
