@@ -10,7 +10,7 @@ First, go to **Settings** from your **AzonPress Navbar** and open the **GeoTrack
 
 Now, here you have to give the **MaxMind API Key** to enable your GEO Tracking/Targeting.
 
-![GeoTracking API settings from AzonPress Dashboard](/guide/public/images/geotracking-api-settings-from-azonpress-dashboard.png)
+![GeoTracking API settings from AzonPress Dashboard](/guide/public/images/miscellaneous/geo-targeting-settings/geotracking-api-settings-from-azonpress-dashboard.webp)
 
 ## How To Get Maxmind GEO-IP API/License Key
 
@@ -20,15 +20,15 @@ First, log in to your Maxmind Account or sign up here for free.
 
 After logging into the **MaxMind account**, go to **Manage Licence Key** from the left sidebar, and click on the **Generate new license Key** button.
 
-![Generate License Keys from MaxMind](/guide/public/images/generate-license-keys-from-maxmind.png)
+![Generate License Keys from MaxMind](/guide/public/images/miscellaneous/geo-targeting-settings/generate-license-keys-maxmind.webp)
 
 A confirmation page will come to Generate New Licence Key, click on the **Confirm** button here.
 
-![Confirm generation of new license key in MaxMind](/guide/public/images/confirm-generation-of-new-license-key-in-maxmind.png)
+![Confirm generation of new license key in MaxMind](/guide/public/images/miscellaneous/geo-targeting-settings/confirm-generation-of-new-license-key-maxmind.webp)
 
 Now you will get your **Maxmind API key**. Copy it from here.
 
-![New license key successfully created in MaxMind](/guide/public/images/new-license-key-successfully-created-in-maxmind.png)
+![New license key successfully created in MaxMind](/guide/public/images/miscellaneous/geo-targeting-settings/new-license-key-successfully-created-maxmind.webp)
 
 ## Update API Key on AzonPress
 
@@ -36,7 +36,7 @@ Go back to **Settings** from the **AzonPress Navbar** again and open the **GeoTr
 
 Now, paste the **API Key** you have **copied from** the **Maxmind** account into the **MaxMind API Key** field and click on the **Update** button.
 
-![Update the license key in AzonPress](/guide/public/images/update-the-license-key-in-azonpress.png)
+![Update the license key in AzonPress](/guide/public/images/miscellaneous/geo-targeting-settings/update-the-license-key-in-azonpress.webp)
 
 Now Geo-targeting/tracking will work just fine with AzonPress!
 
@@ -44,4 +44,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Geo Tracking (Targeting) Settings](https://wpmanageninja.com/docs/azonpress/setting-up-with-azonpress/configure-custom-geo-targeting-in-azonpress/)

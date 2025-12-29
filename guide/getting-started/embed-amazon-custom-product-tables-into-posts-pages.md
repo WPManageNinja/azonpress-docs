@@ -20,15 +20,15 @@ First, go to the **Amazon Comparisons** from the left sidebar or **Comparison Ta
 
 Now, copy the **Shortcode** of your desired table by clicking the box.
 
-![Comparison Tables shortcode](/guide/public/images/comparison-tables-shortcode.png)
+![Comparison Tables shortcode](/guide/public/images/getting-started/embed-amazon-custom-product-tables-into-posts-pages/comparison-table-shortcode.webp)
 
 Then, paste the shortcode to your desired Post/Page where you want to display this table and press the **Publish** button.
 
-![Paste shortcode in a page](/guide/public/images/paste-shortcode-in-a-page.png)
+![Paste shortcode in a page](/guide/public/images/getting-started/embed-amazon-custom-product-tables-into-posts-pages/paste-shortcode-in-a-page.webp)
 
 Here is a preview of how your table will exactly look in the front end.
 
-![Preview of Comparison table](/guide/public/images/preview-of-comparison-table.png)
+![Preview of Comparison table](/guide/public/images/getting-started/embed-amazon-custom-product-tables-into-posts-pages/preview-of-comparison-table.webp)
 
 ### Embed Amazon Product Table
 
@@ -38,15 +38,15 @@ First, go to the **Amazon Products** from the left sidebar or **Comparison Table
 
 Now, copy the **Shortcode** of your desired table by clicking the box.
 
-![Product Tables Shortcode](/guide/public/images/product-tables-shortcode.png)
+![Product Tables Shortcode](/guide/public/images/getting-started/embed-amazon-custom-product-tables-into-posts-pages/product-table-shortcode.webp)
 
 Then, paste the shortcode to your desired Post/Page where you want to display this table and press the **Publish** button.
 
-![Paste shortcode in a page](/guide/public/images/paste-shortcode-in-a-page.png)
+![Paste shortcode in a page](/guide/public/images/getting-started/embed-amazon-custom-product-tables-into-posts-pages/paste-shortcode-in-a-page.webp)
 
 Here is a preview of how your table will exactly look in the front end.
 
-![Preview of Product table](/guide/public/images/preview-of-product-table.png)
+![Preview of Product table](/guide/public/images/getting-started/embed-amazon-custom-product-tables-into-posts-pages/preview-of-product-table.webp)
 
 ### Embed Custom Products Tables
 
@@ -56,18 +56,17 @@ First, go to **Custom Products** from the **WordPress** sidebar or **AzonPress**
 
 Now, copy the **Shortcode** of your desired table by clicking the box.
 
-![Custom Product Tables Shortcode](/guide/public/images/custom-product-tables-shortcode.png)
+![Custom Product Tables Shortcode](/guide/public/images/getting-started/embed-amazon-custom-product-tables-into-posts-pages/custom-product-tables-shortcode.webp)
 
 Then, paste the shortcode to your desired Post/Page where you want to display this table and press the **Publish** button.
 
-![Paste shortcode in a page](/guide/public/images/paste-shortcode-in-a-page.png)
+![Paste shortcode in a page](/guide/public/images/getting-started/embed-amazon-custom-product-tables-into-posts-pages/paste-shortcode-in-a-page.webp)
 
 Here is a preview of how your table will exactly look in the front end.
 
-![Preview of Custom Products](/guide/public/images/preview-of-custom-products.png)
+![Preview of Custom Products](/guide/public/images/getting-started/embed-amazon-custom-product-tables-into-posts-pages/preview-of-custom-products.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
 
-**Reference:** [Embed Amazon/Custom Product Tables into Posts/Pages](https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/embed-amazon-custom-product-tables-into-posts-pages-of-wordpress/)

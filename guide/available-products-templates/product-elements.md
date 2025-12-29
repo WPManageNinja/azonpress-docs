@@ -12,17 +12,17 @@ First, add the **Classic Editor** block on your desired **Page/Post** (e.g., I h
 
 Now, to add the **Classic Editor**, click the Gutenberg editor's **Plus (+) icon**.
 
-![Add Classic editor block in a post](/guide/public/images/add-classic-editor-block-in-a-post.png)
+![Add Classic editor block in a post](/guide/public/images/available-products-templates/product-elements/add-classic-editor-block-in-a-post.webp)
 
 Next, click the **Add Media** option from the classic editor bar, and a pop-up window appears with a couple of options.
 
-![Add media option from the classic editor](/guide/public/images/add-media-option-from-the-classic-editor.png)
+![Add media option from the classic editor](/guide/public/images/available-products-templates/product-elements/add-media-option-from-the-classic-editor.webp)
 
 Now, press **AzonPress** from the left sidebar and you will get **Product Elements** tabs.
 
 Here, you will get a **Search Bar** option form where you can get the **Settings** options of the products that you have searched through the search bar.
 
-![Search Bar](/guide/public/images/search-bar.png)
+![Search Bar](/guide/public/images/available-products-templates/product-elements/search-bar.webp)
 
 Now, enter the name of the products you want to change elements and click the **Search** button.
 
@@ -33,7 +33,7 @@ Once you search for your desired products, they will appear with **Four** major 
 * **CTA Link**
 * **Feature Box**
 
-![Product Elements](/guide/public/images/product-elements.png)
+![Product Elements](/guide/public/images/available-products-templates/product-elements/product-elements.webp)
 
 **A detailed explanation of the Settings options mentioned above is given below:**
 
@@ -47,13 +47,13 @@ Here, you will get three options to customize the elements of desired products. 
 
 Once you finish, click the **Insert Text Link** button and the changes will added to your desired **Post/Page**.
 
-![Text Link](/guide/public/images/text-link.png)
+![Text Link](/guide/public/images/available-products-templates/product-elements/text-link.webp)
 
 ### Product Image Link
 
 With this option, you can **change the size** (Small, Medium, or Large) **of** your desired **product image** by clicking the **Insert small, Insert medium,** or **Insert large** button.
 
-![Product Image Link](/guide/public/images/product-image-link.png)
+![Product Image Link](/guide/public/images/available-products-templates/product-elements/product-image-link.webp)
 
 ### CTA Link
 
@@ -65,20 +65,19 @@ Now, to add the button either as a **Product Details Button** or **Add To Cart B
 
 But for the **Custom Button**, you will find two options **Insert Style** and **Insert Classic** button to add it to your desired products.
 
-![CTA Link](/guide/public/images/cta-link.png)
+![CTA Link](/guide/public/images/available-products-templates/product-elements/cta-link.webp)
 
 ### Feature Box
 
 Feature Box doesn't have any customizable settings.
 
-![Feature Box](/guide/public/images/feature-box.png)
+![Feature Box](/guide/public/images/available-products-templates/product-elements/feature-box.webp)
 
 Here, is the **preview** of the post where the selected **Amazon Product** whose **elements** are **customized** using the **Product Elements** feature.
 
-![Preview of customized elements of a specific product](/guide/public/images/preview-of-customized-elements-of-a-specific-product.png)
+![Preview of customized elements of a specific product](/guide/public/images/available-products-templates/product-elements/preview-of-customized-elements-of-a-specific-product.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
 
-**Reference:** [Product Elements](https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/product-elements/)

@@ -12,11 +12,11 @@ First, add the **Classic Editor** block on your desired **Page/Post** (e.g., I h
 
 Now, to add the **Classic Editor**, click the Gutenberg editor's **Plus (+) icon**.
 
-![Add Classic editor block in a post](/guide/public/images/add-classic-editor-block-in-a-post.png)
+![Add Classic editor block in a post](/guide/public/images/available-products-templates/table-template/add-classic-editor-block-in-a-post.webp)
 
 Next, click the **Add Media** option from the **classic editor** bar, and a pop-up window appears with a couple of options.
 
-![Add media option from the classic editor](/guide/public/images/add-media-option-from-the-classic-editor.png)
+![Add media option from the classic editor](/guide/public/images/available-products-templates/table-template/add-media-option-from-the-classic-editor.webp)
 
 Now, press **AzonPress** from the left sidebar and you will get **Product Templates** tabs with various **settings options** for **showcasing** your **Amazon products.**
 
@@ -25,14 +25,13 @@ Now, press **AzonPress** from the left sidebar and you will get **Product Templa
 * Once you are done, click the **Insert Shortcode** button and the shortcode will be automatically embedded in your post. Then, **publish** it and your Amazon Products will appear on your site under that post.
 * If you want to **showcase the same products** in **another post/s**, you can also do it simply by **copying** the **Shortcode** visible **right before** the **Insert Shortcode** button and **pasting** it into the desired post/s.
 
-![Table template checkbox](/guide/public/images/table-template-checkbox.png)
+![Table template checkbox](/guide/public/images/available-products-templates/table-template/table-template-checkbox.webp)
 
 Here, is the preview of the post where the selected Amazon Products are displayed as a Table template.
 
-![Preview of Table Template](/guide/public/images/preview-of-table-template.png)
+![Preview of Table Template](/guide/public/images/available-products-templates/table-template/preview-of-table-template.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
 
-**Reference:** [Table Template](https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/table-template/)

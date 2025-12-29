@@ -10,7 +10,7 @@ First, go to **Settings** from the **AzonPress Navbar** and click on **Appearanc
 
 Once you complete all the customization, click the **Update Settings** button to save all the changes.
 
-![Appearance Settings under Settings in AzonPress dashboard](/guide/public/images/appearance-settings-under-settings-in-azonpress-dashboard.png)
+![Appearance Settings under Settings in AzonPress dashboard](/guide/public/images/miscellaneous/appearance-settings/appearance-settings-under-settings-in-azonpress-dashboard.webp)
 
 Here on the **Global Style Settings** page, you will get **four major** settings options to customize your table. These are:
 
@@ -25,7 +25,7 @@ Here on the **Global Style Settings** page, you will get **four major** settings
 
 Under this setting, you will get the option to change the UI style for your Products in two different styles either **Modern Style** (i.e., more bold design) or **Classic Style** (i.e., normal design).
 
-![Product UI Style](/guide/public/images/product-ui-style.png)
+![Product UI Style](/guide/public/images/miscellaneous/appearance-settings/product-ui-style.webp)
 
 ### Link defaults
 
@@ -47,7 +47,7 @@ All the available options under this Setting are briefly explained in the screen
 
 **Show Disclaimer Text**: Enable this checkbox if you want to show any disclaimer text. Plus, if you use this **%last_update%** text in your **Disclaimer Text** field, it will show the date of your tables' last update with the disclaimer.
 
-![Link Defaults](/guide/public/images/link-defaults.png)
+![Link Defaults](/guide/public/images/miscellaneous/appearance-settings/link-defaults.webp)
 
 ### Button Appearance
 
@@ -58,7 +58,7 @@ In the Button Appearance setting, you will get two different button styles with 
 
 Choose any button that you wish to appear on your table.
 
-![Button Appearance](/guide/public/images/button-appearance.png)
+![Button Appearance](/guide/public/images/miscellaneous/appearance-settings/button-appearance.webp)
 
 ### Custom Button Styler
 
@@ -66,10 +66,9 @@ With this setting, you can **customize** your **button's style** by **changing**
 
 Once you are done with the customization, click the **Update Settings** button to save all the changes.
 
-![Custom Button Styler](/guide/public/images/custom-button-styler.png)
+![Custom Button Styler](/guide/public/images/miscellaneous/appearance-settings/custom-button-styler.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
 
-**Reference:** [Appearance Settings](https://wpmanageninja.com/docs/azonpress/miscellaneous/appearance-settings/)

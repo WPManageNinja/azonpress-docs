@@ -116,5 +116,4 @@
 
 ---
 
-**Reference:** [Changelog](https://wpmanageninja.com/docs/azonpress/changelog/)
 

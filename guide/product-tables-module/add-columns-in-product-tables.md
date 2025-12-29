@@ -12,11 +12,11 @@ Now, select the desired **Table** where you want to add columns and click on the
 
 If you do not have any existing **Product Tables**, you can create a new Product Table.
 
-![Select desired table for adding columns](/guide/public/images/select-desired-table-for-adding-columns.png)
+![Select desired table for adding columns](/guide/public/images/product-tables-module/add-columns-in-product-tables/select-desired-table-for-adding-columns.webp)
 
 Click on the **Add Column** button to add a new column to the table and a pop-up page will appear.
 
-![Add column button](/guide/public/images/add-column-button.png)
+![Add column button](/guide/public/images/product-tables-module/add-columns-in-product-tables/add-column-button.webp)
 
 ## Customization of Added Column
 
@@ -36,7 +36,7 @@ Here, you will find different options to customize your newly added Column. Thes
 
 Once you are done, click the **Add** button and your column will be added to your table.
 
-![Add new table column popup page](/guide/public/images/add-new-table-column-popup-page.png)
+![Add new table column popup page](/guide/public/images/product-tables-module/add-columns-in-product-tables/add-new-table-column-popup-page.webp)
 
 Here, you can see **a new Reviews column is added** for **showcasing** the **customer ratings** about these products.
 
@@ -44,7 +44,7 @@ Here, you can see **a new Reviews column is added** for **showcasing** the **cus
 
 You can anytime **edit** any column by clicking the **Pencil Icon** right next to the column name and **move** the **column** left and right easily by using the **Drag and Drop** button placed just before the column name.
 
-![Reviews column added](/guide/public/images/reviews-column-added.png)
+![Reviews column added](/guide/public/images/product-tables-module/add-columns-in-product-tables/reviews-column-added.webp)
 
 This way you can add as many columns as you want!
 
@@ -52,4 +52,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Add Columns in Product Tables](https://wpmanageninja.com/docs/azonpress/product-tables-module/add-columns-in-product-tables/)

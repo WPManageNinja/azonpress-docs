@@ -43,4 +43,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [How to Resolve "Request Throttled" Error of Amazon API](https://wpmanageninja.com/docs/azonpress/miscellaneous/error-request-throttled/)

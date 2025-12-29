@@ -19,10 +19,8 @@ First, go to **Reports** from the **AzonPress Navbar** and the **Overview** page
    * **Total countries**: All the number of countries from where you got the clicks.
 4. **Click Tracking Report**: Here, you can see your graph of total click reports for the recent days in a line chart.
 
-![Overview Page of Reports From AzonPress](/guide/public/images/overview-page-of-reports-from-azonpress.png)
+![Overview Page of Reports From AzonPress](/guide/public/images/reports/reports-overview/overview-page-of-rports-from-azonpress.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
-
-**Reference:** [Reports Overview with AzonPress](https://wpmanageninja.com/docs/azonpress/reports/reports-overview-with-azonpress/)

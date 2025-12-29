@@ -12,7 +12,7 @@ To learn how to add Query Params, follow the steps with screenshots below:
 
 First, go to **Settings** from the **AzonPress Navbar** and click on **Affiliate Link Configuration.**
 
-![Affiliate Link Config Settings of AzonPress](/guide/public/images/affiliate-link-config-settings-of-azonpress.png)
+![Affiliate Link Config Settings of AzonPress](/guide/public/images/miscellaneous/affiliate-link-configuration/affiliate-link-config-settings-of-azonpress.webp)
 
 Here, on the **Global Affiliate Link Configuration** page, you will find two domain options for configuring **Query Params** in your link. These are:
 
@@ -29,7 +29,7 @@ Here, on the **Global Affiliate Link Configuration** page, you will find two dom
 
 Once you are done, click the **Save** button to save all the configurations or changes you made.
 
-![Global Affiliate Link Configuration page](/guide/public/images/global-affiliate-link-configuration-page.png)
+![Global Affiliate Link Configuration page](/guide/public/images/miscellaneous/affiliate-link-configuration/global-affiliate-link-configuration-page.webp)
 
 ### Example of Adding Query Params
 
@@ -39,7 +39,7 @@ Here, you can see that after the question mark, the query parameter "**tag=azonp
 
 **Remember**, the **query params** feature **works only** for the **Custom Products**.
 
-![Example of adding Query Params](/guide/public/images/example-of-adding-query-params.png)
+![Example of adding Query Params](/guide/public/images/miscellaneous/affiliate-link-configuration/example-of-adding-quary-params.webp)
 
 ## Add Query Param Directly in a Custom Product
 
@@ -51,7 +51,7 @@ To learn how to add query params directly inside a specific custom product, foll
 
 First, go to **Custom Products** from the **AzonPress Navbar** and open your desired **Custom Product** where you want to add the query param.
 
-![Open desired custom product](/guide/public/images/open-desired-custom-product.png)
+![Open desired custom product](/guide/public/images/miscellaneous/affiliate-link-configuration/open-desired-custom-product.webp)
 
 Then, go to **Settings** from the right-hand sidebar and scroll down to the **Add Link Query Params** option.
 
@@ -59,18 +59,17 @@ Now, **add** your **query param** according to your needs and if you want to add
 
 Finally, press the **Save Template** or **Update & Save Template** button and the query param will be added to this specific product.
 
-![Settings of a specific custom product](/guide/public/images/settings-of-a-specific-custom-product.png)
+![Settings of a specific custom product](/guide/public/images/miscellaneous/affiliate-link-configuration/settings-of-a-specific-custom-product.webp)
 
 To see the preview of your added query param for this product, go to the **product's preview**, click "**buy now**," and you'll see the query param at the end of the URL.
 
-![Preview of Added query param in custom product drift GIF](/guide/public/images/preview-of-added-query-param-in-custom-product-drift-gif.png)
+![Preview of Added query param in custom product drift GIF](/guide/public/images/miscellaneous/affiliate-link-configuration/preview-of-added-query-params-in-url-of-custom-product.webp)
 
 Here, you can see that after the question mark, the query parameter "**tag=azonpress-50**" is added to the link of that specific custom product.
 
-![Preview of added query params in url of custom product](/guide/public/images/preview-of-added-query-params-in-url-of-custom-product.png)
+![Preview of added query params in url of custom product](/guide/public/images/miscellaneous/affiliate-link-configuration/preview-of-added-query-params-in-url-of-custom-product.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
 
-**Reference:** [Affiliate Link Configuration](https://wpmanageninja.com/docs/azonpress/miscellaneous/global-affiliate-link-configuration/)

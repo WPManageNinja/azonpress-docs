@@ -16,7 +16,7 @@ Now, click the **Download** button and the **AzonPress .zip file** will be downl
 
 You'll also see a **License Key** that you can copy as you need it later to activate the plugin, or you retrieve it anytime from your **WP Manage Ninja Dashboard.**
 
-![Download the AzonPress Zip file](/guide/public/images/download-the-azonpress-zip-file.png)
+![Download the AzonPress Zip file](/guide/public/images/getting-started/how-to-install-activate-and-update-the-azonpress/download-the-azonpress-zip-file.webp)
 
 ## Installing And Activating AzonPress
 
@@ -24,23 +24,23 @@ To learn how to install and activate **AzonPress** from the **WordPress Plugin D
 
 First, go to **Plugins** from your WordPress dashboard, and click on **Add New Plugin.**
 
-![Add new Plugin from WordPress Dashboard](/guide/public/images/add-new-plugin-from-wordpress-dashboard.png)
+![Add new Plugin from WordPress Dashboard](/guide/public/images/getting-started/how-to-install-activate-and-update-the-azonpress/add-new-plugin-from-wordpress-dashboard.webp)
 
 Click on the **Upload** button.
 
-![Upload Plugin button](/guide/public/images/upload-plugin-button.png)
+![Upload Plugin button](/guide/public/images/getting-started/how-to-install-activate-and-update-the-azonpress/upload-plugin-button.webp)
 
 Click on the **Choose file** to upload the **AzonPress zip file** that you've downloaded before.
 
-![Choose file button](/guide/public/images/choose-file-button.png)
+![Choose file button](/guide/public/images/getting-started/how-to-install-activate-and-update-the-azonpress/choose-file-button.webp)
 
 Click the **Install Now** button and the **AzonPress** plugin will be successfully **installed** on your WordPress site.
 
-![Install Now button](/guide/public/images/install-now-button.png)
+![Install Now button](/guide/public/images/getting-started/how-to-install-activate-and-update-the-azonpress/install-now-button.webp)
 
 Now, to activate, click on the **Activate Plugin.** But, you need the **License key** to activate all the **AzonPress** features successfully. Keep reading to learn how to activate the license.
 
-![Activate plugin button](/guide/public/images/activate-plugin-button.png)
+![Activate plugin button](/guide/public/images/getting-started/how-to-install-activate-and-update-the-azonpress/activate-plugin-button.webp)
 
 ## How to Activate The License Key
 
@@ -50,7 +50,7 @@ First, go to **Settings** from your **AzonPress Dashboard**, open **Licensing** 
 
 And finally, click the **Activate AzonPress** button. Your **AzonPress** plugin will also be successfully **Activated** on your WordPress site!
 
-![Activate AzonPress License key](/guide/public/images/activate-azonpress-license-key.png)
+![Activate AzonPress License key](/guide/public/images/getting-started/how-to-install-activate-and-update-the-azonpress/activate-azonpress-license-key.webp)
 
 ## How to Update AzonPress
 
@@ -62,7 +62,7 @@ Go to the **Plugins** page of your **WordPress Dashboard** and search for **Azon
 
 Now, check if any update is available. If yes, just click on the **Update** button.
 
-![Update option for AzonPress Plugin](/guide/public/images/update-option-for-azonpress-plugin.png)
+![Update option for AzonPress Plugin](/guide/public/images/getting-started/how-to-install-activate-and-update-the-azonpress/update-option-for-azonpress-plugin.webp)
 
 Congratulations now you can explore all the amazing features of the AzonPress!
 
@@ -70,4 +70,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [How to Install, Activate, and Update the AzonPress](https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/how-to-install-upgrade-and-activate-license/)

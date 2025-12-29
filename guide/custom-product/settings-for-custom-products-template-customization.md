@@ -8,11 +8,11 @@ To learn how to customize the template of Single Custom Products, follow the ste
 
 First, go to **Custom Products** from the **AzonPress Navbar** and open your **desired** Single **Custom Product** that you want to customize.
 
-![Open desired Single custom Product](/guide/public/images/open-desired-single-custom-product.png)
+![Open desired Single custom Product](/guide/public/images/custom-product/settings-for-custom-products-template-customization/open-desired-singlw-custom-product.webp)
 
 Once you open the product, you will find the **Settings** option on the right-hand sidebar.
 
-![Settings Sidebar for Single Products](/guide/public/images/settings-sidebar-for-single-products.png)
+![Settings Sidebar for Single Products](/guide/public/images/custom-product/settings-for-custom-products-template-customization/settings-sidebar-for-single-products.webp)
 
 Now, all the available **Settings** options for customization are briefly explained in the screenshot below:
 
@@ -30,11 +30,11 @@ Now, all the available **Settings** options for customization are briefly explai
 
 **Add Link Query Params**: This option is for Adding Query Params on your affiliate link. To know more read this [Documentation](/guide/miscellaneous/affiliate-link-configuration).
 
-![Single products Settings option](/guide/public/images/single-products-settings-option.png)
+![Single products Settings option](/guide/public/images/custom-product/settings-for-custom-products-template-customization/single-products-settings-option.webp)
 
 After setting up all the customization, click the **Save Template** or **Update & Save Template** button to make sure all the changes must appear on your site.
 
-![Single products Save Template or Update & Save Template button](/guide/public/images/single-products-save-template-or-update-save-template-button.png)
+![Single products Save Template or Update & Save Template button](/guide/public/images/custom-product/settings-for-custom-products-template-customization/single-products-save-template-or-update-&-save-template-button.webp)
 
 ## Settings for Multiple Custom Products
 
@@ -42,11 +42,11 @@ To learn how to customize the template of Multiple Custom Products, follow the s
 
 First, go to **Custom Products** from the **AzonPress Navbar** and open your **desired** Multiple **Custom Products** that you want to customize.
 
-![Open desired Multiple custom products](/guide/public/images/open-desired-multiple-custom-products.png)
+![Open desired Multiple custom products](/guide/public/images/custom-product/settings-for-custom-products-template-customization/open-desired-multiple-custom-products.webp)
 
 Once you open the product, you will find the **Settings** option on the right-hand sidebar.
 
-![Settings Sidebar for Multiple Products](/guide/public/images/settings-sidebar-for-multiple-products.png)
+![Settings Sidebar for Multiple Products](/guide/public/images/custom-product/settings-for-custom-products-template-customization/settings-sidebar-for-multiple-products.webp)
 
 Now, all the available **Settings** options for customization are briefly explained in a screenshot below:
 
@@ -54,11 +54,11 @@ The **Settings** options of **Multiple Custom Products** are **almost the same a
 
 **Button Settings**: With this option, you **can modify the text** of the "**Buy Now**" button. Additionally, you can **Disable** and **Enable** this button by clicking the orange **Toggle**.
 
-![Multiple Products Settings options](/guide/public/images/multiple-products-settings-options.png)
+![Multiple Products Settings options](/guide/public/images/custom-product/settings-for-custom-products-template-customization/multiple-products-settings-options.webp)
 
 Once you are setting up all the customization, click the **Save Template** or **Update & Save Template** button to make sure all the changes appear on your site.
 
-![Multiple Products Save Template or Update & Save Template button](/guide/public/images/multiple-products-save-template-or-update-save-template-button.png)
+![Multiple Products Save Template or Update & Save Template button](/guide/public/images/custom-product/settings-for-custom-products-template-customization/multiple-products-save-template-or-update-&-save-template-button.webp)
 
 This is how you can customize the Template of your Single or Multiple Custom Products!
 
@@ -66,4 +66,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Settings for Custom Products' Template Customization](https://wpmanageninja.com/docs/azonpress/custom-product-in-azonpress/settings-for-custom-products-template-customization/)

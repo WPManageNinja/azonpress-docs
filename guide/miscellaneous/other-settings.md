@@ -8,7 +8,7 @@ To learn how you can **give** your **AzonPress Site's** full **Admin Access** to
 
 First, go to **Settings** from the **AzonPress Navbar** and click on **Other Settings.**
 
-![Other Settings option from AzonPress dashboard](/guide/public/images/other-settings-option-from-azonpress-dashboard.png)
+![Other Settings option from AzonPress dashboard](/guide/public/images/miscellaneous/other-settings/other-settings-option-from-azonpress-dashboard.webp)
 
 Now, here you can see, two major settings options. These are:
 
@@ -21,10 +21,9 @@ Now, here you can see, two major settings options. These are:
 
 Once you are done, click the **Update** button to save all the changes.
 
-![Other Settings Popup page](/guide/public/images/other-settings-popup-page.png)
+![Other Settings Popup page](/guide/public/images/miscellaneous/other-settings/othe-settings-popup-page.webp)
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
 
-**Reference:** [Other Settings in AzonPress](https://wpmanageninja.com/docs/azonpress/miscellaneous/other-settings-in-azonpress/)

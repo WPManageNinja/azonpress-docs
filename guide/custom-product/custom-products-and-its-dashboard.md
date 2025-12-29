@@ -8,7 +8,7 @@ To learn how to add Custom Product/s with AzonPress, follow the steps with the s
 
 First, go to **Custom Products** from the **WordPress Sidebar** or **AzonPress Navbar**. Now, click the **Add Custom Product** button and a popup page will appear.
 
-![Custom Products from AzonPress Dashboard](/guide/public/images/custom-products-from-azonpress-dashboard.png)
+![Custom Products from AzonPress Dashboard](/guide/public/images/custom-product/custom-products-and-its-dashboard/custom-prducts-from-azonpress-dashboard.webp)
 
 Now, select the **Single Product Template** option if you want to add a single custom product. Or, select the **Multiple Product Template** option for adding multiple custom products.
 
@@ -16,7 +16,7 @@ Then, enter the **Link** of the **Amazon product** that you want to add as a cus
 
 **_For example, here I have added a single Amazon product as a custom product._**
 
-![Add products popup page](/guide/public/images/add-products-popup-page.png)
+![Add products popup page](/guide/public/images/custom-product/custom-products-and-its-dashboard/add-products-popup-page.webp)
 
 ## Dashboard Overview Of Custom Products
 
@@ -34,7 +34,7 @@ The details of the whole Dashboard to manage your custom products are given belo
 10. With this option, you can **Delete** any of our existing custom products at any time.
 11. This is the **Pagination** option where you can **set the limit** of how many custom products will be shown per page.
 
-![Custom Product Dashboard](/guide/public/images/custom-product-dashboard.png)
+![Custom Product Dashboard](/guide/public/images/custom-product/custom-products-and-its-dashboard/custom-product-dashboard.webp)
 
 This is all about your custom product dashboard!
 
@@ -42,4 +42,3 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 ---
 
-**Reference:** [Custom Products And Its Dashboard](https://wpmanageninja.com/docs/azonpress/custom-product-in-azonpress/custom-product-dashboard-overview/)
