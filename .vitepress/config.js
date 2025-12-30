@@ -23,7 +23,8 @@ export default defineConfig({
           items: [
             { text: 'Introduction', link: '/guide/getting-started/azonpress-introduction' },
             { text: 'Installation & Activation', link: '/guide/getting-started/how-to-install-activate-and-update-the-azonpress' },
-            { text: 'Dashboard Overview', link: '/guide/getting-started/dashboard-of-azonpress' }
+            { text: 'Dashboard Overview', link: '/guide/getting-started/dashboard-of-azonpress' },
+            { text: 'Glossary', link: '/guide/getting-started/glossary' }
           ]
         },
         {
