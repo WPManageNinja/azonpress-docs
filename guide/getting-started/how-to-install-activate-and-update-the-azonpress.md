@@ -1,12 +1,21 @@
 # How to Install, Activate, and Update the AzonPress
 
-This article will guide you through installing, activating, and updating AzonPress on your WordPress website. Please follow the instructions for a successful installation.
+Installing and activating **AzonPress** is a quick and easy process. This guide will walk you through the steps to install, upgrade, and activate your AzonPress license so you can start managing your affiliate links and earning revenue right away.
+
+### Server & Hosting Requirements
+
+Before installation, ensure your hosting environment meets these minimum specifications to prevent any performance issues:
+  * **WordPress Version:** 5.0 or higher
+  * **PHP Version:** 7.4 or higher
+  * **MySQL Version:** 5.6 or higher
 
 ## Get The Zip File To Install AzonPress
 
-To learn how to get the .zip file to install the **AzonPress Plugin**, follow the steps with the screenshots below –
+Since **AzonPress** is a premium plugin, it is not available in the WordPress.org repository. You must download it from your customer portal.
 
-First, to purchase the **AzonPress** plugin, click here.
+To learn how to get the .zip file required to install the **AzonPress** plugin, follow the steps below-
+
+First, to purchase the **AzonPress** plugin, [click here](https://azonpress.com/pricing/).
 
 Once you have purchased the plugin, you will get access to the WP Manage Ninja Dashboard. Now, log into the account with your credentials.
 
@@ -20,9 +29,7 @@ You'll also see a **License Key** that you can copy as you need it later to acti
 
 ## Installing And Activating AzonPress
 
-To learn how to install and activate **AzonPress** from the **WordPress Plugin Directory** on your **WordPress Site**, follow the steps with the screenshots below –
-
-First, go to **Plugins** from your WordPress dashboard, and click on **Add New Plugin.**
+Go to **Plugins** from your WordPress dashboard, and click on **Add New Plugin.**
 
 ![Add new Plugin from WordPress Dashboard](/guide/public/images/getting-started/how-to-install-activate-and-update-the-azonpress/add-new-plugin-from-wordpress-dashboard.webp)
 
@@ -44,9 +51,7 @@ Now, to activate, click on the **Activate Plugin.** But, you need the **License 
 
 ## How to Activate The License Key
 
-To activate the license, follow the steps in the screenshot below –
-
-First, go to **Settings** from your **AzonPress Dashboard**, open **Licensing** from the left sidebar, and enter the **License Key** you've copied before into the input field.
+First, Navigate to the **Settings** from your **AzonPress Dashboard**, open **License** from the left sidebar, and enter the **License Key** you've copied before into the input field.
 
 And finally, click the **Activate AzonPress** button. Your **AzonPress** plugin will also be successfully **Activated** on your WordPress site!
 
@@ -56,8 +61,6 @@ And finally, click the **Activate AzonPress** button. Your **AzonPress** plugin 
 
 For updating with the latest version of AzonPress, we have implemented an automatic update system compatible with the previous version. Also, you can manually update it anytime if needed.
 
-To **Update** the **AzonPress** plugin **manually**, follow the steps in the screenshot below –
-
 Go to the **Plugins** page of your **WordPress Dashboard** and search for **AzonPress** from the **Search Bar** in the top right corner.
 
 Now, check if any update is available. If yes, just click on the **Update** button.
@@ -66,7 +69,7 @@ Now, check if any update is available. If yes, just click on the **Update** butt
 
 Congratulations now you can explore all the amazing features of the AzonPress!
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/account/support-tickets/). Thank you.
 
 ---
 
