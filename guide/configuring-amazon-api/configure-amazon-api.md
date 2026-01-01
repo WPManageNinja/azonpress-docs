@@ -1,12 +1,16 @@
+---
+title: "Configure Amazon API in AzonPress"
+meta_description: "Step-by-step guide to configuring your Amazon Product Advertising API in AzonPress. Learn to set up credentials, smart caching, and geo-targeting easily."
+---
+
 # Configure Amazon API in AzonPress
 
 To use the AzonPress plugin on your WordPress site, you need to configure the Amazon API in AzonPress from your WordPress Site. This article will guide you through the whole process.
 
 ## Amazon API Configuration In AzonPress
 
-To learn how to configure Amazon API in AzonPress, follow the steps in the screenshot below –
-
-**Remember**, before configuring Amazon API with AzonPress, you must create credentials for Amazon Product Advertising API. After **creating Amazon API** from your **Amazon Site** successfully, go to your **WordPress Site** and install the AzonPress plugin.
+>Remember,
+before configuring Amazon API with AzonPress, you must create credentials for Amazon Product Advertising API. After **creating Amazon API** from your **Amazon Site** successfully, go to your **WordPress Site** and install the AzonPress plugin.
 
 First, go to **Settings** from the **WordPress Sidebar** or **AzonPress Navbar**, and open the **Amazon API** settings option from the left sidebar.
 
@@ -23,7 +27,5 @@ Once you are done, click on the **Update** button to save your **Amazon API Conf
 
 This is how you can set up your API key and other relevant issues using the AzonPress plugin!
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
----
 
