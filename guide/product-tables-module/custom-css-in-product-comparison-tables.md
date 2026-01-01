@@ -28,7 +28,7 @@ Now, in the custom code field, you can write any Custom CSS so that the appearan
 
 Each table has a **Unique ID** that can be used to target specifically that table.
 
-**Remember**, use your own Table's unique ID in your Custom CSS.
+>**Remember**, use your own Table's unique ID in your Custom CSS.
 
 After entering the required code, click on the **Update Custom CSS** button to save all the changes you want to appear in your table.
 
