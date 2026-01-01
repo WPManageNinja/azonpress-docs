@@ -3,6 +3,7 @@ title: "Customization of Product Tables"
 title_tag: "Customize Product Tables Guide | Azonpress Documentation"
 meta_description: "Complete guide to customize AzonPress product tables: add columns, edit design, apply custom CSS, and configure styling options. Design perfect tables!"
 ---
+
 # Customization of Product Tables
 
 AzonPress offers excellent customization features, making it easy to customize according to your needs. This article will guide you through **Customizing Product Tables** with **AzonPress** for **Amazon products** on your **WordPress** website.
@@ -23,17 +24,16 @@ Now, you can see that your desired product table has been opened in your backend
 
 **Here is a brief explanation of all the settings options on the pop-up page given below –**
 
-You can **Add Columns** by clicking on the **+ Add Column** button.
-You can do any custom design in your table, by pressing the **Custom CSS** button.
+You can **Add Columns** by clicking on the **+ Add Column** button. 
 
-Also, you can add more products by clicking the **+ Add Product** button and it will take you to the product search pop-up page again.
+You can do any custom design in your table, by pressing the **Custom CSS** button. Also, you can add more products by clicking the **+ Add Product** button and it will take you to the product search pop-up page again.
 
 ![Add column custom css add products](/guide/public/images/product-tables-module/customization-of-product-tables/add-column-custom-css-add-products.webp)
 
 Two more options are available just above the left side of the page, and these are **Edit Mode** and **Design Mode**. You can use those options to change it anywhere or create a custom design for the table.
 
-* To change the design of your table, click on the **Design Mode** button and the **Settings** bar will appear on the right side.
-* Then, you can choose the library style, color, pagination number, and feature needed for your table from the **Styling library**, **Color Skin**, **Product Table Pagination**, and **Styling Feature** settings options.
+ * To change the design of your table, click on the **Design Mode** button and the **Settings** bar will appear on the right side.
+ * Then, you can choose the library style, color, pagination number, and feature needed for your table from the **Styling library**, **Color Skin**, **Product Table Pagination**, and **Styling Feature** settings options.
 
 _"For example, you can see in the picture below that I have selected all fields of the Styling Feature and customized the table according to my choice using the settings options."_
 
@@ -75,7 +75,6 @@ To learn about customizing tables through Appearance Settings, read this [Docume
 
 This is how you can customize the product table as per your proper design!
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
 
