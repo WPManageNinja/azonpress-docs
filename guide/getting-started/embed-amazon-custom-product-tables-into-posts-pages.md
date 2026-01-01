@@ -1,3 +1,8 @@
+---
+title: "Embed Amazon/Custom Product Tables into Posts/Pages"
+title_tag: "Embed Product Tables in WordPress | Azonpress Documentation"
+meta_description: "Learn how to embed Amazon product tables, comparison tables, and custom product tables into WordPress posts and pages using shortcodes. Quick setup!"
+---
 # Embed Amazon/Custom Product Tables into Posts/Pages
 
 AzonPress allows you to embed your **Amazon Product** tables, **Amazon Comparison** tables, and **Custom Product** tables easily to the front end (i.e., Posts or Pages) on your WordPress Site using the **Shortcode**. This article will guide you through embedding these tables from AzonPress to your desired Posts/Pages.

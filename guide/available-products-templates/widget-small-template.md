@@ -1,3 +1,8 @@
+---
+title: "Widget Small Template"
+title_tag: "Widget Small Template Guide | Azonpress Documentation"
+meta_description: "Use AzonPress Widget Small template for compact Amazon product displays. Ideal for sidebars, footers, and space-constrained areas. Start using it now!"
+---
 # Widget Small Template
 
 AzonPress offers an advanced feature to **display Amazon products** using the **WordPress Classic Editor**. This article guides you through using the **Widget Small Template** of **AzonPress** in the **Classic Editor** of **WordPress**.

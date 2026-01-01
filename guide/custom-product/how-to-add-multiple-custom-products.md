@@ -1,3 +1,8 @@
+---
+title: "How to Add Multiple Custom Products"
+title_tag: "Add Multiple Custom Products Guide | Azonpress Documentation"
+meta_description: "Learn how to add multiple custom products in AzonPress. Bulk import products from Amazon, eBay, Etsy. Edit and customize all products efficiently!"
+---
 # How to Add Multiple Custom Products
 
 AzonPress allows you to add Multiple Custom Products to your website as well. You can fetch the details of the product just by giving the product URL or you can add the product manually. With this feature, besides Amazon, you can also fetch data from other E-Commerce websites such as eBay and Etsy. This article guides you through **Adding Multiple Custom Products** with **AzonPress**.

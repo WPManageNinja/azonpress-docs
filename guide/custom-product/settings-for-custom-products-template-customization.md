@@ -1,3 +1,8 @@
+---
+title: "Settings for Custom Products' Template Customization"
+title_tag: "Customize Product Templates Guide | Azonpress Documentation"
+meta_description: "Complete guide to customize AzonPress custom product templates. Configure colors, links, buttons, and styling for single and multiple products. Design now!"
+---
 # Settings for Custom Products' Template Customization
 
 AzonPress allows you to customize the template of your Custom Products feature for both Single and Multiple products. This article guides you through the process of how to customize the template of both **Single Custom Products** and **Multiple Custom Products** with the available **Settings** options in **AzonPress**.

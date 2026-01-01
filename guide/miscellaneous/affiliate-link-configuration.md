@@ -1,3 +1,8 @@
+---
+title: "Affiliate Link Configuration"
+title_tag: "Affiliate Link Configuration Guide | Azonpress Documentation"
+meta_description: "Configure affiliate links in AzonPress with query parameters. Add tracking IDs, UTM parameters, and custom query params. Optimize your links now!"
+---
 # Affiliate Link Configuration
 
 In AzonPress, the "**Affiliate Link Configuration**" settings allow you to **create** an **Affiliate link** with **Query Params**. You can make query param affiliate links for any e-commerce website with only the Custom Product feature of AzonPress. This guide will help you through **adding** the **Query Params** to your product link with **AzonPress**.

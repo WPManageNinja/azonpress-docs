@@ -1,3 +1,8 @@
+---
+title: "How to Resolve Request Throttled Error of Amazon API"
+title_tag: "Fix Amazon API Throttled Error | Azonpress Documentation"
+meta_description: "Resolve Amazon API request throttled errors in AzonPress. Learn requirements, verify API keys, check sales quotas, and fix connection issues. Get help now!"
+---
 # How to Resolve "Request Throttled" Error of Amazon API
 
 API (Application Programming Interface) is a method we use in our plugin to connect with Amazon to retrieve product information. Our plugin including AzonPress won't connect to Amazon's Servers if you don't have a working API key generated from your Amazon account.

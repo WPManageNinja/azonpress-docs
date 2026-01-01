@@ -1,3 +1,8 @@
+---
+title: "Geo Location Report"
+title_tag: "Geo Location Reports Guide | Azonpress Documentation"
+meta_description: "View geo location reports in AzonPress: track clicks by country, visualize on map, filter by date. Understand your global affiliate traffic. Analyze now!"
+---
 # Geo Location Report
 
 In AzonPress, the "**Geo Location**" feature of the **Reports** section allows you to view click reports, track the origin of clicks, and display the information on a Geo Tracking Map for your Amazon Products & Comparison Tables, and Custom Products. You can also see the number of clicks received from each country and filter your report for a specific time range. This article will guide you through how you can view the Geo Location Report.

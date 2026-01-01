@@ -1,3 +1,8 @@
+---
+title: "Product Elements"
+title_tag: "Product Elements Template Guide | Azonpress Documentation"
+meta_description: "Use AzonPress Product Elements: text links, image links, CTAs, and feature boxes. Customize product displays and increase click-through rates now!"
+---
 # Product Elements
 
 AzonPress offers an advanced feature to **display Amazon products** using the **WordPress Classic Editor**. This article guides you through using the **Product Elements** of **AzonPress** in the **Classic Editor** of **WordPress**.

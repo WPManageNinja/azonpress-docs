@@ -1,3 +1,8 @@
+---
+title: "How to use AzonPress with Classic Editor (Gutenberg Block)"
+title_tag: "AzonPress Classic Editor Integration | Azonpress Documentation"
+meta_description: "Use AzonPress with WordPress Classic Editor via Gutenberg blocks. Display Amazon products, tables, and bestseller lists. Complete setup guide included!"
+---
 # How to use AzonPress with Classic Editor (Gutenberg Block)
 
 AzonPress is a standard Amazon Associate plugin for WordPress. This plugin offers an advanced feature that enables you to **display Amazon Products** using **Classic Editor**. This article will guide you through the process of using AzonPress with Classic Editor of WordPress.
