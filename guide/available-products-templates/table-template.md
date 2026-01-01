@@ -1,3 +1,8 @@
+---
+title: "Table Template"
+title_tag: "Table Template for Products | Azonpress Documentation"
+meta_description: "Use AzonPress Table template to display Amazon products in organized table format. Perfect for comparing product features and specifications easily!"
+---
 # Table Template
 
 AzonPress offers an advanced feature to **display Amazon products** using the **WordPress Classic Editor**. This article guides you through using the **Table Template** of **AzonPress** in the **Classic Editor** of **WordPress**.

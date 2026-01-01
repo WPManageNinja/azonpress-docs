@@ -1,3 +1,8 @@
+---
+title: "Appearance Settings"
+title_tag: "Appearance Settings Configuration | Azonpress Documentation"
+meta_description: "Customize AzonPress appearance settings: product UI styles, link defaults, button appearance, and custom button styling. Perfect your design today!"
+---
 # Appearance Settings
 
 In AzonPress, the "**Appearance Settings**" option allows you to customize the appearance of your Product Tables and Comparison Tables displayed on your site in multiple ways, ensuring that they look the way you want them to on your website. This article guides you through customizing the tables using **Appearance Settings** with **AzonPress**.

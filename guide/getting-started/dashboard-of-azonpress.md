@@ -1,3 +1,8 @@
+---
+title: "Dashboard of AzonPress"
+title_tag: "AzonPress Dashboard Overview Guide | Azonpress Documentation"
+meta_description: "Master the AzonPress dashboard: track clicks, view affiliate statistics, monitor performance metrics, and access usage guides. Optimize your earnings now!"
+---
 # Dashboard of AzonPress
 
 The **Dashboard** of AzonPress displays the **Overall Click Reports** for all your affiliate products, **Affiliate Statistics**, and a **Usage Guide** to make the plugin more user-friendly. This article will guide you through the explanation of the main **Dashboard** of **AzonPress**.

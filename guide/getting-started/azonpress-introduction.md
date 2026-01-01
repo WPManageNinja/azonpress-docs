@@ -1,6 +1,8 @@
 ---
 title: "AzonPress Introduction"
 description: "An overview of AzonPress, a WordPress plugin for Amazon affiliate marketing and multi-platform product promotion."
+title_tag: "AzonPress WordPress Plugin Guide | Azonpress Documentation"
+meta_description: "Discover AzonPress: the ultimate WordPress plugin for Amazon affiliate marketing. Create product tables, comparison layouts, and earn commissions effortlessly. Start today!"
 ---
 
 # AzonPress Introduction

@@ -1,6 +1,8 @@
 ---
 title: "Creating Credentials for Amazon Product Advertising API"
 description: "Learn how to create and download your Amazon API Access Key and Secret Key for AzonPress. Follow our step-by-step guide to meet PA API requirements and fetch product data."
+title_tag: "Create Amazon API Credentials Guide | Azonpress Documentation"
+meta_description: "Step-by-step guide to create Amazon Product Advertising API credentials for AzonPress. Learn requirements, download access keys, and start fetching product data now!"
 ---
 
 # Creating Credentials for Amazon Product Advertising API

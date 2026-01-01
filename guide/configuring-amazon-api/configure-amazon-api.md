@@ -1,6 +1,8 @@
 ---
 title: "Configure Amazon API in AzonPress"
 meta_description: "Step-by-step guide to configuring your Amazon Product Advertising API in AzonPress. Learn to set up credentials, smart caching, and geo-targeting easily."
+title_tag: "Configure Amazon API in AzonPress | Azonpress Documentation"
+meta_description: "Complete guide to configure Amazon Product Advertising API in AzonPress. Set up credentials, enable smart caching, and configure geo-targeting. Get started today!"
 ---
 
 # Configure Amazon API in AzonPress

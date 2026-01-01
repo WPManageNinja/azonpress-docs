@@ -1,3 +1,8 @@
+---
+title: "Widget Template"
+title_tag: "Widget Template for Products | Azonpress Documentation"
+meta_description: "Learn how to use AzonPress Widget template to display Amazon products in compact widget layouts. Perfect for sidebars and featured sections!"
+---
 # Widget Template
 
 AzonPress offers an advanced feature to **display Amazon products** using the **WordPress Classic Editor**. This article guides you through using the **Widget Template** of **AzonPress** in the **Classic Editor** of **WordPress**.

@@ -1,3 +1,8 @@
+---
+title: "How to Add a Single Custom Product"
+title_tag: "Add Single Custom Product Guide | Azonpress Documentation"
+meta_description: "Step-by-step guide to add a single custom product in AzonPress. Import from URL or add manually, edit details, and customize templates. Start now!"
+---
 # How to Add a Single Custom Product
 
 AzonPress allows you to add custom products to your site where you can fetch the details of the product just by giving the product URL or you can add the product manually. With this feature, besides Amazon, you can also fetch data from other E-Commerce websites such as eBay and Etsy. This article guides you through **Adding a Single Custom Product** with AzonPress.

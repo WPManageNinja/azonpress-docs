@@ -1,3 +1,8 @@
+---
+title: "BestSeller Lists"
+title_tag: "Bestseller Lists Template Guide | Azonpress Documentation"
+meta_description: "Display Amazon bestseller products using AzonPress Bestseller Lists. Show top-selling items by category and boost your affiliate conversions today!"
+---
 # BestSeller Lists
 
 AzonPress offers an advanced feature to **display Amazon products** using the **WordPress Classic Editor**. This article guides you through using the **BestSeller Lists** of **AzonPress** in the **Classic Editor** of **WordPress**.

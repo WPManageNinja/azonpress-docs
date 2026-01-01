@@ -1,3 +1,8 @@
+---
+title: "Box Template"
+title_tag: "Box Template for Products | Azonpress Documentation"
+meta_description: "Use AzonPress Box template to display Amazon products in attractive box layouts. Create professional product displays with ease. Get started now!"
+---
 # Box Template
 
 AzonPress offers an advanced feature to **display Amazon products** using the **WordPress Classic Editor**. This article guides you through using the **Box Template** of **AzonPress** in the **Classic Editor** of **WordPress**.

@@ -1,3 +1,8 @@
+---
+title: "Add Columns in Product Tables"
+title_tag: "Add Columns to Product Tables | Azonpress Documentation"
+meta_description: "Learn how to add custom columns to AzonPress product tables. Configure column types, alignment, width, and styling. Enhance your product displays now!"
+---
 # Add Columns in Product Tables
 
 **Product Table** offers you showcasing **information** on **Amazon Products** according to your needs through **Tables**. This article will guide you through **Adding** as many **Columns** as you wish in **Product Table/s** with AzonPress for **Amazon** products on your **WordPress** website.

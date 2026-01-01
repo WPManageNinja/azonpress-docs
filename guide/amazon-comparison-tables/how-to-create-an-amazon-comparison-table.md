@@ -1,3 +1,8 @@
+---
+title: "How to Create an Amazon Comparison Table with AzonPress"
+title_tag: "Create Amazon Comparison Tables | Azonpress Documentation"
+meta_description: "Step-by-step guide to create Amazon comparison tables with AzonPress. Compare products side-by-side, customize features, and boost conversions. Start now!"
+---
 # How to Create an Amazon Comparison Table with AzonPress
 
 AzonPress offers a wonderful feature named **Comparison Table** that will allow your customers to quickly and easily compare key features, prices, and reviews of Amazon Products which will help them to make purchasing decisions. This article will guide you through **creating Comparison Table/s** with AzonPress for **Amazon** products on your **WordPress** website.

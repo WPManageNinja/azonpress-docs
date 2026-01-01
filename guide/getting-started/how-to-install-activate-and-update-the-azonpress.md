@@ -1,3 +1,8 @@
+---
+title: "How to Install, Activate, and Update the AzonPress"
+title_tag: "Install & Activate AzonPress Plugin | Azonpress Documentation"
+meta_description: "Step-by-step guide to install, activate, and update AzonPress on WordPress. Learn how to download, configure license keys, and keep your plugin updated."
+---
 # How to Install, Activate, and Update the AzonPress
 
 This article will guide you through installing, activating, and updating AzonPress on your WordPress website. Please follow the instructions for a successful installation.

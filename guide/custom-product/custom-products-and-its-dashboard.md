@@ -1,3 +1,8 @@
+---
+title: "Custom Products And Its Dashboard"
+title_tag: "Custom Products Dashboard Guide | Azonpress Documentation"
+meta_description: "Complete guide to AzonPress Custom Products dashboard. Add single or multiple products from Amazon, eBay, Etsy. Manage all custom products easily!"
+---
 # Custom Products And Its Dashboard
 
 AzonPress allows you to add **Custom Product/s** for your website where you can add **single** or **multiple** custom products with affiliate links. With this feature, besides Amazon, you can also fetch data from other E-Commerce websites such as eBay and Etsy. This article guides you through adding Custom Product/s with AzonPress and gives an overview of the **Custom Product Dashboard.**

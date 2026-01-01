@@ -1,3 +1,8 @@
+---
+title: "How To Use AzonPress With Gutenberg Blocks"
+title_tag: "AzonPress Gutenberg Blocks Guide | Azonpress Documentation"
+meta_description: "Master AzonPress Gutenberg blocks: create product pages, add single products, pros & cons, CTAs, and star ratings. Transform your content today!"
+---
 # How To Use AzonPress With Gutenberg Blocks
 
 AzonPress offers you some interesting **Gutenberg Blocks** which will give you a lot of opportunities to show your products. This article will guide you through the process of how you can use your **Gutenberg blocks** and what your **AzonPress Gutenberg Blocks** can do.

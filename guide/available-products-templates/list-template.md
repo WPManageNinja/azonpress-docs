@@ -1,3 +1,8 @@
+---
+title: "List Template"
+title_tag: "List Template for Amazon Products | Azonpress Documentation"
+meta_description: "Display Amazon products using AzonPress List template. Create clean, organized product lists that help customers make informed decisions quickly!"
+---
 # List Template
 
 AzonPress offers an advanced feature to **display Amazon products** using the **WordPress Classic Editor**. This article guides you through using the **List Template** of **AzonPress** in the **Classic Editor** of **WordPress**.

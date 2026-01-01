@@ -1,6 +1,8 @@
 ---
 title: "Geo Tracking (Targeting) Settings"
 description: "Learn how to configure Geo Tracking in AzonPress using a MaxMind API key. Re-route Amazon affiliate links to local stores based on your visitor's location."
+title_tag: "Geo Tracking Settings Configuration | Azonpress Documentation"
+meta_description: "Configure geo-tracking in AzonPress with MaxMind API. Route Amazon affiliate links to local stores based on visitor location. Boost conversions now!"
 ---
 
 # Geo Tracking (Targeting) Settings

@@ -1,10 +1,13 @@
+---
+title: "Customization of Product Tables"
+title_tag: "Customize Product Tables Guide | Azonpress Documentation"
+meta_description: "Complete guide to customize AzonPress product tables: add columns, edit design, apply custom CSS, and configure styling options. Design perfect tables!"
+---
 # Customization of Product Tables
 
 AzonPress offers excellent customization features, making it easy to customize according to your needs. This article will guide you through **Customizing Product Tables** with **AzonPress** for **Amazon products** on your **WordPress** website.
 
 ## How To Customize A Product Table
-
-To learn how to customize the information displayed in your Product table with AzonPress, follow the steps with the screenshots below –
 
 First, go to **Amazon Products** from the **WordPress Sidebar** or **Product Tables** from the **Amazon** dropdown in the top right corner of the **AzonPress Navbar**.
 

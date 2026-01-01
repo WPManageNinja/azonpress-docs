@@ -1,3 +1,8 @@
+---
+title: "Customization Of Comparison Tables"
+title_tag: "Customize Comparison Tables Guide | Azonpress Documentation"
+meta_description: "Complete guide to customize AzonPress comparison tables: edit rows, highlight products, configure appearance settings, and add custom CSS. Design perfect comparisons!"
+---
 # Customization Of Comparison Tables
 
 AzonPress offers excellent customization features, making it easy to customize according to your needs. This article will guide you through **Customizing Comparison Tables** with **AzonPress** for **Amazon products** on your **WordPress** website.

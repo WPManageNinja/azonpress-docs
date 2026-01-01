@@ -1,3 +1,8 @@
+---
+title: "Grid Template"
+title_tag: "Grid Template for Amazon Products | Azonpress Documentation"
+meta_description: "Learn how to use AzonPress Grid template to display Amazon products in a symmetrical grid layout. Perfect for showcasing multiple products beautifully!"
+---
 # Grid Template
 
 AzonPress offers an advanced feature to **display Amazon products** using the **WordPress Classic Editor**. This article guides you through using the **Grid Template** of **AzonPress** in the **Classic Editor** of **WordPress**.

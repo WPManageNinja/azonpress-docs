@@ -1,6 +1,8 @@
 ---
 title: "AzonPress Glossary"
 description: "Definitions for common terms and concepts used throughout the AzonPress documentation."
+title_tag: "AzonPress Glossary & Terms Guide | Azonpress Documentation"
+meta_description: "Complete AzonPress glossary: definitions for API integration, comparison tables, affiliate links, Gutenberg blocks, and all key features. Learn the terminology!"
 ---
 
 # AzonPress Glossary
