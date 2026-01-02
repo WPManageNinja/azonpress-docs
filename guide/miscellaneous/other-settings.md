@@ -16,16 +16,28 @@ First, go to **Settings** from the **AzonPress Navbar** and click on **Other Set
 
 ![Other Settings option from AzonPress dashboard](/guide/public/images/miscellaneous/other-settings/other-settings-option-from-azonpress-dashboard.webp)
 
-Now, here you can see, two major settings options. These are:
+## Explanation of Other Settings Options
 
-  * **Global Asset Loading**
-  * **AzonPress Access Roles**
+Now, here you can see two major settings options. These are:
 
-**Global Asset Loading**: Here, you can see, by default the "Load CSS and JS On-Demand" option is enabled to load the CSS and JS files based on scopes. But if you want to load all CSS and JS files globally, you can simply enable the "Load CSS and JS Globally" option.
+#### 1. Global Asset Loading
 
-**AzonPress Access Roles:** Now, here you will get all the roles for giving the admin access. To do this, just simply click the checkbox of your desired user role/s, and that specific user/s will get all the admin access to your AzonPress site.
+This setting controls how the plugin's technical files are loaded on your website:
 
-Once you are done, click the **Update** button to save all the changes.
+ * **Load CSS and JS Globally:** Enable this option if you want to load all AzonPress CSS and JS files on every page of your site.
+ * **Load CSS and JS On-Demand:** By default, this option is enabled to load files only when they are needed, which helps maintain site performance.
+
+#### 2. AzonPress Access Roles
+
+By default, Administrators have all the access. You can assign more user roles to use AzonPress on your site by simply clicking the checkbox of your desired role/s:
+
+ * **Editor**
+ * **Author**
+ * **Contributor**
+
+Once you have selected your desired roles, those specific user/s will be able to access AzonPress features.
+
+**Update Settings:** Once you are done making your selections, click the **Update** button to save all the changes.
 
 ![Other Settings Popup page](/guide/public/images/miscellaneous/other-settings/othe-settings-popup-page.webp)
 
