@@ -3,6 +3,7 @@ title: "Other Settings in AzonPress"
 title_tag: "Other Settings Configuration Guide | Azonpress Documentation"
 meta_description: "Configure AzonPress other settings: assign admin access roles, configure global asset loading for CSS/JS. Manage plugin permissions easily!"
 ---
+
 # Other Settings in AzonPress
 
 In AzonPress, the "Other Settings" feature allows you to **Assign** the **Users** full **Admin Access** for a specific **AzonPress Site/Plugin**. Also, you can decide with this setting option whether you want to load the CSS and JS file globally or on-demand. This article will guide you through giving admin access to the users.
@@ -28,7 +29,5 @@ Once you are done, click the **Update** button to save all the changes.
 
 ![Other Settings Popup page](/guide/public/images/miscellaneous/other-settings/othe-settings-popup-page.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
----
 
