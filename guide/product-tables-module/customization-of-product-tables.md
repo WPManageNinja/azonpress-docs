@@ -36,7 +36,7 @@ Two more options are available just above the left side of the page, and these a
  * To change the design of your table, click on the **Design Mode** button and the **Settings** bar will appear on the right side.
  * Then, you can choose the library style, color, pagination number, and feature needed for your table from the **Styling library**, **Color Skin**, **Product Table Pagination**, and **Styling Feature** settings options.
 
-_"For example, you can see in the picture below that I have selected all fields of the Styling Feature and customized the table according to my choice using the settings options."_
+> _"For example, you can see in the picture below that I have selected all fields of the Styling Feature and customized the table according to my choice using the settings options."_
 
 ![Edit and design mode](/guide/public/images/product-tables-module/customization-of-product-tables/edit-and-design-mode.webp)
 
