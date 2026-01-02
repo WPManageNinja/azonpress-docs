@@ -3,6 +3,7 @@ title: "How to Get Support"
 title_tag: "Get AzonPress Support & Help | Azonpress Documentation"
 meta_description: "Get help with AzonPress: submit support tickets, provide detailed information, include screenshots. Our team is ready to assist you. Contact support now!"
 ---
+
 # How to Get Support
 
 If you've reviewed the Docs guides and are still encountering a problem with AzonPress, our dedicated support team is here to help.
