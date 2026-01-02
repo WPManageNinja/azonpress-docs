@@ -3,13 +3,14 @@ title: "How to Add a Single Custom Product"
 title_tag: "Add Single Custom Product Guide | Azonpress Documentation"
 meta_description: "Step-by-step guide to add a single custom product in AzonPress. Import from URL or add manually, edit details, and customize templates. Start now!"
 ---
+
 # How to Add a Single Custom Product
 
-AzonPress allows you to add custom products to your site where you can fetch the details of the product just by giving the product URL or you can add the product manually. With this feature, besides Amazon, you can also fetch data from other E-Commerce websites such as eBay and Etsy. This article guides you through **Adding a Single Custom Product** with AzonPress.
+AzonPress allows you to add custom products to your site where you can fetch the details of the product just by giving the product URL or you can add the product manually. With this feature, besides Amazon, you can also fetch data from other E-Commerce websites such as eBay and Etsy. 
+
+This article guides you through **Adding a Single Custom Product** with AzonPress.
 
 ## Add A Single Custom Product
-
-To learn how to add a single custom product, follow the steps with the screenshots below –
 
 First, go to **Custom Products** from the **WordPress Sidebar** or **AzonPress Navbar**. Now, click the **Add Custom Product** button and a popup page will appear.
 
@@ -21,9 +22,7 @@ Now, select the **Single Product Template** option, enter the **Link** of the **
 
 ### Get the Amazon Product Link
 
-To learn how to get the URL link of a single Amazon product to fetch the product data into the website, follow the steps in the screenshot below –
-
-First, go to your **Amazon Associate account**, **search** for the **product** you want to add, and copy the **URL link** from the address bar.
+Go to your **Amazon Associate account**, **search** for the **product** you want to add, and copy the **URL link** from the address bar.
 
 ![Copy Amazon Product URL](/guide/public/images/custom-product/how-to-add-a-single-custom-product/copy-amazon-product-url.webp)
 
@@ -31,10 +30,8 @@ First, go to your **Amazon Associate account**, **search** for the **product** y
 
 The **Edit** option will allow you to modify every detail of the product e.g., Product Info, Product metadata, Image, and Button. Also, you can add a Text and Color option for your Product.
 
-To learn the details of the editor, follow the steps with screenshots below –
 
-First, open your desired single custom product by clicking the **Pencil Icon**.
-You can also **delete** the product by clicking the **Trash** icon if needed.
+First, open your desired single custom product by clicking the **Pencil Icon**. You can also **delete** the product by clicking the **Trash** icon if needed.
 
 ![Open the editor of desired product](/guide/public/images/custom-product/how-to-add-a-single-custom-product/open-the-editor-of-desired-product.webp)
 
@@ -61,8 +58,6 @@ Once you are done, click the **Save Template** or **Update & Save Template** to 
 ![Save Template or Update & Save Template button](/guide/public/images/custom-product/how-to-add-a-single-custom-product/save-template-or-update-&-save-template-button.webp)
 
 This is how you can add and edit/customize your Single Custom Product!
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
 

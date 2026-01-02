@@ -26,7 +26,8 @@ Now, you can see that your desired product table has been opened in your backend
 
 You can **Add Columns** by clicking on the **+ Add Column** button. 
 
-You can do any custom design in your table, by pressing the **Custom CSS** button. Also, you can add more products by clicking the **+ Add Product** button and it will take you to the product search pop-up page again.
+If you want to apply your own styling, click the **Custom CSS** button to design the table however you like. You can also add more products at any time by clicking the **+ Add Product** button. This will open the product search pop-up again so you can select additional products.
+
 
 ![Add column custom css add products](/guide/public/images/product-tables-module/customization-of-product-tables/add-column-custom-css-add-products.webp)
 
@@ -35,7 +36,7 @@ Two more options are available just above the left side of the page, and these a
  * To change the design of your table, click on the **Design Mode** button and the **Settings** bar will appear on the right side.
  * Then, you can choose the library style, color, pagination number, and feature needed for your table from the **Styling library**, **Color Skin**, **Product Table Pagination**, and **Styling Feature** settings options.
 
-_"For example, you can see in the picture below that I have selected all fields of the Styling Feature and customized the table according to my choice using the settings options."_
+> _"For example, you can see in the picture below that I have selected all fields of the Styling Feature and customized the table according to my choice using the settings options."_
 
 ![Edit and design mode](/guide/public/images/product-tables-module/customization-of-product-tables/edit-and-design-mode.webp)
 

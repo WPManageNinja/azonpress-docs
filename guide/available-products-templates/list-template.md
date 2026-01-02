@@ -3,15 +3,14 @@ title: "List Template"
 title_tag: "List Template for Amazon Products | Azonpress Documentation"
 meta_description: "Display Amazon products using AzonPress List template. Create clean, organized product lists that help customers make informed decisions quickly!"
 ---
+
 # List Template
 
 AzonPress offers an advanced feature to **display Amazon products** using the **WordPress Classic Editor**. This article guides you through using the **List Template** of **AzonPress** in the **Classic Editor** of **WordPress**.
 
 ## List Template of AzonPress
 
-You can use the List template to symmetrically exhibit your products so that customers can easily conceive the ins and outs of a product.
-
-To learn how to use List Template, follow the steps with the screenshots below –
+You can use the **List template** to symmetrically exhibit your products so that customers can easily conceive the ins and outs of a product.
 
 First, add the **Classic Editor** block on your desired **Page/Post** (e.g., I have added the classic editor to a new post).
 
@@ -25,10 +24,14 @@ Next, click the **Add Media** option from the **classic editor** bar, and a pop-
 
 Now, press **AzonPress** from the left sidebar and you will get **Product Templates** tabs with various **settings options** for **showcasing** your **Amazon products.**
 
-* Here, you will get the **List** template under the **Select Layout** option, **enable** the **checkbox** to use this.
-* To learn about how to use all the other settings options under Product Templates, read this [Documentation](/guide/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block).
-* Once you are done, click the **Insert Shortcode** button and the shortcode will be automatically embedded in your post. Then, **publish** it and your Amazon Products will appear on your site under that post.
-* If you want to **showcase the same products** in **another post/s**, you can also do it simply by **copying** the **Shortcode** visible **right before** the **Insert Shortcode** button and **pasting** it into the desired post/s.
+Here, you will get the **List** template under the **Select Layout** option, **enable** the **checkbox** to use this.
+
+>[!Note]
+>To learn about how to use all the other settings options under Product Templates, read this [Documentation](/guide/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block).
+
+Once you are done, click the **Insert Shortcode** button and the shortcode will be automatically embedded in your post. Then, **publish** it and your Amazon Products will appear on your site under that post.
+
+If you want to **showcase the same products** in **another post/s**, you can also do it simply by **copying** the **Shortcode** visible **right before** the **Insert Shortcode** button and **pasting** it into the desired post/s.
 
 ![List template checkbox](/guide/public/images/available-products-templates/list-template/list-template-checkbox.webp)
 
@@ -36,7 +39,6 @@ Here, is the preview of the post where the selected Amazon Products are displaye
 
 ![Preview of List template](/guide/public/images/available-products-templates/list-template/preview-of-list-template.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
 

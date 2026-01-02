@@ -3,9 +3,12 @@ title: "Custom Products And Its Dashboard"
 title_tag: "Custom Products Dashboard Guide | Azonpress Documentation"
 meta_description: "Complete guide to AzonPress Custom Products dashboard. Add single or multiple products from Amazon, eBay, Etsy. Manage all custom products easily!"
 ---
+
 # Custom Products And Its Dashboard
 
-AzonPress allows you to add **Custom Product/s** for your website where you can add **single** or **multiple** custom products with affiliate links. With this feature, besides Amazon, you can also fetch data from other E-Commerce websites such as eBay and Etsy. This article guides you through adding Custom Product/s with AzonPress and gives an overview of the **Custom Product Dashboard.**
+AzonPress allows you to add **Custom Product/s** for your website where you can add **single** or **multiple** custom products with affiliate links. With this feature, besides Amazon, you can also fetch data from other E-Commerce websites such as eBay and Etsy. 
+
+This article guides you through adding Custom Product/s with AzonPress and gives an overview of the **Custom Product Dashboard.**
 
 ## Add Custom Product/s
 
@@ -25,25 +28,23 @@ Then, enter the **Link** of the **Amazon product** that you want to add as a cus
 
 ## Dashboard Overview Of Custom Products
 
-The details of the whole Dashboard to manage your custom products are given below with a screenshot.
+The details of the whole Dashboard to manage your custom products are given below-
 
-1. With this **Search** option, you can easily find the custom product you are looking for by typing the **Title** or **ID** of your desired product.
-2. By pressing this **Button** you can **add new custom product/s** to your website as many as you want.
-3. This section shows the unique **ID** number for each of the custom products you have added to your website.
-4. The **Title** will show you the names of the custom products you have added to your websites.
-5. The **Shortcode** option provides the specific shortcodes for each custom product so that you can add your custom products to your desired **page** or **post** on your website.
-6. **Clocked URL** gives you the **Product Link** of your custom products so that you can add these products anytime on your other pages, blogs, posts, or anywhere by simply copying those.
-7. This option shows how many **Product links** are available on the **Multiple Custom Product** page.
-8. This button will show you a **Preview** of the details of your custom products.
-9. Using this button, you can **Edit** your added custom products.
-10. With this option, you can **Delete** any of our existing custom products at any time.
-11. This is the **Pagination** option where you can **set the limit** of how many custom products will be shown per page.
+ * **Search Option:** With this option, you can easily find the custom product you are looking for by typing the **Title or ID** of your desired product.
+ * **Add New Button:** By pressing this button you can add new custom product/s to your website as many as you want.
+ * **ID:** This section shows the unique **ID** number for each of the custom products you have added to your website.
+ * **Title:** The **Title** will show you the names of the custom products you have added to your websites.
+ * **Shortcode:** The **Shortcode** option provides the specific shortcodes for each custom product so that you can add your custom products to your desired **page or post** on your website.
+ * **Cloaked URL:** This gives you the **Product Link** of your custom products so that you can add these products anytime on your other pages, blogs, posts, or anywhere by simply copying those.
+ * **Product Links Count:** This option shows how many Product links are available on the **Multiple Custom Product** page.
+ * **Preview Button:** This button will show you a **Preview** of the details of your custom products.
+ * **Edit Button:** Using this button, you can **Edit** your added custom products.
+ * **Delete Option:** With this option, you can **Delete** any of your existing custom products at any time.
+ * **Pagination:** This is the **Pagination** option where you can set the limit of how many custom products will be shown per page.
 
 ![Custom Product Dashboard](/guide/public/images/custom-product/custom-products-and-its-dashboard/custom-product-dashboard.webp)
 
 This is all about your custom product dashboard!
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
 
