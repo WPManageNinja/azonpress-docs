@@ -3,15 +3,14 @@ title: "Customization Of Comparison Tables"
 title_tag: "Customize Comparison Tables Guide | Azonpress Documentation"
 meta_description: "Complete guide to customize AzonPress comparison tables: edit rows, highlight products, configure appearance settings, and add custom CSS. Design perfect comparisons!"
 ---
+
 # Customization Of Comparison Tables
 
-AzonPress offers excellent customization features, making it easy to customize according to your needs. This article will guide you through **Customizing Comparison Tables** with **AzonPress** for **Amazon products** on your **WordPress** website.
+AzonPress offers excellent customization features, making it easy to customize according to your needs. This article will guide you through **Customizing Comparison Tables** with **AzonPress** for **Amazon products** on your website.
 
 ## How To Customize A Comparison Table
 
-To learn how to customize the information displayed in your Comparison table with AzonPress, follow the steps with the screenshots below –
-
-First, go to **Amazon Comparisons** from the **WordPress Sidebar** or **Comparison Tables** from the **Amazon** dropdown in the top right corner of the **AzonPress Navbar**.
+Go to **Amazon Comparisons** from the **WordPress Sidebar** or **Comparison Tables** from the **Amazon** dropdown in the top right corner of the **AzonPress Navbar**.
 
 Now, select the desired **Table** you want to customize and click on the **Pencil Icon**.
 
@@ -21,13 +20,11 @@ If you do not have any existing **Comparison Tables**, you can **create a new Co
 
 Now, you can see that your desired product table has been opened where you will find three major settings options. These are:
 
-* Compared Rows
-* Appearance Settings
-* Compared Products
+ * Compared Rows
+ * Appearance Settings
+ * Compared Products
 
 ![Opened Table with three major option](/guide/public/images/amazon-comparison-tables/customization-of-comparison-tables/opened-table.webp)
-
-### Here is a brief explanation of all the settings options on the pop-up page given below –
 
 ### Compared Rows
 
@@ -37,9 +34,9 @@ If you want to **change**, you can do it by clicking the **Arrow Icon** and choo
 
 ![Dropdown list of each row](/guide/public/images/amazon-comparison-tables/customization-of-comparison-tables/dropdown-list-of-each-row.webp)
 
-You can move rows up and down using the **Drag and Drop** button. You can also hide and unhide rows using the orange **Toggle** button.
+You can rearrange rows by using the **drag-and-drop** handle to move them up or down. You can also hide or show any row using the orange **Toggle** button.
 
-You can **add** as many rows as you want by clicking the **+ Add New Row** button and **delete** any existing row by clicking the **Trash Icon**.
+To add more rows, click the **+ Add New Row** button. If you want to remove a row, click the **Trash** icon.
 
 ![Drag Drop Add new row and Delete buttons](/guide/public/images/amazon-comparison-tables/customization-of-comparison-tables/drag-&-drop,-add-new-row-and-delete-buttons.webp)
 
@@ -63,7 +60,7 @@ Also, you can add more products by clicking the **+ Add Product** button and del
 
 Here, you will get a list of dropdown items that will allow you to change the default value of a row inside a product.
 
-Now you can **change** the **default value** of your **product row** by clicking the **Arrow Icon** and choosing the value that suits your needs.
+Now, you can change the **default value** of your **product row** by clicking the **Arrow Icon** and choosing the value that suits your needs.
 
 If you want to highlight a specific product in the comparison table click on **Show More Options** and it will open up with a **Featured Text** input field.
 
@@ -81,12 +78,9 @@ Once you complete all the customization, click the **Update** or **Update Settin
 
 You can see the preview of your table by clicking the **Preview** button as well.
 
-Additionally, to do any custom design in your table, press the **Custom CSS** button.
-
-You can also **change the Table name** anytime by clicking the **Pencil Icon** right next to the table name in the top left corner.
+Additionally, to do any custom design in your table, press the **Custom CSS** button. You can also **change the Table name** anytime by clicking the **Pencil Icon** right next to the table name in the top left corner.
 
 ![Update Preview button](/guide/public/images/amazon-comparison-tables/customization-of-comparison-tables/update-&-preview-button.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
