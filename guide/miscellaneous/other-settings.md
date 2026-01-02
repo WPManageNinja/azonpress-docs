@@ -18,8 +18,8 @@ First, go to **Settings** from the **AzonPress Navbar** and click on **Other Set
 
 Now, here you can see, two major settings options. These are:
 
-* **Global Asset Loading**
-* **AzonPress Access Roles**
+  * **Global Asset Loading**
+  * **AzonPress Access Roles**
 
 **Global Asset Loading**: Here, you can see, by default the "Load CSS and JS On-Demand" option is enabled to load the CSS and JS files based on scopes. But if you want to load all CSS and JS files globally, you can simply enable the "Load CSS and JS Globally" option.
 
