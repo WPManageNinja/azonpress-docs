@@ -3,15 +3,14 @@ title: "Product Elements"
 title_tag: "Product Elements Template Guide | Azonpress Documentation"
 meta_description: "Use AzonPress Product Elements: text links, image links, CTAs, and feature boxes. Customize product displays and increase click-through rates now!"
 ---
+
 # Product Elements
 
 AzonPress offers an advanced feature to **display Amazon products** using the **WordPress Classic Editor**. This article guides you through using the **Product Elements** of **AzonPress** in the **Classic Editor** of **WordPress**.
 
 ## Product Elements of AzonPress
 
-You can use the Product Elements to easily inform your consumers about your products. It is one of the important features so that a consumer can easily understand any product by using less time.
-
-To learn how to use Product Elements options, follow the steps with the screenshots below –
+You can use the **Product Elements** to easily inform your consumers about your products. It is one of the important features so that a consumer can easily understand any product by using less time.
 
 First, add the **Classic Editor** block on your desired **Page/Post** (e.g., I have added the classic editor to a new post).
 
@@ -33,10 +32,10 @@ Now, enter the name of the products you want to change elements and click the **
 
 Once you search for your desired products, they will appear with **Four** major **Settings** options for showcasing your Amazon products. These are:
 
-* **Text Link**
-* **Product Image Link**
-* **CTA Link**
-* **Feature Box**
+ * **Text Link**
+ * **Product Image Link**
+ * **CTA Link**
+ * **Feature Box**
 
 ![Product Elements](/guide/public/images/available-products-templates/product-elements/product-elements.webp)
 
@@ -46,9 +45,9 @@ Once you search for your desired products, they will appear with **Four** major 
 
 Here, you will get three options to customize the elements of desired products. These are:
 
-* **Link Text**: In this option, you can change the **Title** of the link.
-* **Open in New Window**: If you want to open any product in a new window, keep the **Yes** checkbox enabled. Otherwise, click the **No** checkbox if you don't want it.
-* **Use No Follow Link**: If you want to make your link a no follow link, keep the **Yes** checkbox enabled. Otherwise, click the **No** checkbox if you don't want it.
+ * **Link Text**: In this option, you can change the **Title** of the link.
+ * **Open in New Window**: If you want to open any product in a new window, keep the **Yes** checkbox enabled. Otherwise, click the **No** checkbox if you don't want it.
+ * **Use No Follow Link**: If you want to make your link a no follow link, keep the **Yes** checkbox enabled. Otherwise, click the **No** checkbox if you don't want it.
 
 Once you finish, click the **Insert Text Link** button and the changes will added to your desired **Post/Page**.
 
@@ -82,7 +81,6 @@ Here, is the **preview** of the post where the selected **Amazon Product** whose
 
 ![Preview of customized elements of a specific product](/guide/public/images/available-products-templates/product-elements/preview-of-customized-elements-of-a-specific-product.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
 ---
 
