@@ -3,13 +3,14 @@ title: "How to Add Multiple Custom Products"
 title_tag: "Add Multiple Custom Products Guide | Azonpress Documentation"
 meta_description: "Learn how to add multiple custom products in AzonPress. Bulk import products from Amazon, eBay, Etsy. Edit and customize all products efficiently!"
 ---
+
 # How to Add Multiple Custom Products
 
-AzonPress allows you to add Multiple Custom Products to your website as well. You can fetch the details of the product just by giving the product URL or you can add the product manually. With this feature, besides Amazon, you can also fetch data from other E-Commerce websites such as eBay and Etsy. This article guides you through **Adding Multiple Custom Products** with **AzonPress**.
+AzonPress allows you to add Multiple Custom Products to your website as well. You can fetch the details of the product just by giving the product URL or you can add the product manually. With this feature, besides Amazon, you can also fetch data from other E-Commerce websites such as eBay and Etsy. 
+
+This article guides you through **Adding Multiple Custom Products** with **AzonPress**.
 
 ## Add Multiple Custom Products
-
-To learn how to add multiple custom products, follow the steps with the screenshots below –
 
 First, go to **Custom Products** from the **WordPress Sidebar** or **AzonPress Navbar**. Now, click the **Add Custom Product** button and a popup page will appear.
 
@@ -23,9 +24,7 @@ Once you are done, press the **Continue** button and your multiple custom produc
 
 ### Get the Amazon Products Link
 
-To learn how to get the URL link of multiple Amazon products to fetch the product data into the website, follow the steps in the screenshot below –
-
-First, go to your **Amazon Associate account**, **search** for the **products** you want to add, and copy the **URL link** from the address bar.
+Go to your **Amazon Associate account**, **search** for the **products** you want to add, and copy the **URL link** from the address bar.
 
 ![Get the Amazon Products link](/guide/public/images/custom-product/how-to-add-multiple-custom-products/get-the-amazon-products-link.webp)
 
@@ -33,10 +32,7 @@ First, go to your **Amazon Associate account**, **search** for the **products** 
 
 Multiple Custom Products allows you to **Edit** the details of each custom product individually e.g., Product Info, Image, and Product Rating.
 
-To learn the details of the editor, follow the steps with screenshots below –
-
-First, open your desired multiple custom products by clicking the **Pencil Icon**.
-You can also delete all the products by clicking the Delete button if needed.
+First, open your desired multiple custom products by clicking the **Pencil Icon**. You can also delete all the products by clicking the Delete button if needed.
 
 ![Open desired Multiple custom products](/guide/public/images/custom-product/how-to-add-multiple-custom-products/open-desired-multiple-custom-products.webp)
 
@@ -68,7 +64,4 @@ Once you are done, click the **Save Template** or **Update & Save Template** but
 
 This is how you can add and edit/customize your Multiple Custom Products!
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
-
----
 
