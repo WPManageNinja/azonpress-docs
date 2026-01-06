@@ -40,7 +40,5 @@ Here, is the preview of the post where the selected Amazon Products are displaye
 
 ![Preview of Grid Template Product](/guide/public/images/available-products-templates/grid-template/preview-of-grid-templated-product.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
 
----
 
