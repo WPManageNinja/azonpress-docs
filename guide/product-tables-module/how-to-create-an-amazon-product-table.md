@@ -31,7 +31,8 @@ Now, select the ones you want to display, or can select all by clicking the **Se
 
 Now, you can see that a default product table has been created in your back end.
 
-If you want to learn more about **Customizing** your **Product Tables**, read this [Documentation](/guide/product-tables-module/customization-of-product-tables). Also, to learn about **Customizing** tables through **Appearance Settings**, read this [Documentation](/guide/miscellaneous/appearance-settings).
+>[!Note]
+>If you want to learn more about **Customizing** your **Product Tables**, read this [Documentation](/guide/product-tables-module/customization-of-product-tables). Also, to learn about **Customizing** tables through **Appearance Settings**, read this [Documentation](/guide/miscellaneous/appearance-settings).
 
 Once you are done customizing the table, click the **Save Changes** button, and your table will be ready to display.
 
