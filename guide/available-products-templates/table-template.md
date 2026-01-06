@@ -2,6 +2,7 @@
 title: "Table Template"
 title_tag: "Table Template for Products | Azonpress Documentation"
 meta_description: "Use AzonPress Table template to display Amazon products in organized table format. Perfect for comparing product features and specifications easily!"
+
 ---
 
 # Table Template
@@ -28,6 +29,7 @@ Here, you will get the **Table** template under the **Select Layout** option, **
 
 >[!Note]
 >To learn about how to use all the other settings options under Product Templates, read this [Documentation](/guide/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block).
+
 
 Once you are done, click the **Insert Shortcode** button and the shortcode will be automatically embedded in your post. Then, **publish** it and your Amazon Products will appear on your site under that post.
 

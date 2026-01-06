@@ -28,6 +28,7 @@ Here, you will get the **Widget** template under the **Select Layout** option, *
 
 >To learn about how to use all the other settings options under Product Templates, read this [Documentation](/guide/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block).
 
+
 Once you are done, click the **Insert Shortcode** button and the shortcode will be automatically embedded in your post. Then, **publish** it and your Amazon Products will appear on your site under that post.
 
 If you want to **showcase the same products** in **another post/s**, you can also do it simply by **copying** the **Shortcode** visible **right before** the **Insert Shortcode** button and **pasting** it into the desired post/s.
