@@ -28,6 +28,7 @@ Now, press **AzonPress** from the left sidebar and you will get **BestSeller Lis
 >[!Note]
 >To learn the use of these settings options in detail, read this [Documentation](/guide/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block).
 
+
 ![Best Seller tab](/guide/public/images/available-products-templates/bestseller-lists/best-seller.webp)
 
 Here, is the preview of the post where the selected Amazon Products are displayed as BestSeller Lists.

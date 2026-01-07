@@ -67,7 +67,8 @@ Here, you will find the **different templates** for the purchase button under **
 
 Now, to add the button either as a **Product Details Button** or **Add To Cart Button** into your product, you can choose any template as per your wish simply by clicking the **Insert** button. Your selected button will be added to your desired **Post/Page**.
 
-But for the **Custom Button**, you will find two options **Insert Style** and **Insert Classic** button to add it to your desired products.
+> But for the **Custom Button**, you will find two options **Insert Style** and **Insert Classic** button to add it to your desired products.
+
 
 ![CTA Link](/guide/public/images/available-products-templates/product-elements/cta-link.webp)
 

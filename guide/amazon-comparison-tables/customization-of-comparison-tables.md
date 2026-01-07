@@ -44,7 +44,8 @@ To add more rows, click the **+ Add New Row** button. If you want to remove a ro
 
 From the appearance settings in the top right corner, you have **two** more **options for showing** the **Table Title** and **Table Description** in the **front end**.
 
-To learn about customizing tables through Appearance Settings in detail, read this [Documentation](/guide/miscellaneous/appearance-settings).
+>[!Note]
+>To learn about customizing tables through Appearance Settings in detail, read this [Documentation](/guide/miscellaneous/appearance-settings).
 
 ![Appearance Setting and its Two options](/guide/public/images/amazon-comparison-tables/customization-of-comparison-tables/appearance-setting-and-its-two-options.webp)
 

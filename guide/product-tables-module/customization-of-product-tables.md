@@ -12,19 +12,19 @@ AzonPress offers excellent customization features, making it easy to customize a
 
 First, go to **Amazon Products** from the **WordPress Sidebar** or **Product Tables** from the **Amazon** dropdown in the top right corner of the **AzonPress Navbar**.
 
-Now, select the desired **Table** where you want to add columns and click on the **Pencil Icon.**
+Next, select the desired **Table** where you want to add columns and click on the **Pencil Icon.**
 
-If you do not have any existing **Product Tables**, you can **create a new Product Table**.
+
+>If you do not have any existing **Product Tables**, you can **create a new Product Table**.
+
 
 ![Select desired table](/guide/public/images/product-tables-module/customization-of-product-tables/select-desired-table-for-adding-columns.webp)
 
-Now, you can see that your desired product table has been opened in your backend.
+You can see that your desired product table has been opened in your backend.
 
 ![Opened Table with all customization options](/guide/public/images/product-tables-module/customization-of-product-tables/opened-table-with-all-customization-options.webp)
 
-**Here is a brief explanation of all the settings options on the pop-up page given below –**
-
-You can **Add Columns** by clicking on the **+ Add Column** button. 
+Now, you can **Add Columns** by clicking on the **+ Add Column** button. 
 
 If you want to apply your own styling, click the **Custom CSS** button to design the table however you like. You can also add more products at any time by clicking the **+ Add Product** button. This will open the product search pop-up again so you can select additional products.
 
