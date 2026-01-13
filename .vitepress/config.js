@@ -95,7 +95,7 @@ export default defineConfig({
       ]
     },
     footer: {
-      copyright: 'Copyright © 2025 AzonPress'
+      copyright: 'Copyright © 2026 AzonPress'
     },
     search: {
       provider: 'local'
