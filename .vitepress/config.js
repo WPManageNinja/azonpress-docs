@@ -3,6 +3,20 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'AzonPress Docs',
   description: 'Everything you need to integrate Amazon products into your WordPress site',
+  markdown: {
+    config: (md) => {
+      const defaultRender = md.renderer.rules.link_open || ((tokens, idx, options, env, self) =>
+        self.renderToken(tokens, idx, options))
+      md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
+        const aIndex = tokens[idx].attrIndex('target')
+        if (aIndex < 0) {
+          tokens[idx].attrSet('target', '_blank')
+          tokens[idx].attrSet('rel', 'noopener noreferrer')
+        }
+        return defaultRender(tokens, idx, options, env, self)
+      }
+    }
+  },
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }]
   ],
