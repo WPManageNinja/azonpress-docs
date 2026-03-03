@@ -23,7 +23,7 @@ To learn how to configure your Amazon API settings, follow the steps and refer t
    * **Creators API ID & Secret:** If you use the Amazon Creators API, enter those specific credentials here to enable advanced features.
    * **API Version:** Choose the appropriate version for your region (e.g., 2.1 - North America).
 
-![Configuring Amazon API](/guide/public/images/configuring-amazon-api/configure-amazon-api/coonfiguring-amazon-api.webp)
+![Configuring Amazon API](/guide/public/images/configuring-amazon-api/configure-amazon-api/amazon-api-settings.webp)
 
 ## Additional Optimization Settings
 
