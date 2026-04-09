@@ -54,5 +54,3 @@ Here is a preview of what your table will look like in the front end.
 ![Preview of Comparison table](/guide/public/images/amazon-comparison-tables/how-to-create-an-amazon-comparison-table/preview-of-comparison-table.webp)
 
 This is how you can create a comparison table efficiently using AzonPress!
-
----
