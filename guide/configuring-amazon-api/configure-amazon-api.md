@@ -38,7 +38,5 @@ Besides the credential fields, you can configure two powerful features to improv
 
 Once you have filled in all the required information, click the **Update** button to save your changes. Your Amazon API configuration is now complete!
 
----
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/). Thank you!
 
