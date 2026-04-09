@@ -6,7 +6,7 @@ hero:
   text: "Documentation"
   tagline: The best WordPress affiliate marketing plugin for your affiliate empire. Go with or without API
   image:
-    src: /guide/public/images/brand/feature-hero-banner.webp
+    src: /images/brand/feature-hero-banner.webp
     alt: AzonPress
   actions:
     - theme: brand

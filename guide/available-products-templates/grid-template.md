@@ -28,7 +28,7 @@ Now, press **AzonPress** from the left sidebar and you will get **Product Templa
  * Select how many columns you want for showcasing your products by clicking the **Arrow Icon** under **Select number of column** dropdown.
 
 >[!Note]
->To learn about how to use all the other settings options under Product Templates, read this [Documentation](/guide/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block).
+>To learn about how to use all the other settings options under Product Templates, read this [Documentation](/guide/getting-started/azonpress-introduction).
 
 Once you are done, click the **Insert Shortcode** button and the shortcode will be automatically embedded in your post. Then, **publish** it and your Amazon Products will appear on your site under that post.
 

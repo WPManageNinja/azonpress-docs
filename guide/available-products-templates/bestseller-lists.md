@@ -26,7 +26,7 @@ Next, click the **Add Media** option from the **classic editor** bar, and a pop-
 Now, press **AzonPress** from the left sidebar and you will get **BestSeller Lists** tabs with various **settings options** for **showcasing** your **Amazon products.**
 
 >[!Note]
->To learn the use of these settings options in detail, read this [Documentation](/guide/getting-started/how-to-use-azonpress-with-classic-editor-gutenberg-block).
+>To learn the use of these settings options in detail, read this [Documentation](/guide/getting-started/azonpress-introduction).
 
 
 ![Best Seller tab](/guide/public/images/available-products-templates/bestseller-lists/best-seller.webp)

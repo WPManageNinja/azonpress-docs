@@ -3,6 +3,11 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'AzonPress Docs',
   description: 'Everything you need to integrate Amazon products into your WordPress site',
+  cleanUrls: true,
+  vite: {
+    // Keep existing docs media under guide/public available as static assets.
+    publicDir: 'guide/public'
+  },
   markdown: {
     config: (md) => {
       const defaultRender = md.renderer.rules.link_open || ((tokens, idx, options, env, self) =>
@@ -22,13 +27,16 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: {
-      light: '/logo-light.png',
-      dark: '/logo-dark.png'
+      light: '/images/brand/azonpress_primary_logo.png',
+      dark: '/images/brand/azonpress_monotone_light_logo.png'
     },
-    siteTitle: 'AzonPress',
+    siteTitle: false,
     nav: [
       { text: 'Home', link: '/' },
       { text: 'User Docs', link: '/guide/getting-started/azonpress-introduction' },
+      { text: 'Website', link: 'https://azonpress.com' },
+      { text: 'Changelog', link: '/guide/changelog' }
+
     ],
     sidebar: {
       '/guide/': [

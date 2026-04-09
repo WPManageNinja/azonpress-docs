@@ -68,7 +68,3 @@ This glossary defines common terms used throughout the AzonPress documentation t
 ## W
 
 **WordPress Settings API Integration:** A standardized backend system used to securely store and manage plugin configuration settings in the database.
-
----
-
-If you have any questions or need further assistance, feel free to reach out to our [support team](https://wpmanageninja.com/support-tickets/).

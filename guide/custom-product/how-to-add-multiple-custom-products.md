@@ -56,7 +56,7 @@ Here, you can see the Preview of the **Edited** custom product.
 
 ## Customize Template of Multiple Custom Products with Settings
 
-To learn how you can customize the template of your multiple custom products by using all the available settings options shown in the screenshot below, read this [Documentation](/guide/custom-product/settings-for-custom-products-template-customization).
+To learn how you can customize the template of your multiple custom products by using all the available settings options shown in the screenshot below, read this [Documentation](/guide/custom-product/custom-products-and-its-dashboard).
 
 Once you are done, click the **Save Template** or **Update & Save Template** button to ensure all your edits, customization, and changes appear on your site.
 

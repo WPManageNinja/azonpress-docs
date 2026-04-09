@@ -65,6 +65,3 @@ AzonPress helps you:
 * **Increase** clicks and affiliate earnings.
 * **Stay compliant** with Amazon policies.
 
----
-
-If you have any questions or need further assistance, feel free to reach out to our [support team](https://wpmanageninja.com/support-tickets/).

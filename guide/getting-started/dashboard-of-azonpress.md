@@ -47,6 +47,4 @@ Clicking the **View Usage Guide** button redirects you to the documentation sect
 
 ![Dashboard of AzonPress](/guide/public/images/getting-started/dashboard-of-azonpress/dashboard-of-azonpress.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/account/support-tickets/). Thank you.
 
----
