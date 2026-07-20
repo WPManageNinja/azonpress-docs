@@ -12,16 +12,23 @@ To use the AzonPress plugin on your WordPress site, you need to configure the Am
 
 To learn how to configure your Amazon API settings, follow the steps and refer to the screenshots below:
 
-> **Note:** Before configuring AzonPress, you must first register as an Amazon Associate and create your credentials for the Amazon Product Advertising API (PA-API) on your Amazon Associate account.
+> [!Note]
+> Traditional PA-API credentials are no longer required to connect your Amazon account with AzonPress. Instead, AzonPress now utilizes the Amazon Creators API for product searches, details, and live offers.
 
 1. **Access Settings:** From your WordPress Sidebar or the AzonPress Navbar, navigate to **Settings** and select the **Amazon API** option from the left sidebar.
 
-2. **Enter Credentials:** Input the following details generated from your Amazon Associate Account:
-   * **API Key & API Secret:** Enter your primary PA-API credentials.
+2. **Enter Credentials:** Configure the required fields using your Amazon Associates Central details:
+
    * **Country:** Select your primary Amazon marketplace (e.g., US, UK, CA).
    * **Tracking Id:** Enter your unique Amazon Associate Tracking ID.
-   * **Creators API ID & Secret:** If you use the Amazon Creators API, enter those specific credentials here to enable advanced features.
-   * **API Version:** Choose the appropriate version for your region (e.g., 2.1 - North America).
+
+3. **Creators API Credentials:** Enter the credentials generated from Associates Central:
+
+   * **Creators API ID:** **Paste** your unique Creator Application Client ID.
+   * **Creators API Secret:** Input your Creator Application Secret key.
+   * **API Version:** Select the API version corresponding to your regional marketplace (e.g., 3.2 – EU (Europe), 2.1 – NA (North America)). Match the region to your marketplace as indicated in the helper text under the selector.
+
+Once your credentials are correct, you will see a green **Connected** badge next to **Creators API Status**.
 
 ![Configuring Amazon API](/guide/public/images/configuring-amazon-api/configure-amazon-api/amazon-api-settings.webp)
 
