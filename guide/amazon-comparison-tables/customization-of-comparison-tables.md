@@ -34,6 +34,9 @@ If you want to **change**, you can do it by clicking the **Arrow Icon** and choo
 
 ![Dropdown list of each row](/guide/public/images/amazon-comparison-tables/customization-of-comparison-tables/dropdown-list-of-each-row.webp)
 
+
+> **Remember**, Amazon no longer provides Prime eligibility data, so a **Prime Status** row will not display any value. If your table was created in an older version and still has this row, it's automatically removed the next time the table renders.
+
 You can rearrange rows by using the **drag-and-drop** handle to move them up or down. You can also hide or show any row using the orange **Toggle** button.
 
 To add more rows, click the **+ Add New Row** button. If you want to remove a row, click the **Trash** icon.

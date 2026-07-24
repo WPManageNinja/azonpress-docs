@@ -13,7 +13,7 @@ This glossary defines common terms used throughout the AzonPress documentation t
 
 **Add-to-cart Button:** A specialized call-to-action button that allows visitors to add products directly to their Amazon shopping cart from your website.
 
-**Amazon Product Advertising API Integration:** The core system that connects your WordPress website to Amazon’s API, enabling the plugin to fetch real-time product data.
+**Amazon Creators API Integration:** The core system that connects your WordPress website to Amazon’s Creators API, enabling the plugin to fetch real-time product data, pricing, and availability.
 
 **API Request Handler:** A backend component responsible for managing secure communication and data exchange between your server and Amazon’s services.
 
@@ -26,6 +26,10 @@ This glossary defines common terms used throughout the AzonPress documentation t
 ## C
 
 **Classic Editor Compatibility:** Full support for the legacy WordPress Classic Editor, allowing users to insert products and tables without using the block editor.
+
+**Click Tracking:** The system that records every click on your affiliate links — from product tables, comparison tables, Gutenberg blocks, and cloaked URLs alike — so it can be reviewed in the Reports section.
+
+**Cloaked URL:** A shortened, branded link (e.g., `/azp/product-name`) that redirects visitors to a custom product's affiliate URL, while also recording the visit for click and geo-tracking analytics.
 
 **Comparison Tables:** Structured, high-conversion layouts that display multiple Amazon products side by side for easy comparison.
 
@@ -40,6 +44,10 @@ This glossary defines common terms used throughout the AzonPress documentation t
 ## I
 
 **Image Size Optimization:** A performance feature that automatically resizes Amazon product images to improve site loading speed.
+
+## L
+
+**Last Amazon API Error:** A field on the Amazon API Settings screen that displays the most recent error message returned by Amazon (e.g., an expired credential or a rate-limit hit), so you can diagnose issues without checking server logs.
 
 ## M
 

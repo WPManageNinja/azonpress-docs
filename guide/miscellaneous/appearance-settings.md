@@ -43,7 +43,6 @@ All the available options under this Setting are briefly explained in the screen
  * **No Follow**: To prevent spam on interactive pages regarding external links, enable this option. No follow markup will help visitors not to create spam to add a link to their website to the content they create.
  * **No Index**: If you want the No Index, No Follow attribute applied to the AzonPress page meta by default, enable this checkbox.
  * **Hide Price**: If you want to hide the price field, enable this checkbox.
- * **Hide Prime Status**: If you want to hide the prime status, enable this checkbox.
  * **Hide Label in Mobile Device**: If you want to hide the comparison table label on the mobile device, enable this option.
  * **Show Disclaimer Text**: Enable this checkbox if you want to show any disclaimer text. Plus, if you use this **%last_update%** text in your **Disclaimer Text** field, it will show the date of your tables' last update with the disclaimer.
 

@@ -35,7 +35,7 @@ This section shows a **line chart** of your total clicks over recent days, helpi
 This module provides a bird’s-eye view of your site's affiliate health and configuration:
 
  * **Product Table Count:** Displays a statistic of how many product comparison tables you have currently deployed on your site.
- * **API Status:** Shows the real-time activity status of your Amazon API Key to ensure your product data remains synchronized and active.
+ * **API Status:** Shows the real-time connection status of your Amazon Creators API credentials to ensure your product data remains synchronized and active.
 
 ### View Usage Guide
 

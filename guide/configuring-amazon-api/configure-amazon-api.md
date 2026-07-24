@@ -1,7 +1,7 @@
 ---
 title: "Configure Amazon API in AzonPress"
 title_tag: "Configure Amazon API in AzonPress | Azonpress Documentation"
-meta_description: "Complete guide to configure Amazon Product Advertising API in AzonPress. Set up credentials, enable smart caching, and configure geo-targeting. Get started today!"
+meta_description: "Complete guide to configure the Amazon Creators API in AzonPress. Set up credentials, enable smart caching, and configure geo-targeting. Get started today!"
 ---
 
 # Configure Amazon API in AzonPress
@@ -14,6 +14,9 @@ To learn how to configure your Amazon API settings, follow the steps and refer t
 
 > [!Note]
 > Traditional PA-API credentials are no longer required to connect your Amazon account with AzonPress. Instead, AzonPress now utilizes the Amazon Creators API for product searches, details, and live offers.
+
+> [!Note]
+> If your Creators API credentials aren't configured yet, you'll see an admin notice in your WordPress dashboard about the PA-API shutdown with a **Connect Creators API** link. Clicking it brings you directly to this Settings screen; the notice disappears automatically once your credentials are connected and verified.
 
 1. **Access Settings:** From your WordPress Sidebar or the AzonPress Navbar, navigate to **Settings** and select the **Amazon API** option from the left sidebar.
 
@@ -31,6 +34,8 @@ To learn how to configure your Amazon API settings, follow the steps and refer t
 Once your credentials are correct, you will see a green **Connected** badge next to **Creators API Status**.
 
 ![Configuring Amazon API](/guide/public/images/configuring-amazon-api/configure-amazon-api/amazon-api-settings.webp)
+
+**Last Amazon API Error:** If Amazon rejects a request (an expired credential, an invalid ASIN, or a rate-limit hit), the most recent error message is shown right here on the Settings screen, so you don't need to check your server logs to see what's wrong. This alert clears automatically the next time your credentials are saved and verified successfully.
 
 ## Additional Optimization Settings
 
