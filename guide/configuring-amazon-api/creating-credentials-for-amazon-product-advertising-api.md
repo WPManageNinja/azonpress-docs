@@ -1,46 +1,52 @@
 ---
-title: "Creating Credentials for Amazon Product Advertising API"
-description: "Learn how to create and download your Amazon API Access Key and Secret Key for AzonPress. Follow our step-by-step guide to meet PA API requirements and fetch product data."
-title_tag: "Create Amazon API Credentials Guide | Azonpress Documentation"
-meta_description: "Step-by-step guide to create Amazon Product Advertising API credentials for AzonPress. Learn requirements, download access keys, and start fetching product data now!"
+title: "Creating Credentials for Amazon Creators API"
+description: "Learn how to generate your Amazon Creators API Credential ID and Credential Secret for AzonPress. Follow our step-by-step guide covering eligibility requirements and credential setup."
+title_tag: "Create Amazon Creators API Credentials Guide | Azonpress Documentation"
+meta_description: "Step-by-step guide to create Amazon Creators API credentials for AzonPress. Learn eligibility requirements, generate your Credential ID and Secret, and start fetching product data now!"
 ---
 
-# Creating Credentials for Amazon Product Advertising API
+# Creating Credentials for Amazon Creators API
 
-The **Amazon API Key** is required for the AzonPress plugin to connect to the **Amazon Product Advertising API**. This enables the plugin to fetch up-to-date product information, display accurate listings, and track affiliate commissions. To set up **Amazon API Keys** in **AzonPress**, you must create the credentials in Amazon first. This article will guide you through creating credentials.
+The **Creators API Credential ID** and **Credential Secret** are required for the AzonPress plugin to connect to the **Amazon Creators API**. This enables the plugin to fetch up-to-date product information, display accurate listings, and track affiliate commissions. To set up these credentials in **AzonPress**, you must first generate them from your Amazon Associates account. This article will guide you through creating them.
 
-## How to Create Credentials
+> [!Note]
+> AzonPress uses the Amazon Creators API for authentication. Access Key and Secret Key credentials are no longer supported.
 
-First, you need to create an **Amazon Associates Account**. Now, to create all the credentials for configuring your Amazon account in AzonPress, you need to **request API access**.
+## Eligibility Requirements
 
-But, you need to meet all the requirements below first, to request and get access to **Product Advertising API.** The requirements are –
+Before you can request Creators API access, your **Amazon Associates account** needs to meet a few requirements:
 
- * To qualify for requesting access to PA API, you will need an Associates account.
- * You wisll have to complete 3 qualifying sales in the first 180 days and you will have to comply with the Operating Agreement.
- * Once your account is approved as an Associates account, you will see a 'Request for PA API access' button below. You can click the button to get access to PA API.
+* You need an active, approved **Amazon Associates account**. If you haven't signed up yet, visit the Amazon Associates website for your region and apply.
+* Your account must have generated at least **10 qualifying sales within the last 30 days**. Amazon uses this to confirm your site is actively driving real traffic.
+* This is an **ongoing requirement**, not a one-time check if your qualifying sales drop below this threshold, your Creators API access may be temporarily suspended until you start generating qualifying sales again.
 
-> **Remember**,
-> if you can't create credentials properly, your Associates' account will not meet the requirements mentioned above.
+> **Remember**, if you don't yet qualify for Creators API access, you can still use AzonPress's **Custom Product (Zero API)** feature to build and promote Amazon affiliate product displays without connecting to Amazon's API, and connect your credentials later once you're eligible.
 
-Once your PA API access is approved, go to the [Home dashboard](https://affiliate-program.amazon.com/home) of your Amazon Associates account. In the top-right corner, click the **three-dot** menu icon.
+## How to Get Amazon Creators API Credentials
+
+Once your Associates account meets the eligibility requirements above, go to the [Home dashboard](https://affiliate-program.amazon.com/home) of your Amazon Associates account and follow the steps below to generate your credentials.
+
+1. **Open the menu:** In the top-right corner, click the **three-line (hamburger)** menu icon.
 
 ![Amazon api key](/guide/public/images/configuring-amazon-api/creating-credentials-for-amazon-product-advertising-api/access-amazon-api-1.webp)
 
-A pop-up menu will appear. From there, click **Tools**, and then select **Product Advertising API** from the dropdown list.
+2. **Navigate to Creators API:** A pop-up menu will appear under **Tools**. From the list, select **CreatorsAPI**.
 
-![Azonpress - Create API](/guide/public/images/configuring-amazon-api/creating-credentials-for-amazon-product-advertising-api/product-advertising-api.webp)
+![Creator API](/guide/public/images/configuring-amazon-api/creating-credentials-for-amazon-product-advertising-api/creator-api-2.webp)
 
-Next, you will have the option to create your credentials by clicking the **Add Credentials** button.
+3. **Apply for API access:** If your account is eligible, you'll see an option to apply. Click **Apply for Access** and fill in the short application form about your website and expected usage. Approval is usually granted within a few minutes, though it can occasionally take 24–48 hours.
 
-![Add credential](/guide/public/images/configuring-amazon-api/creating-credentials-for-amazon-product-advertising-api/aawp-amazon-associates-credentials-1.webp)
+4. **Create an application:** Once approved, click **Create Application** and give it a name this is only for your own reference.
 
-After creating all your credentials properly, you can download them including **Access Key** and **Secret Key** by clicking the **Download Credentials** button.
+5. **Generate your credentials:** Click **Add New Credential**. Amazon will instantly generate:
+   * **Credential ID** - a long string of letters and numbers.
+   * **Credential Secret** — another long string; keep this private.
+   * **API Version** — the [Creators API](https://affiliate-program.amazon.com/creatorsapi) version for your marketplace.
 
-Now, you can Configure Amazon API in the AzonPress plugin.
+> **Important:** Amazon shows the **Credential Secret only once**. Copy it immediately, or download it as a CSV file, and store it somewhere secure. If you lose it, you'll need to generate a new credential.
 
-Remember one thing, if you are using a local Association program, your URL might be different.
+Now, you can [configure the Amazon API](/guide/configuring-amazon-api/configure-amazon-api) in the AzonPress plugin using these credentials.
 
-![Download Credentials](/guide/public/images/configuring-amazon-api/creating-credentials-for-amazon-product-advertising-api/download-credentials.webp)
+Remember, if you're using a local Associates program, your dashboard URL might be different.
 
 If you have any further questions, concerns, or suggestions, please do not hesitate to contact our support team. Thank you.
-
