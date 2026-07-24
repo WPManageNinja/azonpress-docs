@@ -19,6 +19,16 @@ AzonPress records clicks from every place a product link can appear on your site
 
 You don't need to enable anything separately for each of these tracking is active automatically as soon as you publish a product, table, or block on your site.
 
+## How Gutenberg Block Click Tracking Works
+
+Before this feature, click tracking only worked for products displayed with an AzonPress **shortcode** Amazon products inserted through the **Single Product block** (or other product-display blocks) in the block editor weren't recorded at all.
+
+AzonPress now brings block-based products to full parity with shortcodes:
+
+* Every product link rendered by a block is tagged with the product's identifier behind the scenes, so a click on it is recognized and recorded the same way a shortcode click is.
+* This works automatically for **existing** blocks already published on your site, and for any **new** block you add there's no setting to turn on.
+* Recorded clicks from blocks count toward the same **Total Clicks**, **Unique Clicks**, and **Total Countries** metrics as any other product, with no separate "block clicks" number to check.
+
 ## How Cloaked URL Tracking Works
 
 A **Cloaked URL** is the short, branded link (e.g., `/azp/product-name`) AzonPress generates for your Custom Products, so you can share a clean link instead of a long affiliate URL.
