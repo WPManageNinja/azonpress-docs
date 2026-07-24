@@ -1,5 +1,29 @@
 # Changelog
 
+**2.3.0 – July 21, 2026**
+
+* Adds Amazon Creators API as the only product data source
+* Adds Admin notice for the PA-API shutdown, with a link to connect
+* Adds Last Amazon API error to the Settings screen
+* Adds Cached product fallback when Amazon is unreachable
+* Improves Request pacing for Amazon's 1 request per second limit
+* Improves Product cache rebuilds automatically after this update
+* Fixes Legacy Prime rows stripped from saved comparison tables
+* Fixes Rejected ASINs no longer re-requested on every page view
+* Fixes Lowercase ASINs not resolving
+* Removes Prime badges and the Hide Prime status option, no longer sent by Amazon
+* Removes Lowest price and offer count, no longer sent by Amazon
+* Removes PA-API credentials (API Key / Secret) from Settings
+
+**2.2.5 – May 05, 2026**
+
+* Adds Click tracking for Gutenberg block links
+* Adds Standalone cloaked URL visit tracking with click analytics & geo tracking
+* Fixes Creators API token request format
+* Fixes Click tracking for all product link types
+* Fixes Custom product template title validation before save
+* Fixes Grid template not rendering in [azonpress] shortcode
+
 **2.2.3 – September, 25, 2025**
 
 * Adds Option to edit product titles in comparison tables
