@@ -97,6 +97,7 @@ export default defineConfig({
           text: 'Reports',
           items: [
             { text: 'Overview', link: '/guide/reports/reports-overview' },
+            { text: 'Click Tracking & Cloaked URL Analytics', link: '/guide/reports/click-tracking-and-cloaked-url-analytics' },
             { text: 'Geo Location Report', link: '/guide/reports/geo-location-report' },
           ]
         },

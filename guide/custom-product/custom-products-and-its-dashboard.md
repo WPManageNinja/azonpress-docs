@@ -37,7 +37,7 @@ The details of the whole Dashboard to manage your custom products are given belo
  * **ID:** This section shows the unique **ID** number for each of the custom products you have added to your website.
  * **Title:** The **Title** will show you the names of the custom products you have added to your websites.
  * **Shortcode:** The **Shortcode** option provides the specific shortcodes for each custom product so that you can add your custom products to your desired **page or post** on your website.
- * **Cloaked URL:** This gives you the **Product Link** of your custom products so that you can add these products anytime on your other pages, blogs, posts, or anywhere by simply copying those. Every visit to this link is automatically recorded in your click and geo-tracking Reports, even when it's shared or visited directly outside of a page.
+ * **Cloaked URL:** This gives you the **Product Link** of your custom products so that you can add these products anytime on your other pages, blogs, posts, or anywhere by simply copying those. Every visit to this link is automatically recorded in your click and geo-tracking Reports, even when it's shared or visited directly outside of a page — see [Click Tracking & Cloaked URL Analytics](/guide/reports/click-tracking-and-cloaked-url-analytics) for details.
  * **Product Links Count:** This option shows how many Product links are available on the **Multiple Custom Product** page.
  * **Preview Button:** This button will show you a **Preview** of the details of your custom products.
  * **Edit Button:** Using this button, you can **Edit** your added custom products.

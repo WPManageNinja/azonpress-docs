@@ -25,7 +25,7 @@ All the options available within the Geo Location reports are briefly explained 
  * **Show Clicks From Each Country:** You can see exactly how many clicks you received from each individual country by clicking this button.
  * **Zoom Controls:** Use the **Plus (+)** and **Minus (-)** icons to zoom in and zoom out on your Geo Tracking Map for better visualization.
 
-> **Remember**, geo data is also captured for **Gutenberg block** product links and **standalone Cloaked URL** visits, so this map reflects visitor locations from every link type, not just Product and Comparison Tables.
+> **Remember**, geo data is also captured for **Gutenberg block** product links and **standalone Cloaked URL** visits, so this map reflects visitor locations from every link type, not just Product and Comparison Tables. See [Click Tracking & Cloaked URL Analytics](/guide/reports/click-tracking-and-cloaked-url-analytics) for details on how this works.
 
 ![Geo Tracking Map under Geo Location from AzonPress dashboard](/guide/public/images/reports/geo-location-report/geo-tracking-map-under-geo-location-from-azonpress-dashboard.webp)
 

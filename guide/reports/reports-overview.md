@@ -27,7 +27,7 @@ All the options for reports overview are briefly explained below:
     * **Total Countries:** The total number of countries from where you received clicks.
 * **Click Tracking Report:** Here, you can view a visual **Line Chart** displaying the graph of total click reports over recent days.
 
-> **Remember**, this Overview combines clicks from every source — Product Tables, Comparison Tables, **Gutenberg block** links, and **standalone Cloaked URL** visits — so you get a single, complete picture of your affiliate performance.
+> **Remember**, this Overview combines clicks from every source — Product Tables, Comparison Tables, **Gutenberg block** links, and **standalone Cloaked URL** visits — so you get a single, complete picture of your affiliate performance. Read [Click Tracking & Cloaked URL Analytics](/guide/reports/click-tracking-and-cloaked-url-analytics) to learn how each of these is tracked.
 
 ![Overview Page of Reports From AzonPress](/guide/public/images/reports/reports-overview/overview-page-of-rports-from-azonpress.webp)
 
