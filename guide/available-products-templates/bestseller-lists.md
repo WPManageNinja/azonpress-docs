@@ -8,6 +8,16 @@ meta_description: "Display Amazon bestseller products using AzonPress Bestseller
 
 AzonPress offers an advanced feature to **display Amazon products** using the **WordPress Classic Editor**. This article guides you through using the **BestSeller Lists** of **AzonPress** in the **Classic Editor** of **WordPress**.
 
+<div class="video-frame">
+  <iframe
+    src="https://www.youtube.com/embed/izCqG0Eye5E"
+    title="Create Automated BestSeller Lists from Amazon | Only With AzonPress"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</div>
+
 ## BestSeller Lists of AzonPress
 
 You can use the **BestSeller Lists** to exhibit your best-selling products so that customers can easily conceive the ins and outs of a product.

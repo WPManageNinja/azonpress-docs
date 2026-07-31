@@ -10,6 +10,16 @@ meta_description: "Step-by-step guide to create Amazon comparison tables with Az
 
 This article will guide you through **creating Comparison Table/s** with AzonPress for **Amazon** products on your **WordPress** website.
 
+<div class="video-frame">
+  <iframe
+    src="https://www.youtube.com/embed/WR0eMN5DFKA"
+    title="How To Create Amazon Product Comparison Table in WordPress"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</div>
+
 ## Create A Comparison Table
 
 First, go to the **Amazon Comparisons** from the **WordPress Sidebar** or **Comparison Tables** from the **Amazon** dropdown in the top right corner of the **AzonPress Navbar.**
