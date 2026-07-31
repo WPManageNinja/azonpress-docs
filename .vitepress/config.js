@@ -4,6 +4,8 @@ export default defineConfig({
   title: 'AzonPress Docs',
   description: 'Everything you need to integrate Amazon products into your WordPress site',
   cleanUrls: true,
+  // Repo-level docs must not become site routes (/readme, /claude).
+  srcExclude: ['README.md', 'CLAUDE.md', '.claude/**/*.md'],
   vite: {
     // Keep existing docs media under guide/public available as static assets.
     publicDir: 'guide/public'
