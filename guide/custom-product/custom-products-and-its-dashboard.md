@@ -10,6 +10,16 @@ AzonPress allows you to add **Custom Product/s** for your website where you can 
 
 This article guides you through adding Custom Product/s with AzonPress and gives an overview of the **Custom Product Dashboard.**
 
+<div class="video-frame">
+  <iframe
+    src="https://www.youtube.com/embed/R8qazHCLCqQ"
+    title="Showcase Your Custom Affiliate Products with AzonPress | No API Needed"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</div>
+
 ## Add Custom Product/s
 
 To learn how to add Custom Product/s with AzonPress, follow the steps with the screenshots below –

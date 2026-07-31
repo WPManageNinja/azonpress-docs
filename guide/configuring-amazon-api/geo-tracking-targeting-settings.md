@@ -9,6 +9,16 @@ meta_description: "Configure geo-tracking in AzonPress with MaxMind API. Route A
 
 AzonPress allows you to easily re-route the Amazon links to different stores based on the user's location and offers a GeoTracking Settings option to track your customers' locations using this. This article will guide you through the process of **configuring** custom **Geo Tracking** in **AzonPress**.
 
+<div class="video-frame">
+  <iframe
+    src="https://www.youtube.com/embed/CQnGuWNd3Mw"
+    title="How To Configure Geo Targeting & Geo Tracking in AzonPress"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</div>
+
 ## Geo Tracking API Settings in AzonPress
 
 Go to **Settings** from your **AzonPress Navbar** and open the **GeoTracking Settings** option from the left sidebar.
