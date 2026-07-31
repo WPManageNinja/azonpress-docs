@@ -111,6 +111,42 @@ Do not "simplify" it to `/images/...` — that skips content hashing and cache-b
 
 Screenshots are **`.webp`**, stored one folder per page: `guide/public/images/<section>/<slug>/`. There are no `.gitkeep` files in this repo; empty folders simply aren't tracked.
 
+### Video embeds
+
+VitePress has no video component — the supported approach is raw HTML in Markdown, which
+VitePress passes through untouched. This site standardises on a `.video-frame` wrapper defined in
+`.vitepress/theme/custom.css`:
+
+```html
+<div class="video-frame">
+  <iframe
+    src="https://www.youtube.com/embed/VIDEO_ID"
+    title="Exact YouTube video title"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</div>
+```
+
+The wrapper gives a 16:9 responsive frame at the same width as a screenshot in the content column,
+with the site's divider border and 8px radius. There is a `@supports` padding-bottom fallback for
+browsers without `aspect-ratio`.
+
+Rules for adding one:
+- **Only embed videos from the WPManageNinja channel** (`youtube.com/@WPManageNinja`). Search
+  results surface third-party AzonPress tutorials — verify ownership before embedding.
+- **Verify the video before embedding it.** The YouTube oEmbed endpoint confirms in one call that
+  the ID resolves, the video is embeddable, and who owns it:
+  `curl -s "https://www.youtube.com/oembed?url=https%3A//www.youtube.com/watch%3Fv%3D<ID>&format=json"`
+  (200 + `"author_name":"WPManageNinja"`). Never write a video ID from memory.
+- **Check the upload date against the documented release.** Several AzonPress videos date from
+  2018 and show a pre-Creators-API UI that contradicts the current docs — see "Known state" below.
+- **Embed the frame on its own — no heading and no lead-in sentence above it.** Place it after
+  the page intro, before the first step section (in `azonpress-introduction.md` it sits inline in
+  the editors section). The video is meant to speak for itself.
+- Use the exact YouTube title as the `title` attribute — it is the accessible name for the frame.
+
 ### Every in-content link opens in a new tab
 
 A `markdown-it` `link_open` rule in `config.js` adds `target="_blank" rel="noopener noreferrer"` to **every** link that lacks an explicit `target` — including internal cross-references. This is intentional but surprising; account for it when reasoning about navigation, and don't "fix" internal links by adding a target.
@@ -227,6 +263,17 @@ Verified as of the last review — worth knowing before you assume something is 
 4. **The root `public/` directory is dead.** It holds `logo-dark.png` / `logo-light.png` that are never served, because `vite.publicDir` is overridden to `guide/public`. Live logos are in `guide/public/images/brand/`.
 5. **`.gitignore` has duplicated entries** (`.DS_Store` ×4, `/.vitepress/dist` ×2). Cosmetic.
 6. **A missing sidebar entry never fails the build.** It is the most common way a new page silently ships invisible.
+7. **Deliberately un-embedded videos.** The WPManageNinja channel has AzonPress tutorials from
+   2018 that were *not* embedded, because they contradict the current product:
+   - `195WyDdnpwM` "Creating Credentials and Configuring API" teaches the **PA-API Access Key /
+     Secret Key** flow, which v2.3.0 removed. The docs now state those credentials are no longer
+     supported, so embedding this would actively mislead readers. **Do not add it** unless a
+     re-recorded Creators API version is published.
+   - `RMmo1i5i85I` (Installation), `WbHOU2U3vFE` (Templates & Layouts), `nBrPhh5ipuU` (Product
+     Elements), `PHsgAwjgXbY` (Button Customization) are all Dec 2018 and show a seven-year-old
+     UI. Left out pending refreshed recordings, not because they were missed.
+   - `ksXoOLMOTWM` (Comparison tables, 2018) and `zBPvRs1_02A` (BestSeller lists, 2018) are
+     superseded by the Nov 2025 recordings that are embedded instead.
 
 ---
 

@@ -23,3 +23,45 @@
   border-color: #d4ab0f;
 }
 
+/* ---------------------------------------------------------------------------
+   Video embeds
+   Usage in Markdown (VitePress renders raw HTML as-is):
+
+     <div class="video-frame">
+       <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="..." loading="lazy"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         allowfullscreen></iframe>
+     </div>
+
+   The frame occupies the same width as a screenshot in the content column and
+   keeps a 16:9 ratio at every viewport, so it scales down on mobile without
+   letterboxing or overflow.
+   --------------------------------------------------------------------------- */
+.vp-doc .video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 20px 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--vp-c-bg-soft);
+}
+
+.vp-doc .video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Fallback for browsers without aspect-ratio support: padding-bottom hack. */
+@supports not (aspect-ratio: 16 / 9) {
+  .vp-doc .video-frame {
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+}
+
