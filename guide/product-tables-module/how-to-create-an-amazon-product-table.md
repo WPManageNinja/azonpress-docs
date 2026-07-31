@@ -7,6 +7,16 @@ meta_description: "Learn how to create Amazon product tables with AzonPress. Sea
 
 **Product Table** offers you showcasing the **information** of **Amazon Products** according to your needs through **Tables** and the most convenient is that you don't need to know any codes for creating your tables. This article will guide you through **creating Product Table/s** with AzonPress for **Amazon products** on your **WordPress** website.
 
+<div class="video-frame">
+  <iframe
+    src="https://www.youtube.com/embed/oEG_IW-d8C0"
+    title="How to Create Amazon Product Table on WordPress | AzonPress"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</div>
+
 ## Create A Product Table
 
 Go to **Amazon Products** from the **WordPress Sidebar** or **Product Tables** from the **Amazon** dropdown in the top right corner of the **AzonPress Navbar.**

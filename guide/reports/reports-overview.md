@@ -8,6 +8,16 @@ meta_description: "Complete overview of AzonPress reports: track clicks, views, 
 
 In AzonPress, the "**Overview**" feature of the **Reports** section displays overall click reports for all your affiliate products with filtering options. This article will guide you through the explanation of the **Overview** of **Reports**.
 
+<div class="video-frame">
+  <iframe
+    src="https://www.youtube.com/embed/X8KBHBabwbc"
+    title="AzonPress Advanced Report Dashboard | All Your Affiliate Data in One Place"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</div>
+
 ## Overview of Reports
 
 To learn about all the available options under the dashboard overview of Reports, follow the steps with a screenshot below –

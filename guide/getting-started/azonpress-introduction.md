@@ -46,6 +46,16 @@ AzonPress supports both:
 
 You can insert products and tables using blocks or buttons, just like adding images or text.
 
+<div class="video-frame">
+  <iframe
+    src="https://www.youtube.com/embed/BsUgfFbwUm4"
+    title="How to Use AzonPress with Gutenberg Blocks in WordPress"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</div>
+
 ## Supports More Than Just Amazon
 
 Besides Amazon, AzonPress also allows you to add **Custom Products** from other platforms, such as:
