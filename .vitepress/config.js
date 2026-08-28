@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { zoomablePlugin } from './theme/markdown-plugin-zoomable.js'
 
 export default defineConfig({
   title: 'AzonPress Docs',
@@ -10,8 +11,29 @@ export default defineConfig({
     // Keep existing docs media under guide/public available as static assets.
     publicDir: 'guide/public'
   },
+  // Screenshots are written as on-disk paths (/guide/public/images/...) which only
+  // resolve because Vite hashes and bundles them into /assets/. The zoom plugin hands
+  // that path to <ZoomableImage> as a plain string prop, which Vite would NOT process —
+  // every image would 404 in production. Listing the component here puts its `src` back
+  // through the same asset pipeline as a plain <img src>. The other tags are the Vue
+  // defaults and must be repeated, since supplying this object replaces them.
+  vue: {
+    template: {
+      transformAssetUrls: {
+        video: ['src', 'poster'],
+        source: ['src'],
+        img: ['src'],
+        image: ['xlink:href', 'href'],
+        use: ['xlink:href', 'href'],
+        ZoomableImage: ['src']
+      }
+    }
+  },
   markdown: {
     config: (md) => {
+      // Click-to-zoom on every markdown image.
+      md.use(zoomablePlugin)
+
       const defaultRender = md.renderer.rules.link_open || ((tokens, idx, options, env, self) =>
         self.renderToken(tokens, idx, options))
       md.renderer.rules.link_open = (tokens, idx, options, env, self) => {

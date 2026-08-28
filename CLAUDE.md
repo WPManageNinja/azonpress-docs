@@ -111,6 +111,42 @@ Do not "simplify" it to `/images/...` — that skips content hashing and cache-b
 
 Screenshots are **`.webp`**, stored one folder per page: `guide/public/images/<section>/<slug>/`. There are no `.gitkeep` files in this repo; empty folders simply aren't tracked.
 
+### Image zoom — and the one edit that silently breaks every image
+
+Every markdown image is click-to-zoom. Authors write plain markdown (`![Alt](/guide/public/…)`)
+and get it automatically — there is nothing to opt into. Three files implement it:
+
+| File | Role |
+| --- | --- |
+| `.vitepress/theme/markdown-plugin-zoomable.js` | Replaces the markdown-it `image` rule with `<ClientOnly><ZoomableImage src alt></ZoomableImage></ClientOnly>` |
+| `.vitepress/theme/components/ZoomableImage.vue` | Renders its own `<img>` from the `src` prop; click to zoom, click/Esc/scroll to close |
+| `.vitepress/config.js` | `md.use(zoomablePlugin)` **and** the `vue.template.transformAssetUrls` block |
+
+**The trap.** `<ZoomableImage>` receives `src` as a plain string prop, and a string prop does not
+go through Vite's asset pipeline. This site's image paths (`/guide/public/images/…`) are on-disk
+paths, *not* URLs — `/guide/public/` does not exist in `dist/`, so an untransformed path 404s.
+That is why `config.js` lists `ZoomableImage: ['src']` in `vue.template.transformAssetUrls`: it
+puts the prop back through the same hashing as a plain `<img src>`, producing
+`/assets/<name>.<hash>.webp`.
+
+**Do not remove that entry, and do not drop the other tags beside it** (`img`, `video`, `source`,
+`image`, `use`) — supplying the object replaces Vue's defaults rather than extending them.
+Removing either breaks images **only in the production build**; `docs:dev` serves the raw path
+from disk and looks perfectly fine. This exact failure has bitten this site's siblings.
+
+Two more load-bearing details, both there to prevent images vanishing after hydration:
+- **`<ClientOnly>`.** The component renders `<div>`s, and markdown puts the image inside a `<p>`.
+  The browser's HTML parser closes that `<p>` early, so a server-rendered version would be a
+  hydration mismatch and Vue would discard the image. Rendering client-side means there is no
+  server markup to mismatch. Trade-off: screenshots are not in the SSR HTML.
+- **No slot, and `escapeAttr()` on `src`/`alt`.** The component owns the `<img>` so server and
+  client agree; escaping stops alt text containing `"` `&` `<` `>` from terminating the attribute
+  early. One filename and one alt string on this site already contain `&`.
+
+**Verify zoom changes against a build, never `docs:dev` alone:** `npm run docs:build && npm run
+docs:preview`, then confirm images load, check the console for hydration warnings, and click
+through a page-to-page navigation to be sure no overlay stays stuck.
+
 ### Video embeds
 
 VitePress has no video component — the supported approach is raw HTML in Markdown, which
