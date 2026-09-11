@@ -337,3 +337,17 @@ Repo-specific skills live in `.claude/skills/`. Prefer them over ad-hoc edits �
 | `azonpress-manage-images` | Adding, replacing, or auditing screenshots |
 | `azonpress-changelog` | Adding a release entry to `guide/changelog.md` |
 | `azonpress-audit-docs` | Read-only site-wide quality gate before publishing |
+
+## Featured (social-share) images
+
+Every page has its own link-preview card — the image Slack, X, LinkedIn and Facebook show when a docs URL is shared. Cards are **generated, not designed by hand**: `scripts/generate-featured-images.mjs` renders a branded 1200×630 PNG carrying the page's title and section into `guide/public/images/featured/`, and the VitePress config (`featuredImageFor()`) points each page's `og:image` / `twitter:image` at it. A page with no card falls back to `default.png`.
+
+```bash
+npm run featured:generate     # render cards for pages that don't have one yet (idempotent)
+npm run featured:regenerate   # re-render every card (after changing the generator's design)
+```
+
+- Run `npm run featured:generate` after adding a page and commit the PNG alongside it.
+- If you rename or retitle a page, delete its old card first and run the generator again — it skips existing files and only *reports* orphans, it never deletes them.
+- Card naming rule: the page's served path (after `rewrites`) minus `.md`, with `/` replaced by `--`, plus `.png`. It lives in both the script (`cardNameFor()`) and the config (`featuredImageFor()`) — change one, change the other.
+- These PNGs are the deliberate exception to any "images must be `.webp`" rule in this repo: social scrapers expect PNG/JPEG.

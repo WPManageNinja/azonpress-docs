@@ -108,3 +108,16 @@ See [`CLAUDE.md`](./CLAUDE.md) for the complete conventions reference, including
 - [Vue 3](https://vuejs.org/) (custom theme layer)
 - Markdown with VitePress extensions (frontmatter, containers, code groups)
 - Local (client-side) search — no external search service
+
+## Featured (social-share) images
+
+Every page has its own link-preview card — the image Slack, X, LinkedIn and Facebook show when a docs URL is shared. Cards are **generated, not designed by hand**: `scripts/generate-featured-images.mjs` renders a branded 1200×630 PNG carrying the page's title and section into `guide/public/images/featured/`, and the VitePress config (`featuredImageFor()`) points each page's `og:image` / `twitter:image` at it. A page with no card falls back to `default.png`.
+
+```bash
+npm run featured:generate     # render cards for pages that don't have one yet (idempotent)
+npm run featured:regenerate   # re-render every card (after changing the generator's design)
+```
+
+- Run `npm run featured:generate` after adding a page and commit the PNG alongside it.
+- If you rename or retitle a page, delete its old card first and run the generator again — it skips existing files and only *reports* orphans, it never deletes them.
+- Card naming rule: the page's served path (after `rewrites`) minus `.md`, with `/` replaced by `--`, plus `.png`. It lives in both the script (`cardNameFor()`) and the config (`featuredImageFor()`) — change one, change the other.
