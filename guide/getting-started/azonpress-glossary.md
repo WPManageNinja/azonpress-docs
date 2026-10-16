@@ -31,6 +31,8 @@ This glossary defines common terms used throughout the AzonPress documentation t
 
 **Cloaked URL:** A shortened, branded link (e.g., `/azp/product-name`) that redirects visitors to a custom product's affiliate URL, while also recording the visit for click and geo-tracking analytics.
 
+**Collection (Product Collection):** A reusable list of custom and Amazon products that you can show anywhere with the `[azonpress_collection]` shortcode or the Product Collection block. See [Product Collections](/guide/available-products-templates/product-collections).
+
 **Comparison Tables:** Structured, high-conversion layouts that display multiple Amazon products side by side for easy comparison.
 
 **cURL-based HTTP Communication:** A secure server-side method used by the plugin to request and retrieve data from Amazon’s external services.
