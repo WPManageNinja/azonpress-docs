@@ -16,6 +16,7 @@ AzonPress records clicks from every place a product link can appear on your site
 * **Comparison Tables**: Clicks on any compared product's Buy button or linked column.
 * **Custom Products**: Clicks on single or multiple custom product links, including their **Cloaked URLs**.
 * **Gutenberg Blocks**: Clicks on links from the Single Product block and other product-display blocks in the block editor.
+* **Product Collections**: Clicks on products shown through the `[azonpress_collection]` shortcode or the Product Collection block. Each click is recorded with the collection and the page it came from. See [Product Collections](/guide/available-products-templates/product-collections).
 
 You don't need to enable anything separately for each of these tracking is active automatically as soon as you publish a product, table, or block on your site.
 
