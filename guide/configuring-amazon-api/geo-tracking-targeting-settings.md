@@ -53,5 +53,4 @@ Now, paste the **API Key** you have **copied from** the **Maxmind** account into
 
 Now Geo-targeting/tracking will work just fine with AzonPress!
 
-
-
+> **Note**, geo-targeted links also work on pages served by a caching plugin or host cache.
