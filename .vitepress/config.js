@@ -170,7 +170,8 @@ export default defineConfig({
             { text: 'Product Elements', link: '/guide/available-products-templates/product-elements' },
             { text: 'Table Template', link: '/guide/available-products-templates/table-template' },
             { text: 'Widget Small Template', link: '/guide/available-products-templates/widget-small-template' },
-            { text: 'Widget Template', link: '/guide/available-products-templates/widget-template' }
+            { text: 'Widget Template', link: '/guide/available-products-templates/widget-template' },
+            { text: 'Product Collections', link: '/guide/available-products-templates/product-collections' }
           ]
         },
         {
