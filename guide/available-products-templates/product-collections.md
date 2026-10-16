@@ -17,10 +17,10 @@ A collection never copies your product data. It points to each product where it 
 1. In your WordPress admin, go to **AzonPress → Collections**.
 2. Click **Add New Collection**.
 3. Enter a **Collection title** (for example, *Best Budget Laptops*).
-4. Click **Add Products** and choose the products to include:
+4. Click **Add Products** and choose the products to include. Select **Select all** to add everything in the current list:
     * **Custom Products**: Search by product or template title.
-    * **Amazon Products**: Search by product title, ASIN, or table name. You can also paste one or more ASINs separated by commas.
-5. Review the list and save the collection.
+    * **Amazon Products**: Search by product title, ASIN, or table name. You can also paste ASINs, one per line or separated by commas. If a product doesn't exist yet, use **Create custom products**.
+5. Click **Create** to save the collection. Use **Draft** if you aren't ready to publish it, and **Preview** to see how it looks.
 
 <!-- SCREENSHOT NEEDED: New collection form with the Collection title field filled in and the Add Products button. Save as new-collection-form.webp -->
 
@@ -30,13 +30,14 @@ A collection never copies your product data. It points to each product where it 
 
 ## Reorder and Remove Products
 
-* Drag a product by its handle to change its position.
+* Drag a product to change its position.
 * Prefer the keyboard? Use the **Move up** and **Move down** buttons next to each product.
+* Your new order is applied when you save the collection.
 * Click **Remove from collection** to take a product out. The original product is not deleted.
 
 <!-- SCREENSHOT NEEDED: Collection product list showing the drag handle, Move up, Move down and Remove from collection buttons. Save as reorder-and-remove-products.webp -->
 
-Each product can also have its own label (for example, *Best Pick*) that applies only inside this collection. The original product is not changed.
+Each product can also have its own **Title**, **Badge** (for example, *Best Pick*), and **Button text**. These apply only inside this collection, and the original product is not changed.
 
 > **Note**, if a product was deleted, Amazon no longer returns it, or its link was flagged as broken, it stays hidden on your site until you fix or remove it. The collection editor shows a warning next to it.
 
@@ -45,16 +46,16 @@ Each product can also have its own label (for example, *Best Pick*) that applies
 | Setting | What it does |
 | --- | --- |
 | **Shortcode ID (slug)** | The ID used in the shortcode. |
-| **Status** | **published** collections appear on your site. **draft** collections render nothing. |
+| **Status** | **Published** collections appear on your site. **Draft** collections render nothing. |
 | **Description** | Optional text shown with the collection. |
 | **Internal notes** | Visible to admins only. |
 | **Layout** | **Grid**, **List**, or **Table**. |
-| **Columns** | Number of columns for the Grid layout (1–4). |
+| **Columns** | Number of columns for the **Grid** layout (1–4). |
 | **Button text** | Overrides the button label. Leave empty to use each product's default. |
-| **Disclosure** | Show the **global** affiliate disclosure, a **custom** one, or **none**. |
-| **Disclosure text** / **Disclosure position** | Your custom wording, shown at the **top** or **bottom** of the collection. |
+| **Disclosure** | Show the **Global** affiliate disclosure, a **Custom** one, or **None**. |
+| **Disclosure text** / **Disclosure position** | Your custom wording, shown **Above products** or **Below products**. Basic HTML is allowed, and `%last_update%` shows when the collection was last saved. |
 
-You can also choose whether to show a header, the price, the rating, and the description.
+You can also switch the header, **Show price**, **Show rating**, and **Show description** on or off.
 
 <!-- SCREENSHOT NEEDED: Collection settings panel showing Shortcode ID (slug), Status, Layout, Columns, Button text and Disclosure options. Save as collection-settings.webp -->
 
@@ -73,7 +74,7 @@ You can override the saved settings for a single placement with these attributes
 | Attribute | Example | Description |
 | --- | --- | --- |
 | `layout` | `layout="table"` | `grid`, `list`, or `table` |
-| `columns` | `columns="2"` | 1 to 4 |
+| `columns` | `columns="2"` | 1 to 4 (Grid layout) |
 | `limit` | `limit="5"` | Show only the first 5 products |
 | `button_text` | `button_text="Check Price"` | Custom button label |
 
@@ -89,7 +90,7 @@ You can override the saved settings for a single placement with these attributes
 
 <!-- SCREENSHOT NEEDED: Block editor with the AzonPress Product Collection block, showing 'Select a collection' and the Display overrides (Layout, Max products). Save as collection-gutenberg-block.webp -->
 
-> **Remember**, a collection set to **draft** shows nothing to visitors. If a published collection has no products to show, only admins see a short notice explaining why.
+> **Remember**, a collection set to **Draft** shows nothing to visitors. If a published collection has no products to show, only admins see a short notice explaining why.
 
 ## Collection Click Stats
 
