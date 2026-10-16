@@ -8,6 +8,37 @@ description: "Stay updated with the latest improvements, new features, bug fixes
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in AzonPress.
 
 
+## AzonPress v2.3.1
+*Released on October 16, 2026*
+
+::: code-group
+
+```md [🆕 New Features]
+• Product collections: group custom and Amazon products into one reusable list
+• [azonpress_collection] shortcode and Gutenberg block with grid, list and table layouts
+• Move up and Move down buttons to reorder collection products from the keyboard
+• Collection click stats by page and by product in the collection editor
+• Collection and page attribution in click analytics
+```
+
+```md [🔧 Improvements]
+• Refreshing product tables now covers every product, in batches of 50, and reports how many were skipped
+• The admin product list now loads one page at a time
+• Geo-targeted links now work on cached pages
+• New installs keep analytics for 365 days by default
+• Lower server load from the click limiter, cloaked-link checks and background keyword refresh
+```
+
+```md [🐛 Bug fixes]
+• Fixed the "Undefined array key old_price" warning on custom products without a price
+• Fixed analytics chart days and the Last Week range
+• Fixed the affiliate tag being dropped from cloaked links
+• Fixed product table title edits not saving
+• Fixed product table custom CSS not saving
+```
+
+:::
+
 ## AzonPress v2.3.0
 *Released on July 21, 2026*
 
