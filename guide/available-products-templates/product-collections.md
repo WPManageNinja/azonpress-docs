@@ -12,19 +12,20 @@ A collection never copies your product data. It points to each product where it 
 
 ## Create a Collection
 
-
-<!-- SCREENSHOT NEEDED: AzonPress → Collections list page showing the Add New Collection button, each collection's copyable shortcode, and the Preview / Edit / Duplicate / Delete actions. Save as collections-list.webp -->
 1. In your WordPress admin, go to **AzonPress → Collections**.
-2. Click **Add New Collection**.
-3. Enter a **Collection title** (for example, *Best Budget Laptops*).
-4. Click **Add Products** and choose the products to include. Select **Select all** to add everything in the current list:
-    * **Custom Products**: Search by product or template title.
-    * **Amazon Products**: Search by product title, ASIN, or table name. You can also paste ASINs, one per line or separated by commas. If a product doesn't exist yet, use **Create custom products**.
-5. Click **Create** to save the collection. Use **Draft** if you aren't ready to publish it, and **Preview** to see how it looks.
+2. Click **Add New Collection**. A small pop-up will appear.
+3. Enter a **Collection title** (for example, *Best Budget Laptops*) and click **Create**.
 
 <!-- SCREENSHOT NEEDED: New collection form with the Collection title field filled in and the Add Products button. Save as new-collection-form.webp -->
 
+4. Your new collection opens in the editor. Click **Add Products** and choose the products to include:
+    * **Custom Products**: Search by product or template title.
+    * **Amazon Products**: Search by product title, ASIN, or table name. You can also paste ASINs, one per line or separated by commas. If a product doesn't exist yet, use **Create custom products**.
+5. Tick the products you want, then click **Add [number] products**.
+
 <!-- SCREENSHOT NEEDED: 'Add products to this collection' dialog showing the Custom Products and Amazon Products tabs and the search field. Save as add-products-dialog.webp -->
+
+6. Click **Save Changes** to save the collection. Use **Preview** to see how it looks, or set the **Status** to **Draft** if you aren't ready to publish it.
 
 > **Note**, a collection can hold up to 100 products.
 
@@ -33,7 +34,7 @@ A collection never copies your product data. It points to each product where it 
 * Drag a product to change its position.
 * Prefer the keyboard? Use the **Move up** and **Move down** buttons next to each product.
 * Your new order is applied when you save the collection.
-* Click **Remove from collection** to take a product out. The original product is not deleted.
+* Click the **Trash icon** (**Remove from collection**) next to a product to take it out. To remove several at once, tick **Select all** or the products you want, then click **Remove selected**. The original products are not deleted.
 
 <!-- SCREENSHOT NEEDED: Collection product list showing the drag handle, Move up, Move down and Remove from collection buttons. Save as reorder-and-remove-products.webp -->
 
@@ -55,7 +56,7 @@ Each product can also have its own **Title**, **Badge** (for example, *Best Pick
 | **Disclosure** | Show the **Global** affiliate disclosure, a **Custom** one, or **None**. |
 | **Disclosure text** / **Disclosure position** | Your custom wording, shown **Above products** or **Below products**. Basic HTML is allowed, and `%last_update%` shows when the collection was last saved. |
 
-You can also switch the header, **Show price**, **Show rating**, and **Show description** on or off.
+You can also switch **Show heading**, **Show price**, **Show rating**, and **Show description** on or off.
 
 <!-- SCREENSHOT NEEDED: Collection settings panel showing Shortcode ID (slug), Status, Layout, Columns, Button text and Disclosure options. Save as collection-settings.webp -->
 
