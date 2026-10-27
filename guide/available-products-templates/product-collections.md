@@ -14,16 +14,18 @@ A collection never copies your product data. It points to each product where it 
 
 1. In your WordPress admin, go to **AzonPress → Collections**.
 2. Click **Add New Collection**. A small pop-up will appear.
-3. Enter a **Collection title** (for example, *Best Budget Laptops*) and click **Create**.
 
-<!-- SCREENSHOT NEEDED: New collection form with the Collection title field filled in and the Add Products button. Save as new-collection-form.webp -->
+![Screenshot of the Collections list with the Add New Collection button, shortcodes, and Preview, Edit, Duplicate and Delete actions](/guide/public/images/available-products-templates/product-collections/collections-list.webp)
+3. Enter a **Collection title** (for example, *Home Office Essentials*) and click **Create**.
+
+![Screenshot of the Create a new Collection pop-up with the Collection title filled in](/guide/public/images/available-products-templates/product-collections/new-collection-form.webp)
 
 4. Your new collection opens in the editor. Click **Add Products** and choose the products to include:
     * **Custom Products**: Search by product or template title.
     * **Amazon Products**: Search by product title, ASIN, or table name. You can also paste ASINs, one per line or separated by commas. If a product doesn't exist yet, use **Create custom products**.
 5. Tick the products you want, then click **Add [number] products**.
 
-<!-- SCREENSHOT NEEDED: 'Add products to this collection' dialog showing the Custom Products and Amazon Products tabs and the search field. Save as add-products-dialog.webp -->
+![Screenshot of the Add products to this collection dialog with Custom Products and Amazon Products tabs and three products selected](/guide/public/images/available-products-templates/product-collections/add-products-dialog.webp)
 
 6. Click **Save Changes** to save the collection. Use **Preview** to see how it looks, or set the **Status** to **Draft** if you aren't ready to publish it.
 
@@ -36,9 +38,9 @@ A collection never copies your product data. It points to each product where it 
 * Your new order is applied when you save the collection.
 * Click the **Trash icon** (**Remove from collection**) next to a product to take it out. To remove several at once, tick **Select all** or the products you want, then click **Remove selected**. The original products are not deleted.
 
-<!-- SCREENSHOT NEEDED: Collection product list showing the drag handle, Move up, Move down and Remove from collection buttons. Save as reorder-and-remove-products.webp -->
+![Screenshot of the collection product list with the drag handle, Move up and Move down buttons, Customize button, and Remove icon](/guide/public/images/available-products-templates/product-collections/reorder-and-remove-products.webp)
 
-Each product can also have its own **Title**, **Badge** (for example, *Best Pick*), and **Button text**. These apply only inside this collection, and the original product is not changed.
+To give a product its own **Title**, **Badge** (for example, *Best Pick*), or **Button text**, click **Customize** next to it. These apply only inside this collection, and the original product is not changed.
 
 > **Note**, if a product was deleted, Amazon no longer returns it, or its link was flagged as broken, it stays hidden on your site until you fix or remove it. The collection editor shows a warning next to it.
 
@@ -58,7 +60,7 @@ Each product can also have its own **Title**, **Badge** (for example, *Best Pick
 
 You can also switch **Show heading**, **Show price**, **Show rating**, and **Show description** on or off.
 
-<!-- SCREENSHOT NEEDED: Collection settings panel showing Shortcode ID (slug), Status, Layout, Columns, Button text and Disclosure options. Save as collection-settings.webp -->
+![Screenshot of the collection settings panels with Collection, Display and Affiliate options](/guide/public/images/available-products-templates/product-collections/collection-settings.webp)
 
 ## Show a Collection on Your Site
 
@@ -85,9 +87,9 @@ You can override the saved settings for a single placement with these attributes
 
 ### Using the Gutenberg block
 
-1. In the block editor, click the **Plus (+) icon** and add the **AzonPress Product Collection** block.
-2. Choose your collection under **Select a collection**.
-3. Under **Display overrides**, optionally change the **Layout** (**Collection default**, **Grid**, **List**, or **Table**) and **Max products** for this placement only.
+1. In the block editor, click the **Plus (+) icon** and add the **Azp Product Collection** block.
+2. In the block settings, choose your collection under **Select a collection**.
+3. Under **Display overrides**, optionally change the **Layout** (**Collection default**, **Grid**, **List**, or **Table**) and **Max products** for this placement only. Leave **Max products** empty to show all products.
 
 <!-- SCREENSHOT NEEDED: Block editor with the AzonPress Product Collection block, showing 'Select a collection' and the Display overrides (Layout, Max products). Save as collection-gutenberg-block.webp -->
 
