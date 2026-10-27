@@ -8,7 +8,7 @@ description: "Stay updated with the latest improvements, new features, bug fixes
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in AzonPress.
 
 
-## AzonPress v2.3.1
+## AzonPress v2.3.2
 *Released on October 16, 2026*
 
 ::: code-group
