@@ -39,6 +39,8 @@ All the options for reports overview are briefly explained below:
 
 > **Remember**, this Overview combines clicks from every source — Product Tables, Comparison Tables, **Gutenberg block** links, **Product Collections**, and **standalone Cloaked URL** visits — so you get a single, complete picture of your affiliate performance. Read [Click Tracking & Cloaked URL Analytics](/guide/reports/click-tracking-and-cloaked-url-analytics) to learn how each of these is tracked.
 
+> **Note**, AzonPress keeps click data for 365 days by default on new installs. You can change this under **Settings → Other Settings** (see [Other Settings](/guide/miscellaneous/other-settings)).
+
 ![Overview Page of Reports From AzonPress](/guide/public/images/reports/reports-overview/overview-page-of-rports-from-azonpress.webp)
 
 
