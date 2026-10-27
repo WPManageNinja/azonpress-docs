@@ -6,7 +6,7 @@ meta_description: "Configure AzonPress other settings: assign admin access roles
 
 # Other Settings in AzonPress
 
-In AzonPress, the "Other Settings" feature allows you to **Assign** the **Users** full **Admin Access** for a specific **AzonPress Site/Plugin**. Also, you can decide with this setting option whether you want to load the CSS and JS file globally or on-demand. This article will guide you through giving admin access to the users.
+In AzonPress, the "Other Settings" feature allows you to **Assign** the **Users** full **Admin Access** for a specific **AzonPress Site/Plugin**. Also, you can decide with this setting option whether you want to load the CSS and JS file globally or on-demand. You can also manage how AzonPress stores your click data under **Click Tracking Privacy**. This article will guide you through giving admin access to the users.
 
 ## Give Admin Access to Users with Other Settings
 
@@ -18,7 +18,7 @@ First, go to **Settings** from the **AzonPress Navbar** and click on **Other Set
 
 ## Explanation of Other Settings Options
 
-Now, here you can see two major settings options. These are:
+Now, here you can see three major settings options. These are:
 
 #### 1. Global Asset Loading
 
@@ -36,6 +36,18 @@ By default, Administrators have all the access. You can assign more user roles t
  * **Contributor**
 
 Once you have selected your desired roles, those specific user/s will be able to access AzonPress features.
+
+#### 3. Click Tracking Privacy
+
+This section controls how AzonPress stores click data:
+
+ * **Track clicks only with consent:** A consent plugin that supports the WP Consent API (for example, Complianz or CookieYes) is always respected. Turn this on to also stop tracking when no such plugin is installed.
+ * **Anonymise visitor IP addresses:** Stores IPs with the last part removed (for example, `192.168.1.0`). The country is still detected, but unique-click counts become approximate. This applies to new clicks only.
+ * **Keep click data for ___ days:** Older click data is deleted once a day. New installs keep analytics for **365 days** by default. Enter `0` to keep click data forever.
+
+![Screenshot of the Click Tracking Privacy settings with consent, IP anonymising, and click data retention options](/guide/public/images/miscellaneous/other-settings/other-settings-privacy.webp)
+
+> **Note**, click data older than the number of days you set is permanently deleted.
 
 **Update Settings:** Once you are done making your selections, click the **Update** button to save all the changes.
 
