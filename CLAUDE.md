@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the **end-user documentation site** for **AzonPress** — a WordPress affiliate-marketing plugin by WPManageNinja that pulls Amazon product data into product tables, comparison tables, and templates. The site is built with [VitePress](https://vitepress.dev/) v1.6 (Vue 3).
 
-> **You are editing user-facing documentation, not plugin source code.** All content lives under `guide/` as Markdown. The currently documented release is **AzonPress v2.3.0** (July 21, 2026) — the release that moved from the Amazon Product Advertising API (PA-API) to the **Amazon Creators API**.
+> **You are editing user-facing documentation, not plugin source code.** All content lives under `guide/` as Markdown. The currently documented release is **AzonPress v2.3.2** (adds Product collections). The previous major change, **v2.3.0** (July 21, 2026), moved from the Amazon Product Advertising API (PA-API) to the **Amazon Creators API**.
 
 This repo is one of ~20 sibling VitePress doc sites under `WPManageNinja-Docs/`. Conventions here are close to, but **not identical to**, its siblings — do not copy patterns from a sibling repo without checking them against this file (notably: this repo uses plain `config.js`, has **no** `rewrites`, and resolves images differently).
 
@@ -21,7 +21,10 @@ npm install            # Install dependencies
 npm run docs:dev       # Dev server → http://localhost:5173 (live reload)
 npm run docs:build     # Production build → .vitepress/dist/
 npm run docs:preview   # Preview the production build → http://localhost:4173
+npm run shots -- scripts/screenshots/plans/<plan>.json   # Capture screenshots → see azonpress-doc-screenshots skill
 ```
+
+> **Heads up:** if your shell exports `NODE_ENV=production`, `npm install` skips dev dependencies and removes `vitepress`, `sharp` and `playwright-core`. Use `NODE_ENV=development npm install`.
 
 **Validation:** There are no tests, linters, or formatters. `npm run docs:build` is the de facto correctness check — VitePress fails the build on dead internal links and warns on unresolved image paths. Run it after any link, image, or page change. A clean build takes ~3 seconds.
 
@@ -334,7 +337,8 @@ Repo-specific skills live in `.claude/skills/`. Prefer them over ad-hoc edits �
 | `azonpress-add-doc` | Creating a new documentation page, wired into the sidebar |
 | `azonpress-edit-doc` | Editing an existing page in place (same slug, same location) |
 | `azonpress-restructure-docs` | Renaming, moving, merging, deleting pages; reordering the sidebar |
-| `azonpress-manage-images` | Adding, replacing, or auditing screenshots |
+| `azonpress-manage-images` | Adding, replacing, or auditing screenshots (paths, alt text, orphans) |
+| `azonpress-doc-screenshots` | Capturing and annotating new screenshots from the local AzonPress site with `npm run shots` |
 | `azonpress-changelog` | Adding a release entry to `guide/changelog.md` |
 | `azonpress-audit-docs` | Read-only site-wide quality gate before publishing |
 

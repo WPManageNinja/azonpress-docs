@@ -1,0 +1,10 @@
+{
+  "outDir": "guide/public/images/miscellaneous/other-settings",
+  "viewport": { "width": 1600, "height": 1100 },
+  "steps": [
+    { "admin": "/settings/other_settings" },
+    { "wait": 1000 },
+    { "shot": { "name": "other-settings-privacy",
+                "clip": { "rows": ["Click Tracking Privacy"], "pad": 4 } } }
+  ]
+}

@@ -8,3 +8,6 @@ guide/.DS_Store
 .DS_Store
 .DS_Store
 .DS_Store
+
+# Screenshot pipeline raw captures
+scripts/screenshots/raw/

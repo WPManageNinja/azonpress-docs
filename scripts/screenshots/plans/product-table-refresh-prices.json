@@ -1,0 +1,13 @@
+{
+  "outDir": "guide/public/images/product-tables-module/customization-of-product-tables",
+  "viewport": { "width": 1600, "height": 1000 },
+  "steps": [
+    { "admin": "/product_tables" },
+    { "click": "a[href*=\"product_tables/edit\"]:visible" },
+    { "wait": 2500 },
+    { "shot": { "name": "refresh-prices-button",
+                "clip": "app",
+                "crop": { "height": 700 },
+                "arrows": [ { "target": { "text": "Refresh Prices" }, "from": "bottom", "len": 140 } ] } }
+  ]
+}
