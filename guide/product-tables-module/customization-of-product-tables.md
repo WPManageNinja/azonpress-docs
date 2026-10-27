@@ -70,6 +70,16 @@ You can see the preview of your table by clicking the **Preview** button in the 
 
 ![Preview save changes button](/guide/public/images/product-tables-module/customization-of-product-tables/preview-save-changes-button.webp)
 
+## Refresh Prices
+
+Amazon prices, discounts, and stock can change. To update them without searching for your products again, click the **Refresh Prices** button in the top toolbar of the table.
+
+AzonPress refreshes **every product** in the table by its ASIN, in **batches of 50**. When it finishes, you will see the message **Prices and availability refreshed**, and the table reloads with the latest data.
+
+> **Note**, if the refresh stops partway, AzonPress shows how many products were refreshed before it stopped. Click **Refresh Prices** again to start the refresh once more.
+
+> **Remember**, you need to connect your Amazon Creators API credentials first. See [Configure Amazon API](/guide/configuring-amazon-api/configure-amazon-api).
+
 ## Customization Through Appearance Settings
 
 To learn about customizing tables through Appearance Settings, read this [Documentation](/guide/miscellaneous/appearance-settings).
