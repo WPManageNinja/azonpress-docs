@@ -25,6 +25,11 @@ Every screenshot is produced by a script, never by hand, so the output is reprod
 - **The plugin must be licensed and the Creators API connected**, otherwise the admin shows "Please Activate AzonPress" and `.azp-main-application` never appears (the runner times out). Activation is under `/settings/licensing`; credentials under `/settings/amazon-api`. Do not invent a license key. If the site is unlicensed, stop and tell the user.
 - **Install dev dependencies with `NODE_ENV=development`.** This shell may export `NODE_ENV=production`, which makes `npm install` skip dev dependencies and silently remove `sharp`, `vitepress` and `playwright-core`. Use `NODE_ENV=development npm install` (or `npm install --include=dev`), and run `NODE_ENV=development npm run shots -- …`.
 
+### Site state the plans assume (fcrmv3 dev site)
+- `product-collections.json` needs the Custom Product module active, three sample custom products (**Sample Standing Desk**, **Sample Ergonomic Chair**, **Sample LED Desk Lamp**, ids 1–3), and an **empty** collection id 1 titled *Home Office Essentials*. Empty it first (collection editor → **Select all** → **Remove selected** → confirm → **Save Changes**), otherwise the add-products dialog has nothing to tick.
+- `product-table-refresh-prices.json` needs the Amazon Creators API connected and one Amazon product table; the site has neither yet.
+- Plans that open a dialog or a toast should clip with `pad: 0` / hide `.el-message` so the dim backdrop and "saved" toasts stay out of the image.
+
 ### What does NOT work
 - The Claude-in-Chrome extension (bound to another device, cannot resolve Local sites).
 - AppleScript + `screencapture` (captures overlapping windows, needs permissions).

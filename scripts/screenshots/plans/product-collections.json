@@ -1,0 +1,138 @@
+{
+  "outDir": "guide/public/images/available-products-templates/product-collections",
+  "viewport": {
+    "width": 1600,
+    "height": 1500
+  },
+  "steps": [
+    {
+      "admin": "/collections"
+    },
+    {
+      "css": ".el-message, .el-notification { display: none !important; }"
+    },
+    {
+      "click": {
+        "text": "Add New Collection"
+      }
+    },
+    {
+      "fill": {
+        "selector": "input[placeholder=\"eg. Best Budget Laptops\"]",
+        "value": "Home Office Essentials"
+      }
+    },
+    {
+      "shot": {
+        "name": "new-collection-form",
+        "clip": {
+          "element": ".el-dialog:visible",
+          "pad": 0
+        }
+      }
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "^Cancel$"
+      }
+    },
+    {
+      "admin": "/collections/edit/1"
+    },
+    {
+      "css": ".el-message, .el-notification { display: none !important; }"
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Add Products"
+      }
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": {
+        "text": "Sample Standing Desk"
+      }
+    },
+    {
+      "click": {
+        "text": "Sample Ergonomic Chair"
+      }
+    },
+    {
+      "click": {
+        "text": "Sample LED Desk Lamp"
+      }
+    },
+    {
+      "shot": {
+        "name": "add-products-dialog",
+        "clip": {
+          "element": ".el-dialog:visible",
+          "pad": 0
+        }
+      }
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "^Add 3 products$"
+      }
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "shot": {
+        "name": "reorder-and-remove-products",
+        "clip": {
+          "element": ".azp-collection-editor__body .el-col",
+          "pad": 8
+        }
+      }
+    },
+    {
+      "viewport": {
+        "height": 2300
+      }
+    },
+    {
+      "shot": {
+        "name": "collection-settings",
+        "clip": {
+          "element": ".azp-collection-editor__body .el-col:nth-child(2)",
+          "pad": 8
+        }
+      }
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Save Changes"
+      }
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "admin": "/collections"
+    },
+    {
+      "css": ".el-message, .el-notification { display: none !important; }"
+    },
+    {
+      "shot": {
+        "name": "collections-list",
+        "clip": {
+          "x": 170,
+          "y": 110,
+          "width": 1420,
+          "height": 340
+        }
+      }
+    }
+  ]
+}
