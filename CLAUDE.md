@@ -3,6 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 > Source folder is `docs/`. It is served at `/guide/...` through `rewrites` in `.vitepress/config.js`. Page/nav/sidebar links stay `/guide/<section>/<slug>`. Image paths in markdown use `/docs/public/images/...`.
+> Before changing paths, config or the featured-image generator, read `.claude/notes/docs-folder-rewrite.md` (what must stay in sync, how to verify, how to roll back).
 
 ---
 
