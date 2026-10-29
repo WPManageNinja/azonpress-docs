@@ -1,8 +1,8 @@
 ---
 name: azonpress-changelog
-description: 'Add or maintain a release entry in the AzonPress docs changelog (guide/changelog.md). Prepends a new reverse-chronological version section using the site''s exact ::: code-group format with 🆕 New Features / 🔧 Improvements / 🗑️ Removed / 🐛 Bug fixes tabs, rewriting raw release notes or git history into user-facing language. USE FOR: write a changelog entry, update the changelog, add release notes, document version X, we shipped a new release. DO NOT USE FOR: writing or updating feature guides (use azonpress-add-doc or azonpress-edit-doc), or site-wide checks (use azonpress-audit-docs).'
+description: 'Add or maintain a release entry in the AzonPress docs changelog (docs/changelog.md). Prepends a new reverse-chronological version section using the site''s exact ::: code-group format with 🆕 New Features / 🔧 Improvements / 🗑️ Removed / 🐛 Bug fixes tabs, rewriting raw release notes or git history into user-facing language. USE FOR: write a changelog entry, update the changelog, add release notes, document version X, we shipped a new release. DO NOT USE FOR: writing or updating feature guides (use azonpress-add-doc or azonpress-edit-doc), or site-wide checks (use azonpress-audit-docs).'
 license: MIT
-compatibility: 'Operates on guide/changelog.md in the azonpress-docs VitePress site. Uses VitePress ::: code-group containers with md-fenced tabs. Requires Node + npm to run docs:build.'
+compatibility: 'Operates on docs/changelog.md in the azonpress-docs VitePress site. Uses VitePress ::: code-group containers with md-fenced tabs. Requires Node + npm to run docs:build.'
 metadata:
   project: azonpress-docs
   canonical-rules: CLAUDE.md
@@ -10,13 +10,13 @@ metadata:
 
 # AzonPress Changelog Entry
 
-Add a release to `guide/changelog.md`, newest first, in the site's established format.
+Add a release to `docs/changelog.md`, newest first, in the site's established format.
 
 ---
 
 ## Agent Behavior Rules
 
-1. **DO** read the existing top entry in `guide/changelog.md` before writing, and copy its exact
+1. **DO** read the existing top entry in `docs/changelog.md` before writing, and copy its exact
    structure — spacing, emoji, and tab order included.
 2. **DO** write from the **user's** point of view: what changed for someone using the plugin, not
    what changed in the code. "Fixed lowercase ASINs not resolving", not "normalize ASIN casing in
@@ -64,12 +64,12 @@ Drop anything users can't perceive. Wait for confirmation.
 
 ## Phase 2: Context
 
-1. Read the top ~45 lines of `guide/changelog.md` — the intro plus the current newest release.
+1. Read the top ~45 lines of `docs/changelog.md` — the intro plus the current newest release.
 2. Note the exact format of the previous entry and mirror it.
 3. If the release removes or changes a documented feature, grep for it so you can name the
    affected guide pages in your report:
    ```
-   grep -rln '<feature term>' --include='*.md' guide
+   grep -rln '<feature term>' --include='*.md' docs
    ```
 
 ---
@@ -81,7 +81,7 @@ Drop anything users can't perceive. Wait for confirmation.
              Keep lines short — one clause, no sub-bullets.
 
 2. INSERT  - Prepend the new section directly under the intro paragraph
-             of guide/changelog.md, above the previous release heading.
+             of docs/changelog.md, above the previous release heading.
              Use the exact template below. Omit empty tabs.
 
 3. BUILD   - npm run docs:build ; confirm the code-group renders and the build is clean.

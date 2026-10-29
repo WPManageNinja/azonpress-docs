@@ -1,5 +1,5 @@
 {
-  "outDir": "guide/public/images/miscellaneous/other-settings",
+  "outDir": "docs/public/images/miscellaneous/other-settings",
   "viewport": { "width": 1600, "height": 1100 },
   "steps": [
     { "admin": "/settings/other_settings" },

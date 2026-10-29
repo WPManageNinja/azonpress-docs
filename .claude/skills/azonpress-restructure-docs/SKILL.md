@@ -2,7 +2,7 @@
 name: azonpress-restructure-docs
 description: 'Perform STRUCTURAL operations on the AzonPress docs while protecting URL and reference integrity: rename a page (change its slug/URL), move a page to another section, delete a page, merge two pages, or reorder the sidebar. Always rewrites inbound links, moves the screenshot folder, and updates the sidebar in .vitepress/config.js. USE FOR: rename this doc, change the slug, change the URL of, move X to another section, delete this page, remove this doc, merge these two docs, reorder the sidebar, change the order of pages, reorganize the docs. DO NOT USE FOR: content or wording edits (use azonpress-edit-doc), creating a brand-new page (use azonpress-add-doc), or read-only checks (use azonpress-audit-docs).'
 license: MIT
-compatibility: 'VitePress 1.6 repo with NO rewrites — guide/<section>/<slug>.md maps directly to /guide/<section>/<slug>, so the section folder IS part of the public URL and any move is a breaking URL change. Sidebar is a manual array at themeConfig.sidebar["/guide/"] in .vitepress/config.js. Screenshots at guide/public/images/<section>/<slug>/. Requires git, Node + npm.'
+compatibility: 'VitePress 1.6 repo whose only rewrite is docs/ -> guide/ — docs/<section>/<slug>.md is served at /guide/<section>/<slug>, so the section folder IS part of the public URL and any move is a breaking URL change. Sidebar is a manual array at themeConfig.sidebar["/guide/"] in .vitepress/config.js. Screenshots at docs/public/images/<section>/<slug>/. Requires git, Node + npm.'
 metadata:
   project: azonpress-docs
   canonical-rules: CLAUDE.md
@@ -17,8 +17,8 @@ Canonical conventions live in `CLAUDE.md`; this skill is the *procedure*.
 
 ## ⚠️ The core risk
 
-This site has **no `rewrites` map**. `guide/<section>/<slug>.md` is served at
-`/guide/<section>/<slug>`, literally. That means:
+This site's only `rewrites` rule swaps the leading `docs` for `guide`. `docs/<section>/<slug>.md` is served at
+`/guide/<section>/<slug>`, so the section and slug are still literal. That means:
 
 - Renaming a slug **changes the live URL**.
 - Moving a page to another section **changes the live URL**.
@@ -34,7 +34,7 @@ So a URL change is a product decision, not a cleanup — get it confirmed explic
 1. **DO** state the old and new public URL side by side and get explicit confirmation before any
    rename or move.
 2. **DO** use `git mv` for file and folder moves so history is preserved.
-3. **DO** rewrite **every** inbound reference across `guide/` and `index.md` — including the
+3. **DO** rewrite **every** inbound reference across `docs/` and `index.md` — including the
    homepage feature cards, which link deep into the guide.
 4. **DO** move the page's screenshot folder alongside it, and update every image ref inside the
    page to the new path.
@@ -68,16 +68,16 @@ Record `OPERATION`.
 
 Resolve every affected file:
 ```
-find guide -name '<slug>.md' -not -path '*/public/*'
+find docs -name '<slug>.md' -not -path '*/public/*'
 ```
 Record `SOURCE_PATH`, and `DEST_PATH` where applicable.
 
 ### 1.3 Impact survey (always run before confirming)
 
 ```
-Inbound links:   grep -rn '/guide/<section>/<slug>' --include='*.md' guide index.md
+Inbound links:   grep -rn '/guide/<section>/<slug>' --include='*.md' docs index.md
 Sidebar entry:   grep -n '/guide/<section>/<slug>' .vitepress/config.js
-Image folder:    grep -oE '/guide/public/images/[^)]*' <SOURCE_PATH> | sed 's|/[^/]*$||' | sort -u
+Image folder:    grep -oE '/docs/public/images/[^)]*' <SOURCE_PATH> | sed 's|/[^/]*$||' | sort -u
 ```
 
 Record `INBOUND_COUNT` and `IMAGE_DIR`.
@@ -102,10 +102,10 @@ Wait for explicit confirmation.
 
 ### A. RENAME (same section, new slug)
 ```
-1. git mv guide/<SECTION>/<OLD>.md guide/<SECTION>/<NEW>.md
-2. git mv guide/public/images/<SECTION>/<OLD>/ guide/public/images/<SECTION>/<NEW>/   (if it exists)
+1. git mv docs/<SECTION>/<OLD>.md docs/<SECTION>/<NEW>.md
+2. git mv docs/public/images/<SECTION>/<OLD>/ docs/public/images/<SECTION>/<NEW>/   (if it exists)
 3. Update image refs inside the page to the new folder path
-4. Rewrite inbound links in guide/ and index.md: /guide/<SECTION>/<OLD> → /guide/<SECTION>/<NEW>
+4. Rewrite inbound links in docs/ and index.md: /guide/<SECTION>/<OLD> → /guide/<SECTION>/<NEW>
 5. Update sidebar `link` (and `text` if the title changed) in .vitepress/config.js
 6. Update frontmatter title / title_tag if the title changed
 ```
@@ -147,7 +147,7 @@ Also move the sidebar entry into the destination GROUP's items array — ask whe
 
 ```
 1. BUILD      - npm run docs:build   (must be clean)
-2. RESIDUE    - grep -rn '<OLD_SLUG>' --include='*.md' guide index.md .vitepress/config.js
+2. RESIDUE    - grep -rn '<OLD_SLUG>' --include='*.md' docs index.md .vitepress/config.js
                 Must return nothing (except intentional prose mentions).
 3. SIDEBAR    - Re-read the changed group; confirm valid JS and correct order.
 4. HOMEPAGE   - grep -n '<OLD_SLUG>' index.md   → must be clean.
@@ -169,28 +169,28 @@ Report:
 
 ### Locate everything for a page
 ```
-File:          find guide -name '<slug>.md' -not -path '*/public/*'
-Inbound:       grep -rn '/guide/<section>/<slug>' --include='*.md' guide index.md
+File:          find docs -name '<slug>.md' -not -path '*/public/*'
+Inbound:       grep -rn '/guide/<section>/<slug>' --include='*.md' docs index.md
 Sidebar:       grep -n '<slug>' .vitepress/config.js
-Images:        grep -oE '/guide/public/images/[^)]*' <file> | sed 's|/[^/]*$||' | sort -u
+Images:        grep -oE '/docs/public/images/[^)]*' <file> | sed 's|/[^/]*$||' | sort -u
 Homepage card: grep -n '<slug>' index.md
 ```
 
 ### Sections and sidebar groups
 ```
-guide/getting-started/             → 'Getting Started'
-guide/configuring-amazon-api/      → 'Configuring Amazon API'
-guide/product-tables-module/       → 'Product Tables'
-guide/amazon-comparison-tables/    → 'Comparison Tables'
-guide/available-products-templates/→ 'Product Templates'
-guide/custom-product/              → 'Custom Products'
-guide/reports/                     → 'Reports'
-guide/miscellaneous/               → 'Miscellaneous'
-guide/support/                     → 'Support'
+docs/getting-started/             → 'Getting Started'
+docs/configuring-amazon-api/      → 'Configuring Amazon API'
+docs/product-tables-module/       → 'Product Tables'
+docs/amazon-comparison-tables/    → 'Comparison Tables'
+docs/available-products-templates/→ 'Product Templates'
+docs/custom-product/              → 'Custom Products'
+docs/reports/                     → 'Reports'
+docs/miscellaneous/               → 'Miscellaneous'
+docs/support/                     → 'Support'
 ```
 
 ### Key Principles
-1. **No rewrites means every move is a breaking URL change** — confirm, don't assume.
+1. **The rewrite only swaps `docs`→`guide`, so every move is still a breaking URL change** — confirm, don't assume.
 2. **`git mv`, never `mv`** — keep the history.
 3. **Rewrite inbound links before deleting anything.**
 4. **The homepage links into the guide too.**

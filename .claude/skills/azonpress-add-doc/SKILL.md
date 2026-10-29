@@ -2,7 +2,7 @@
 name: azonpress-add-doc
 description: 'Create a NEW AzonPress documentation page in this VitePress site: place it in the right section folder, write frontmatter and body to house style, create its screenshot folder, wire it into the sidebar in .vitepress/config.js, and verify with docs:build. Also handles converting pasted HTML or draft markdown into a clean doc page. USE FOR: add a doc, write a new doc page, create a doc for X, document this feature, new documentation page, add a page to the sidebar, turn this draft into a doc, import this article. DO NOT USE FOR: editing an existing page (use azonpress-edit-doc), renaming/moving/deleting a page or reordering the sidebar (use azonpress-restructure-docs), release notes (use azonpress-changelog), screenshots on an existing page (use azonpress-manage-images), or site-wide checks (use azonpress-audit-docs).'
 license: MIT
-compatibility: 'VitePress 1.6 repo using guide/<section>/<slug>.md layout with NO rewrites — the section folder is part of the public URL. Sidebar is a manual array at themeConfig.sidebar["/guide/"] in .vitepress/config.js (plain JS, not .mts). Screenshots live at guide/public/images/<section>/<slug>/. Requires Node + npm.'
+compatibility: 'VitePress 1.6 repo using docs/<section>/<slug>.md layout, served at /guide/<section>/<slug> through a single docs->guide rewrite — the section folder is part of the public URL. Sidebar is a manual array at themeConfig.sidebar["/guide/"] in .vitepress/config.js (plain JS, not .mts). Screenshots live at docs/public/images/<section>/<slug>/. Requires Node + npm.'
 metadata:
   project: azonpress-docs
   canonical-rules: CLAUDE.md
@@ -18,12 +18,12 @@ this skill is the *procedure*.
 ## Agent Behavior Rules
 
 1. **DO** confirm the section folder with the user before creating anything — the folder is part
-   of the permanent public URL (`/guide/<section>/<slug>`) and there are no rewrites to hide it.
+   of the permanent public URL (`/guide/<section>/<slug>`) and the rewrite only swaps `docs` for `guide`, it does not hide the section.
 2. **DO** add the page to `themeConfig.sidebar['/guide/']` in `.vitepress/config.js`. This is the
    step that is silently skippable: **a missing sidebar entry never fails the build**, it just
    ships an invisible page.
 3. **DO** write all three frontmatter keys: `title`, `title_tag`, `meta_description`.
-4. **DO** reference images with the full on-disk path `/guide/public/images/<section>/<slug>/<name>.webp`.
+4. **DO** reference images with the full on-disk path `/docs/public/images/<section>/<slug>/<name>.webp`.
    Never shorten to `/images/...` and never use relative `./` paths.
 5. **DO** cross-link the new page from at least one existing related page, so it isn't an orphan.
 6. **DO** end on a clean `npm run docs:build`.
@@ -48,15 +48,15 @@ Record `TOPIC` and `SOURCE`.
 > **Which section does it belong to?**
 
 ```
-Getting Started            → guide/getting-started/
-Configuring Amazon API     → guide/configuring-amazon-api/
-Product Tables             → guide/product-tables-module/
-Comparison Tables          → guide/amazon-comparison-tables/
-Product Templates          → guide/available-products-templates/
-Custom Products            → guide/custom-product/
-Reports                    → guide/reports/
-Miscellaneous              → guide/miscellaneous/
-Support                    → guide/support/
+Getting Started            → docs/getting-started/
+Configuring Amazon API     → docs/configuring-amazon-api/
+Product Tables             → docs/product-tables-module/
+Comparison Tables          → docs/amazon-comparison-tables/
+Product Templates          → docs/available-products-templates/
+Custom Products            → docs/custom-product/
+Reports                    → docs/reports/
+Miscellaneous              → docs/miscellaneous/
+Support                    → docs/support/
 ```
 
 Record `SECTION` (folder) and `GROUP` (sidebar group title).
@@ -67,7 +67,7 @@ can be long (`how-to-create-an-amazon-product-table`) — match that register.
 
 Verify the slug is free:
 ```
-ls guide/<SECTION>/<SLUG>.md 2>/dev/null && echo "TAKEN"
+ls docs/<SECTION>/<SLUG>.md 2>/dev/null && echo "TAKEN"
 ```
 
 ### 1.4 Position and images
@@ -80,7 +80,7 @@ Record `POSITION` and `HAS_IMAGES`.
 
 | Parameter | Value |
 | --- | --- |
-| File | `guide/<SECTION>/<SLUG>.md` |
+| File | `docs/<SECTION>/<SLUG>.md` |
 | Public URL | `/guide/<SECTION>/<SLUG>` |
 | Sidebar group | `<GROUP>` |
 | Sidebar text | ... |
@@ -104,14 +104,14 @@ Wait for confirmation.
 ## Phase 3: Procedure
 
 ```
-1. FILE      - Write guide/<SECTION>/<SLUG>.md
+1. FILE      - Write docs/<SECTION>/<SLUG>.md
                Frontmatter: title, title_tag, meta_description (see Quick Reference)
                Body: single # H1 matching title, then ## sections
                Bold every UI label exactly as it appears in the plugin: **Save Changes**
                Numbered lists for sequential steps, bullets for options
                Close with a one-line wrap-up sentence
 
-2. IMAGES    - If HAS_IMAGES: create guide/public/images/<SECTION>/<SLUG>/
+2. IMAGES    - If HAS_IMAGES: create docs/public/images/<SECTION>/<SLUG>/
                Place .webp screenshots there
                Reference each directly after the step it illustrates, with real alt text
                (If the user has no screenshots yet, leave the folder out — this repo does
@@ -132,7 +132,7 @@ Wait for confirmation.
 ## Phase 4: Verify & Report
 
 Confirm and report:
-- File created: `guide/<SECTION>/<SLUG>.md`
+- File created: `docs/<SECTION>/<SLUG>.md`
 - Public URL: `/guide/<SECTION>/<SLUG>`
 - Sidebar entry added under `<GROUP>` — quote the exact line
 - Image folder created + count of screenshots (or: none yet, and which steps need them)
@@ -158,7 +158,7 @@ meta_description: "<Benefit-led, ~150-160 chars, closing with a short call to ac
 ### Formats
 ```
 Cross-link:  [Text](/guide/<section>/<slug>)
-Image ref:   ![Alt](/guide/public/images/<section>/<slug>/<name>.webp)
+Image ref:   ![Alt](/docs/public/images/<section>/<slug>/<name>.webp)
 Bold label:  **Save Changes**        (no inner spaces)
 Callout:     > **Note**, <sentence>
              > **Remember**, <sentence>
@@ -173,13 +173,13 @@ Sidebar `text` is a shortened form of the H1, not a copy of it.
 ### Locate
 ```
 Sidebar group:  grep -n "text: '<GROUP>'" .vitepress/config.js
-Sibling pages:  ls guide/<SECTION>/
-Slug collision: ls guide/<SECTION>/<SLUG>.md
+Sibling pages:  ls docs/<SECTION>/
+Slug collision: ls docs/<SECTION>/<SLUG>.md
 ```
 
 ### Key Principles
 1. **The section folder is the URL** — get it right the first time.
 2. **Sidebar or invisible** — the build will not remind you.
-3. **Full image paths** — `/guide/public/images/...`, always.
+3. **Full image paths** — `/docs/public/images/...`, always.
 4. **Match the neighbouring page**, not a sibling repo.
 5. **Green build or it's not done.**

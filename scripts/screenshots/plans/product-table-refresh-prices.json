@@ -1,5 +1,5 @@
 {
-  "outDir": "guide/public/images/product-tables-module/customization-of-product-tables",
+  "outDir": "docs/public/images/product-tables-module/customization-of-product-tables",
   "viewport": { "width": 1600, "height": 1000 },
   "steps": [
     { "admin": "/product_tables" },

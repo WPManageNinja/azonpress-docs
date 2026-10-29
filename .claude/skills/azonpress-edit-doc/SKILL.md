@@ -2,7 +2,7 @@
 name: azonpress-edit-doc
 description: 'Edit the CONTENT of an EXISTING AzonPress documentation page in place — same slug, same folder, same URL — while preserving every site convention. Handles rewording, adding or removing sections, updating steps for a new plugin version, and swapping screenshots. USE FOR: edit the X doc, update the wording on, add a section to, rewrite this page, this doc is out of date, fix an error in the doc, expand the X guide, update the doc for the new release. DO NOT USE FOR: creating a new page (use azonpress-add-doc), renaming a slug / moving between sections / deleting / reordering the sidebar (use azonpress-restructure-docs), release notes (use azonpress-changelog), or site-wide checks (use azonpress-audit-docs).'
 license: MIT
-compatibility: 'VitePress 1.6 repo using guide/<section>/<slug>.md layout with NO rewrites. Sidebar is a manual array at themeConfig.sidebar["/guide/"] in .vitepress/config.js (plain JS). Screenshots live at guide/public/images/<section>/<slug>/ — note that folder names do not always match the page slug. Requires Node + npm.'
+compatibility: 'VitePress 1.6 repo using docs/<section>/<slug>.md layout, served at /guide/<section>/<slug> through a single docs->guide rewrite. Sidebar is a manual array at themeConfig.sidebar["/guide/"] in .vitepress/config.js (plain JS). Screenshots live at docs/public/images/<section>/<slug>/ — note that folder names do not always match the page slug. Requires Node + npm.'
 metadata:
   project: azonpress-docs
   canonical-rules: CLAUDE.md
@@ -46,7 +46,7 @@ the same. Canonical conventions live in `CLAUDE.md`; this skill is the *procedur
 
 Resolve to a file:
 ```
-find guide -name '<slug>.md' -not -path '*/public/*'
+find docs -name '<slug>.md' -not -path '*/public/*'
 ```
 If ambiguous or not found, ask. Record `TARGET_PATH`, `SLUG`, `SECTION`.
 
@@ -79,7 +79,7 @@ Wait for confirmation.
 2. Read `CLAUDE.md` for conventions.
 3. Resolve the page's actual image folder:
    ```
-   grep -oE '/guide/public/images/[^)]*' <TARGET_PATH> | sed 's|/[^/]*$||' | sort -u
+   grep -oE '/docs/public/images/[^)]*' <TARGET_PATH> | sed 's|/[^/]*$||' | sort -u
    ```
 4. If `TITLE_CHANGES`: locate the sidebar entry
    ```
@@ -101,7 +101,7 @@ Wait for confirmation.
 
 2. IMAGES    - If TOUCHES_IMAGES: add/replace .webp files in the page's REAL image folder
                (resolved in Phase 2, step 3 — not a guessed path).
-               Update ![alt](/guide/public/images/<section>/<folder>/<file>.webp) refs.
+               Update ![alt](/docs/public/images/<section>/<folder>/<file>.webp) refs.
                Remove refs for any file you deleted.
 
 3. META      - If TITLE_CHANGES: update frontmatter `title` to match the new H1.
@@ -130,16 +130,16 @@ Report:
 
 ### Locate
 ```
-File by slug:    find guide -name '<slug>.md' -not -path '*/public/*'
-Its image dir:   grep -oE '/guide/public/images/[^)]*' <file> | sed 's|/[^/]*$||' | sort -u
+File by slug:    find docs -name '<slug>.md' -not -path '*/public/*'
+Its image dir:   grep -oE '/docs/public/images/[^)]*' <file> | sed 's|/[^/]*$||' | sort -u
 Sidebar entry:   grep -n '/guide/<section>/<slug>' .vitepress/config.js
-Inbound links:   grep -rn '/guide/<section>/<slug>' --include='*.md' guide index.md
+Inbound links:   grep -rn '/guide/<section>/<slug>' --include='*.md' docs index.md
 ```
 
 ### Formats (unchanged from site rules)
 ```
 Cross-link:  [Text](/guide/<section>/<slug>)            (full path — never relative)
-Image ref:   ![Alt](/guide/public/images/<section>/<folder>/<name>.webp)
+Image ref:   ![Alt](/docs/public/images/<section>/<folder>/<name>.webp)
 Bold label:  **Save Changes**                           (no inner spaces)
 Callout:     > **Note**, <sentence>
              > **Remember**, <sentence>

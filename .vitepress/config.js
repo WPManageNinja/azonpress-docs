@@ -12,7 +12,7 @@ const SITE_URL = 'https://docs.azonpress.com'
  * Per-page link-preview cards.
  *
  * `scripts/generate-featured-images.mjs` renders a branded 1200x630 PNG carrying each
- * page's own title into `guide/public/images/featured/`, served at `/images/featured/`.
+ * page's own title into `docs/public/images/featured/`, served at `/images/featured/`.
  *
  * NAMING RULE — kept in sync with that script's cardNameFor(): the card is the page's
  * served path (i.e. `pageData.relativePath`, which VitePress has already passed through
@@ -23,7 +23,7 @@ const SITE_URL = 'https://docs.azonpress.com'
  * also emits — so a shared link is never left with no preview at all. The URL must be
  * absolute: relative paths are ignored by Slack/X/LinkedIn/Facebook scrapers.
  */
-const FEATURED_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'guide', 'public', 'images', 'featured')
+const FEATURED_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'docs', 'public', 'images', 'featured')
 
 function featuredImageFor(relativePath) {
   const name = `${relativePath.replace(/\.md$/, '').replace(/\//g, '--')}.png`
@@ -35,13 +35,19 @@ export default defineConfig({
   title: 'AzonPress Docs',
   description: 'Everything you need to integrate Amazon products into your WordPress site',
   cleanUrls: true,
+  // Source lives in docs/, but every page is still served at /guide/... so no public
+  // URL changed. `pageData.relativePath` is the REWRITTEN path (guide/...);
+  // `pageData.filePath` is the source (docs/...).
+  rewrites: {
+    'docs/:rest*': 'guide/:rest*'
+  },
   // Repo-level docs must not become site routes (/readme, /claude).
   srcExclude: ['README.md', 'CLAUDE.md', '.claude/**/*.md'],
   vite: {
-    // Keep existing docs media under guide/public available as static assets.
-    publicDir: 'guide/public'
+    // Keep existing docs media under docs/public available as static assets.
+    publicDir: 'docs/public'
   },
-  // Screenshots are written as on-disk paths (/guide/public/images/...) which only
+  // Screenshots are written as on-disk paths (/docs/public/images/...) which only
   // resolve because Vite hashes and bundles them into /assets/. The zoom plugin hands
   // that path to <ZoomableImage> as a plain string prop, which Vite would NOT process —
   // every image would 404 in production. Listing the component here puts its `src` back

@@ -51,7 +51,7 @@ npm run docs:preview
 ├── .vitepress/
 │   ├── config.js                     # Nav, sidebar, markdown rules — single source of truth
 │   └── theme/                        # Brand CSS, custom layout, feedback widget
-├── guide/                            # All documentation content (Markdown)
+├── docs/                            # All documentation content (Markdown)
 │   ├── getting-started/
 │   ├── configuring-amazon-api/
 │   ├── product-tables-module/
@@ -72,7 +72,7 @@ npm run docs:preview
 
 ## Writing Conventions
 
-A page lives at `guide/<section>/<slug>.md` and is served at `/guide/<section>/<slug>`. The section folder is part of the public URL, so moving a page changes its live link.
+A page lives at `docs/<section>/<slug>.md` and is served at `/guide/<section>/<slug>`. The section folder is part of the public URL, so moving a page changes its live link.
 
 Every page starts with frontmatter:
 
@@ -84,10 +84,10 @@ meta_description: "A benefit-led summary of roughly 150–160 characters."
 ---
 ```
 
-Screenshots are `.webp`, stored in `guide/public/images/<section>/<slug>/`, and referenced with the full root-relative path:
+Screenshots are `.webp`, stored in `docs/public/images/<section>/<slug>/`, and referenced with the full root-relative path:
 
 ```md
-![Descriptive alt text](/guide/public/images/reports/geo-location-report/geo-map.webp)
+![Descriptive alt text](/docs/public/images/reports/geo-location-report/geo-map.webp)
 ```
 
 **Adding a page requires adding it to the sidebar** in `.vitepress/config.js` — VitePress does not generate navigation from the filesystem, and a missing entry will not fail the build.
@@ -97,7 +97,7 @@ See [`CLAUDE.md`](./CLAUDE.md) for the complete conventions reference, including
 ## Contributing
 
 1. Create a branch from `master`.
-2. Make your changes under `guide/`.
+2. Make your changes under `docs/`.
 3. Add any new page to the sidebar in `.vitepress/config.js`.
 4. Run `npm run docs:dev` to preview, then `npm run docs:build` to verify.
 5. Open a pull request.
@@ -111,7 +111,7 @@ See [`CLAUDE.md`](./CLAUDE.md) for the complete conventions reference, including
 
 ## Featured (social-share) images
 
-Every page has its own link-preview card — the image Slack, X, LinkedIn and Facebook show when a docs URL is shared. Cards are **generated, not designed by hand**: `scripts/generate-featured-images.mjs` renders a branded 1200×630 PNG carrying the page's title and section into `guide/public/images/featured/`, and the VitePress config (`featuredImageFor()`) points each page's `og:image` / `twitter:image` at it. A page with no card falls back to `default.png`.
+Every page has its own link-preview card — the image Slack, X, LinkedIn and Facebook show when a docs URL is shared. Cards are **generated, not designed by hand**: `scripts/generate-featured-images.mjs` renders a branded 1200×630 PNG carrying the page's title and section into `docs/public/images/featured/`, and the VitePress config (`featuredImageFor()`) points each page's `og:image` / `twitter:image` at it. A page with no card falls back to `default.png`.
 
 ```bash
 npm run featured:generate     # render cards for pages that don't have one yet (idempotent)

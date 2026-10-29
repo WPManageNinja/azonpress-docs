@@ -2,15 +2,17 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+> Source folder is `docs/`. It is served at `/guide/...` through `rewrites` in `.vitepress/config.js`. Page/nav/sidebar links stay `/guide/<section>/<slug>`. Image paths in markdown use `/docs/public/images/...`.
+
 ---
 
 ## Repository overview
 
 This is the **end-user documentation site** for **AzonPress** — a WordPress affiliate-marketing plugin by WPManageNinja that pulls Amazon product data into product tables, comparison tables, and templates. The site is built with [VitePress](https://vitepress.dev/) v1.6 (Vue 3).
 
-> **You are editing user-facing documentation, not plugin source code.** All content lives under `guide/` as Markdown. The currently documented release is **AzonPress v2.3.2** (adds Product collections). The previous major change, **v2.3.0** (July 21, 2026), moved from the Amazon Product Advertising API (PA-API) to the **Amazon Creators API**.
+> **You are editing user-facing documentation, not plugin source code.** All content lives under `docs/` as Markdown. The currently documented release is **AzonPress v2.3.2** (adds Product collections). The previous major change, **v2.3.0** (July 21, 2026), moved from the Amazon Product Advertising API (PA-API) to the **Amazon Creators API**.
 
-This repo is one of ~20 sibling VitePress doc sites under `WPManageNinja-Docs/`. Conventions here are close to, but **not identical to**, its siblings — do not copy patterns from a sibling repo without checking them against this file (notably: this repo uses plain `config.js`, has **no** `rewrites`, and resolves images differently).
+This repo is one of ~20 sibling VitePress doc sites under `WPManageNinja-Docs/`. Conventions here are close to, but **not identical to**, its siblings — do not copy patterns from a sibling repo without checking them against this file (notably: this repo uses plain `config.js`, has a single `rewrites` rule (`docs/` → `guide/`), and resolves images differently).
 
 ---
 
@@ -54,7 +56,7 @@ npm run shots -- scripts/screenshots/plans/<plan>.json   # Capture screenshots �
 │   ├── cache/                    # Build cache (gitignored)
 │   └── dist/                     # Build output (gitignored; may be stale — never authoritative)
 │
-├── guide/                        # ALL documentation content
+├── docs/                         # ALL documentation content (served at /guide/ via rewrites)
 │   ├── changelog.md              # Release notes (linked from top nav)
 │   ├── getting-started/          # Introduction, install, dashboard, glossary
 │   ├── configuring-amazon-api/   # API credentials, configuration, geo tracking
@@ -71,7 +73,7 @@ npm run shots -- scripts/screenshots/plans/<plan>.json   # Capture screenshots �
 │           ├── brand/            #   Logos + hero banner → /images/brand/...
 │           └── <section>/<slug>/ #   Per-page screenshots (.webp)
 │
-└── public/                       # ⚠️ DEAD — publicDir is overridden to guide/public.
+└── public/                       # ⚠️ DEAD — publicDir is overridden to docs/public.
                                   #   Files here are NOT served. Do not add assets here.
 ```
 
@@ -81,9 +83,9 @@ There are **31 content pages** across 9 sidebar sections, plus the homepage. Sec
 
 ## Architecture decisions to be aware of
 
-### URLs are literal file paths — there are no rewrites
+### Source folder is `docs/`, public URLs stay `/guide/...` (via `rewrites`)
 
-`guide/<section>/<slug>.md` is served at `/guide/<section>/<slug>` (`cleanUrls: true` strips `.html`).
+`docs/<section>/<slug>.md` is served at `/guide/<section>/<slug>` (`cleanUrls: true` strips `.html`). `config.js` has one rule, `rewrites: { 'docs/:rest*': 'guide/:rest*' }`, so the folder name on disk and the URL prefix differ on purpose. In page hooks, `pageData.relativePath` is the rewritten path (`guide/...`) and `pageData.filePath` is the source (`docs/...`). Do not rename the URL prefix: it would break every inbound link.
 
 **The section folder is part of the public URL.** Moving a page between sections changes its live URL and breaks external inbound links and SEO. Treat cross-section moves as a deliberate, confirmed decision — see the `azonpress-restructure-docs` skill.
 
@@ -101,22 +103,22 @@ This is the single most confusing thing in the repo. Both forms work, for differ
 
 | Use | Path form | How it resolves |
 | --- | --- | --- |
-| **Screenshots in Markdown** | `/guide/public/images/<section>/<slug>/<name>.webp` | Vite treats a leading `/` as **project-root relative**, finds the real file on disk, and bundles it into `/assets/<name>.<hash>.webp` |
-| **Brand assets in `config.js`** | `/images/brand/<name>.png`, `/favicon.png` | Served straight through by `publicDir: 'guide/public'` |
+| **Screenshots in Markdown** | `/docs/public/images/<section>/<slug>/<name>.webp` | Vite treats a leading `/` as **project-root relative**, finds the real file on disk, and bundles it into `/assets/<name>.<hash>.webp` |
+| **Brand assets in `config.js`** | `/images/brand/<name>.png`, `/favicon.png` | Served straight through by `publicDir: 'docs/public'` |
 
-So in Markdown, **always write the full on-disk path** including `guide/public`:
+So in Markdown, **always write the full on-disk path** including `docs/public`:
 
 ```md
-![Alt text](/guide/public/images/reports/geo-location-report/geo-map.webp)
+![Alt text](/docs/public/images/reports/geo-location-report/geo-map.webp)
 ```
 
 Do not "simplify" it to `/images/...` — that skips content hashing and cache-busting. All 125 existing image references use the full form. Never use relative (`./`) image paths.
 
-Screenshots are **`.webp`**, stored one folder per page: `guide/public/images/<section>/<slug>/`. There are no `.gitkeep` files in this repo; empty folders simply aren't tracked.
+Screenshots are **`.webp`**, stored one folder per page: `docs/public/images/<section>/<slug>/`. There are no `.gitkeep` files in this repo; empty folders simply aren't tracked.
 
 ### Image zoom — and the one edit that silently breaks every image
 
-Every markdown image is click-to-zoom. Authors write plain markdown (`![Alt](/guide/public/…)`)
+Every markdown image is click-to-zoom. Authors write plain markdown (`![Alt](/docs/public/…)`)
 and get it automatically — there is nothing to opt into. Three files implement it:
 
 | File | Role |
@@ -126,8 +128,8 @@ and get it automatically — there is nothing to opt into. Three files implement
 | `.vitepress/config.js` | `md.use(zoomablePlugin)` **and** the `vue.template.transformAssetUrls` block |
 
 **The trap.** `<ZoomableImage>` receives `src` as a plain string prop, and a string prop does not
-go through Vite's asset pipeline. This site's image paths (`/guide/public/images/…`) are on-disk
-paths, *not* URLs — `/guide/public/` does not exist in `dist/`, so an untransformed path 404s.
+go through Vite's asset pipeline. This site's image paths (`/docs/public/images/…`) are on-disk
+paths, *not* URLs — `/docs/public/` does not exist in `dist/`, so an untransformed path 404s.
 That is why `config.js` lists `ZoomableImage: ['src']` in `vue.template.transformAssetUrls`: it
 puts the prop back through the same hashing as a plain `<img src>`, producing
 `/assets/<name>.<hash>.webp`.
@@ -247,7 +249,7 @@ This repo does **not** use VitePress `::: tip` / `::: warning` containers in bod
 > **Remember**, you need to configure your MaxMind API key first.
 ```
 
-`::: code-group` **is** used — but only in `guide/changelog.md`. Match what neighbouring pages do rather than introducing new container types.
+`::: code-group` **is** used — but only in `docs/changelog.md`. Match what neighbouring pages do rather than introducing new container types.
 
 ### Links
 
@@ -261,7 +263,7 @@ AzonPress docs currently carry **no** `(Pro)` labels — unlike several sibling 
 
 ### Changelog format
 
-`guide/changelog.md` is reverse-chronological. Each release is:
+`docs/changelog.md` is reverse-chronological. Each release is:
 
 ````md
 ## AzonPress v2.3.0
@@ -296,10 +298,10 @@ Rules: `md` as the fence language inside `code-group`, `•` bullets (not `-`), 
 
 Verified as of the last review — worth knowing before you assume something is broken:
 
-1. **13 orphaned image folders.** Directories under `guide/public/images/<section>/` have no matching `.md` page (e.g. `miscellaneous/api-caching`, `product-tables-module/how-to-create-a-product-table`, `getting-started/how-to-use-azonpress-using-gutenberg-blocks`). They are leftovers from an earlier doc structure. They cost nothing at build time — Vite only bundles referenced files — so **do not bulk-delete them without asking**; some are likely wanted for pages that were merged or are pending a rewrite.
+1. **13 orphaned image folders.** Directories under `docs/public/images/<section>/` have no matching `.md` page (e.g. `miscellaneous/api-caching`, `product-tables-module/how-to-create-a-product-table`, `getting-started/how-to-use-azonpress-using-gutenberg-blocks`). They are leftovers from an earlier doc structure. They cost nothing at build time — Vite only bundles referenced files — so **do not bulk-delete them without asking**; some are likely wanted for pages that were merged or are pending a rewrite.
 2. **Image folder names don't always match the page slug.** `how-to-create-an-amazon-product-table.md` uses images from `.../product-tables-module/how-to-create-a-product-table/`. Locate a page's images by grepping its refs, not by guessing the path from the slug.
 3. **3 pages have no image folder** — `azonpress-glossary`, `click-tracking-and-cloaked-url-analytics`, `how-to-get-support`. These are intentionally text-only.
-4. **The root `public/` directory is dead.** It holds `logo-dark.png` / `logo-light.png` that are never served, because `vite.publicDir` is overridden to `guide/public`. Live logos are in `guide/public/images/brand/`.
+4. **The root `public/` directory is dead.** It holds `logo-dark.png` / `logo-light.png` that are never served, because `vite.publicDir` is overridden to `docs/public`. Live logos are in `docs/public/images/brand/`.
 5. **`.gitignore` has duplicated entries** (`.DS_Store` ×4, `/.vitepress/dist` ×2). Cosmetic.
 6. **A missing sidebar entry never fails the build.** It is the most common way a new page silently ships invisible.
 7. **Deliberately un-embedded videos.** The WPManageNinja channel has AzonPress tutorials from
@@ -319,9 +321,9 @@ Verified as of the last review — worth knowing before you assume something is 
 ## Checklist: adding a new doc page
 
 1. Pick the section folder — remember it becomes part of the public URL.
-2. Create `guide/<section>/<slug>.md` with `title` / `title_tag` / `meta_description` frontmatter and a matching `# H1`.
-3. Create `guide/public/images/<section>/<slug>/` and add `.webp` screenshots.
-4. Reference them as `![Alt](/guide/public/images/<section>/<slug>/<name>.webp)`.
+2. Create `docs/<section>/<slug>.md` with `title` / `title_tag` / `meta_description` frontmatter and a matching `# H1`.
+3. Create `docs/public/images/<section>/<slug>/` and add `.webp` screenshots.
+4. Reference them as `![Alt](/docs/public/images/<section>/<slug>/<name>.webp)`.
 5. **Add the page to `themeConfig.sidebar['/guide/']` in `.vitepress/config.js`**, in the right group and position. Keep the `text` short.
 6. Cross-link from at least one related page so the page isn't an orphan.
 7. Run `npm run docs:build` and confirm it is clean, then spot-check in `npm run docs:dev`.
@@ -339,12 +341,12 @@ Repo-specific skills live in `.claude/skills/`. Prefer them over ad-hoc edits �
 | `azonpress-restructure-docs` | Renaming, moving, merging, deleting pages; reordering the sidebar |
 | `azonpress-manage-images` | Adding, replacing, or auditing screenshots (paths, alt text, orphans) |
 | `azonpress-doc-screenshots` | Capturing and annotating new screenshots from the local AzonPress site with `npm run shots` |
-| `azonpress-changelog` | Adding a release entry to `guide/changelog.md` |
+| `azonpress-changelog` | Adding a release entry to `docs/changelog.md` |
 | `azonpress-audit-docs` | Read-only site-wide quality gate before publishing |
 
 ## Featured (social-share) images
 
-Every page has its own link-preview card — the image Slack, X, LinkedIn and Facebook show when a docs URL is shared. Cards are **generated, not designed by hand**: `scripts/generate-featured-images.mjs` renders a branded 1200×630 PNG carrying the page's title and section into `guide/public/images/featured/`, and the VitePress config (`featuredImageFor()`) points each page's `og:image` / `twitter:image` at it. A page with no card falls back to `default.png`.
+Every page has its own link-preview card — the image Slack, X, LinkedIn and Facebook show when a docs URL is shared. Cards are **generated, not designed by hand**: `scripts/generate-featured-images.mjs` renders a branded 1200×630 PNG carrying the page's title and section into `docs/public/images/featured/`, and the VitePress config (`featuredImageFor()`) points each page's `og:image` / `twitter:image` at it. A page with no card falls back to `default.png`.
 
 ```bash
 npm run featured:generate     # render cards for pages that don't have one yet (idempotent)

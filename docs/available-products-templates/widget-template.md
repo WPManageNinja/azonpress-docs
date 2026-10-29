@@ -1,0 +1,44 @@
+---
+title: "Widget Template"
+title_tag: "Widget Template for Products | Azonpress Documentation"
+meta_description: "Learn how to use AzonPress Widget template to display Amazon products in compact widget layouts. Perfect for sidebars and featured sections!"
+---
+
+# Widget Template
+
+AzonPress offers an advanced feature to **display Amazon products** using the **WordPress Classic Editor**. This article guides you through using the **Widget Template** of **AzonPress** in the **Classic Editor** of **WordPress**.
+
+## Widget Template of AzonPress
+
+You can use the Widget template to symmetrically exhibit your products so that customers can easily conceive the ins and outs of a product.
+
+First, add the **Classic Editor** block on your desired **Page/Post** (e.g., I have added the classic editor to a new post).
+
+Now, to add the **Classic Editor**, click the Gutenberg editor's **Plus (+) icon**.
+
+![Add Classic editor block in a post](/docs/public/images/available-products-templates/widget-template/add-classic-editor-block-in-a-post.webp)
+
+Next, click the **Add Media** option from the **classic editor** bar, and a pop-up window appears with a couple of options.
+
+![Add media option from the classic editor](/docs/public/images/available-products-templates/widget-template/add-media-option-from-the-classic-editor.webp)
+
+Now, press **AzonPress** from the left sidebar and you will get **Product Templates** tabs with various **settings options** for **showcasing** your **Amazon products.**
+
+Here, you will get the **Widget** template under the **Select Layout** option, **enable** the **checkbox** to use this.
+
+>To learn about how to use all the other settings options under Product Templates, read this [Documentation](/guide/getting-started/azonpress-introduction).
+
+
+Once you are done, click the **Insert Shortcode** button and the shortcode will be automatically embedded in your post. Then, **publish** it and your Amazon Products will appear on your site under that post.
+
+If you want to **showcase the same products** in **another post/s**, you can also do it simply by **copying** the **Shortcode** visible **right before** the **Insert Shortcode** button and **pasting** it into the desired post/s.
+
+![Widget Template checkbox](/docs/public/images/available-products-templates/widget-template/widget-template-checkbox.webp)
+
+Here, is the preview of the post where the selected Amazon Products are displayed as a Widget template.
+
+![Preview of Widget template](/docs/public/images/available-products-templates/widget-template/preview-of-widget-template.webp)
+
+
+---
+

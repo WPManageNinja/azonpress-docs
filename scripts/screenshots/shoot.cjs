@@ -6,7 +6,7 @@
 // A plan is JSON:
 // {
 //   "site": "http://localhost:10053",                       (optional; default or AZP_SITE env)
-//   "outDir": "guide/public/images/<section>/<slug>",    (required; created if missing)
+//   "outDir": "docs/public/images/<section>/<slug>",    (required; created if missing)
 //   "viewport": {"width":1600,"height":1100},           (optional, default)
 //   "steps": [ ...see STEP TYPES below... ]
 // }

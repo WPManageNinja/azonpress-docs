@@ -45,14 +45,15 @@ const DEFAULT_TITLE = 'AzonPress Documentation'
 // Paths, relative to the repo root. SRC_DIR_REL mirrors VitePress `srcDir` ('' = repo root);
 // PUBLIC_DIR_REL mirrors the effective publicDir; HOME_REL is the `layout: home` page.
 const SRC_DIR_REL = ''
-const PUBLIC_DIR_REL = 'guide/public'
+const PUBLIC_DIR_REL = 'docs/public'
 const HOME_REL = 'index.md'
 // Folders under SRC_DIR that hold no pages (mirrors `srcExclude` / stray asset folders).
 const EXCLUDE_DIRS_REL = []
 
 // Eyebrow label = first folder of the page path, after skipping these wrapper folders,
 // title-cased — with SECTION_LABELS pinning the ones that title-case badly (acronyms etc.).
-const SECTION_PREFIXES = ["guide"]
+// `docs` is the source folder, `guide` the served prefix; the eyebrow skips both.
+const SECTION_PREFIXES = ["docs", "guide"]
 const SECTION_LABELS = {
   'configuring-amazon-api': 'Configuring Amazon API',
   'available-products-templates': 'Available Product Templates'
@@ -61,7 +62,7 @@ const SECTION_LABELS = {
 // Dark-mode wordmark. `width` sizes a ready-made lockup; `recolor` swaps SVG fills that
 // vanish on a dark ground; `wordmark` sets the product name beside an icon-only mark.
 const LOGO = {
-  path: 'guide/public/images/brand/azonpress_monotone_light_logo.png',
+  path: 'docs/public/images/brand/azonpress_monotone_light_logo.png',
   width: 330
 }
 
@@ -88,9 +89,10 @@ const PALETTE = {
   ]
 }
 
-// No `rewrites` in this repo: pages are served at their source path.
+// Mirrors the `rewrites` rule in .vitepress/config.js: source `docs/<rest>` is served as
+// `guide/<rest>`, so card names stay `guide--<section>--<slug>.png` (unchanged).
 function servedPath(rel) {
-  return rel
+  return rel.startsWith('docs/') ? `guide/${rel.slice('docs/'.length)}` : rel
 }
 
 // =========================================================================

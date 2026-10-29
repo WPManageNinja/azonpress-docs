@@ -1,8 +1,8 @@
 ---
 name: azonpress-manage-images
-description: 'Add, replace, standardize, and audit screenshots in the AzonPress VitePress docs. Enforces the repo convention: per-page images live at guide/public/images/<section>/<slug>/, are referenced in markdown with the full root-relative /guide/public/images/... path, use .webp, and carry meaningful alt text. Verifies every reference resolves to a real file and reports orphans. USE FOR: add screenshots, embed images, replace an image, fix image paths, broken image, image not showing, standardize screenshots, rename screenshots, find unused images, check alt text. DO NOT USE FOR: brand assets like logos or the favicon (those are config-level, see CLAUDE.md), creating a whole new page (use azonpress-add-doc), or prose edits (use azonpress-edit-doc).'
+description: 'Add, replace, standardize, and audit screenshots in the AzonPress VitePress docs. Enforces the repo convention: per-page images live at docs/public/images/<section>/<slug>/, are referenced in markdown with the full root-relative /docs/public/images/... path, use .webp, and carry meaningful alt text. Verifies every reference resolves to a real file and reports orphans. USE FOR: add screenshots, embed images, replace an image, fix image paths, broken image, image not showing, standardize screenshots, rename screenshots, find unused images, check alt text. DO NOT USE FOR: brand assets like logos or the favicon (those are config-level, see CLAUDE.md), creating a whole new page (use azonpress-add-doc), or prose edits (use azonpress-edit-doc).'
 license: MIT
-compatibility: 'VitePress 1.6 with vite.publicDir set to guide/public. Markdown image refs resolve through the VITE ASSET PIPELINE using the full on-disk path (/guide/public/images/...), NOT through publicDir. Image conversion, if needed, requires cwebp or ImageMagick. Requires Node + npm to run docs:build.'
+compatibility: 'VitePress 1.6 with vite.publicDir set to docs/public. Markdown image refs resolve through the VITE ASSET PIPELINE using the full on-disk path (/docs/public/images/...), NOT through publicDir. Image conversion, if needed, requires cwebp or ImageMagick. Requires Node + npm to run docs:build.'
 metadata:
   project: azonpress-docs
   canonical-rules: CLAUDE.md
@@ -20,10 +20,10 @@ Both of these work, for **different reasons**. Mixing them up is the #1 cause of
 
 | Use | Path you write | Why it works |
 | --- | --- | --- |
-| **Screenshots in Markdown** | `/guide/public/images/<section>/<slug>/<name>.webp` | Vite reads the leading `/` as **project-root relative**, finds the file on disk, and bundles it to `/assets/<name>.<hash>.webp` |
-| **Brand assets in `config.js`** | `/images/brand/<name>.png`, `/favicon.png` | Passed straight through by `publicDir: 'guide/public'` |
+| **Screenshots in Markdown** | `/docs/public/images/<section>/<slug>/<name>.webp` | Vite reads the leading `/` as **project-root relative**, finds the file on disk, and bundles it to `/assets/<name>.<hash>.webp` |
+| **Brand assets in `config.js`** | `/images/brand/<name>.png`, `/favicon.png` | Passed straight through by `publicDir: 'docs/public'` |
 
-**In Markdown, always write the full path including `guide/public`.** Shortening it to
+**In Markdown, always write the full path including `docs/public`.** Shortening it to
 `/images/...` will still render, but the file skips content-hashing and cache-busting — an
 invisible regression. All 125 existing refs use the full form.
 
@@ -33,7 +33,7 @@ The root `public/` directory is **dead** (publicDir is overridden). Never put as
 
 ## Agent Behavior Rules
 
-1. **DO** use the full `/guide/public/images/<section>/<slug>/<name>.webp` form in Markdown.
+1. **DO** use the full `/docs/public/images/<section>/<slug>/<name>.webp` form in Markdown.
 2. **DO** find a page's **real** image folder by grepping its existing refs — folder names do not
    always match the page slug (e.g. `how-to-create-an-amazon-product-table.md` uses
    `.../product-tables-module/how-to-create-a-product-table/`).
@@ -45,7 +45,7 @@ The root `public/` directory is **dead** (publicDir is overridden). Never put as
 7. **DO** end on a clean `npm run docs:build` — Vite fails loudly on an asset path that doesn't
    resolve, which is the real test that an image works.
 8. **DO NOT** use relative `./` or `../` image paths.
-9. **DO NOT** put doc screenshots in `guide/public/images/brand/` — that folder is logos and the
+9. **DO NOT** put doc screenshots in `docs/public/images/brand/` — that folder is logos and the
    hero banner only.
 10. **DO NOT** bulk-delete orphaned image folders. This repo has 13 of them from an earlier doc
     structure; some are likely wanted. Report them and ask.
@@ -69,7 +69,7 @@ Record `TASK`.
 ### 1.2 Target
 For A–C: > **Which page?** Resolve it:
 ```
-find guide -name '<slug>.md' -not -path '*/public/*'
+find docs -name '<slug>.md' -not -path '*/public/*'
 ```
 Record `TARGET_PATH`, `SECTION`, `SLUG`.
 
@@ -82,10 +82,10 @@ For A/B: > **Where are the new screenshots?** Record their paths and formats.
 
 Resolve the page's **existing** image folder first:
 ```
-grep -oE '/guide/public/images/[^)]*' <TARGET_PATH> | sed 's|/[^/]*$||' | sort -u
+grep -oE '/docs/public/images/[^)]*' <TARGET_PATH> | sed 's|/[^/]*$||' | sort -u
 ```
 - If the page already has a folder → **use that one**, even if its name differs from the slug.
-- If it has none → create `guide/public/images/<SECTION>/<SLUG>/`.
+- If it has none → create `docs/public/images/<SECTION>/<SLUG>/`.
 
 State the destination and wait for confirmation.
 
@@ -101,7 +101,7 @@ State the destination and wait for confirmation.
 2. Name them kebab-case and descriptively.
 3. Copy into the confirmed folder.
 4. Insert refs in TARGET_PATH directly after the step each one illustrates:
-     ![Descriptive alt text](/guide/public/images/<SECTION>/<FOLDER>/<name>.webp)
+     ![Descriptive alt text](/docs/public/images/<SECTION>/<FOLDER>/<name>.webp)
 5. npm run docs:build
 ```
 
@@ -118,7 +118,7 @@ State the destination and wait for confirmation.
 ### C. FIX a broken image
 Work down this list — it is ordered by how often each cause actually occurs here:
 ```
-1. Path shortened to /images/... instead of /guide/public/images/...
+1. Path shortened to /images/... instead of /docs/public/images/...
 2. Folder name assumed from the slug, but the real folder is named differently
 3. Typo in the file name, or wrong extension (.png vs .webp)
 4. File genuinely missing from disk
@@ -126,34 +126,34 @@ Work down this list — it is ordered by how often each cause actually occurs he
 ```
 Verify the file exists:
 ```
-ls guide/public/images/<SECTION>/<FOLDER>/
+ls docs/public/images/<SECTION>/<FOLDER>/
 ```
 
 ### D. AUDIT (read-only)
 ```
 1. BROKEN REFS - every markdown ref must resolve to a real file:
-     grep -rhoE '\(/guide/public/images/[^)]*\)' --include='*.md' guide index.md \
+     grep -rhoE '\(/docs/public/images/[^)]*\)' --include='*.md' docs index.md \
        | tr -d '()' | sed 's|^/||' | sort -u \
        | while read p; do [ -f "$p" ] || echo "MISSING: $p"; done
 
-2. WRONG FORM  - refs that skip the guide/public prefix:
-     grep -rn '](/images/' --include='*.md' guide index.md
+2. WRONG FORM  - refs that skip the docs/public prefix:
+     grep -rn '](/images/' --include='*.md' docs index.md
 
 3. RELATIVE    - relative image paths:
-     grep -rnE '!\[[^]]*\]\(\.\.?/' --include='*.md' guide index.md
+     grep -rnE '!\[[^]]*\]\(\.\.?/' --include='*.md' docs index.md
 
 4. ORPHANS     - image folders with no matching page:
-     for d in guide/public/images/*/*/; do
+     for d in docs/public/images/*/*/; do
        sec=$(basename $(dirname "$d")); slug=$(basename "$d")
-       [ -f "guide/$sec/$slug.md" ] || echo "ORPHAN DIR: $sec/$slug"
+       [ -f "docs/$sec/$slug.md" ] || echo "ORPHAN DIR: $sec/$slug"
      done
      (Expect ~13. Report, do not delete.)
 
 5. ALT TEXT    - empty or placeholder alt text:
-     grep -rnE '!\[(|image|screenshot|img)\]\(' --include='*.md' guide index.md
+     grep -rnE '!\[(|image|screenshot|img)\]\(' --include='*.md' docs index.md
 
 6. NON-WEBP    - non-webp screenshots:
-     find guide/public/images -type f ! -name '*.webp' ! -path '*/brand/*'
+     find docs/public/images -type f ! -name '*.webp' ! -path '*/brand/*'
 ```
 
 ---
@@ -176,16 +176,16 @@ fixes — do not apply them unasked.
 
 ### Formats
 ```
-Markdown ref:  ![Descriptive alt text](/guide/public/images/<section>/<folder>/<name>.webp)
-On disk:       guide/public/images/<section>/<folder>/<name>.webp
-Brand assets:  guide/public/images/brand/  → referenced in config.js as /images/brand/...
+Markdown ref:  ![Descriptive alt text](/docs/public/images/<section>/<folder>/<name>.webp)
+On disk:       docs/public/images/<section>/<folder>/<name>.webp
+Brand assets:  docs/public/images/brand/  → referenced in config.js as /images/brand/...
 ```
 
 ### Locate
 ```
-A page's image folder:  grep -oE '/guide/public/images/[^)]*' <file> | sed 's|/[^/]*$||' | sort -u
-Reuse of one image:     grep -rn '<image-name>.webp' --include='*.md' guide index.md
-Folder contents:        ls guide/public/images/<section>/<folder>/
+A page's image folder:  grep -oE '/docs/public/images/[^)]*' <file> | sed 's|/[^/]*$||' | sort -u
+Reuse of one image:     grep -rn '<image-name>.webp' --include='*.md' docs index.md
+Folder contents:        ls docs/public/images/<section>/<folder>/
 ```
 
 ### Convert to webp
@@ -195,8 +195,8 @@ magick input.png -quality 85 output.webp
 ```
 
 ### Key Principles
-1. **Full path in Markdown** — `/guide/public/images/...`, always.
+1. **Full path in Markdown** — `/docs/public/images/...`, always.
 2. **Find the folder, don't guess it** — names drift from slugs.
 3. **`.webp` + descriptive alt text.**
-4. **Root `public/` is dead**; brand assets live under `guide/public/images/brand/`.
+4. **Root `public/` is dead**; brand assets live under `docs/public/images/brand/`.
 5. **Orphans get reported, not deleted.**

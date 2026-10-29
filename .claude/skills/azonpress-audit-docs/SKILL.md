@@ -2,7 +2,7 @@
 name: azonpress-audit-docs
 description: 'Run a READ-ONLY quality gate across the whole AzonPress docs site: production build, sidebar coverage (pages that exist but are invisible), inbound-link integrity, image reference resolution and orphan folders, frontmatter completeness, and convention compliance. Produces a scored checklist with offending paths, then offers fixes. USE FOR: audit the docs, review the documentation, pre-publish check, lint the docs, check for broken links, find pages missing from the sidebar, find orphaned images, is everything consistent, check before committing. DO NOT USE FOR: writing a new page (use azonpress-add-doc), editing content (use azonpress-edit-doc), renaming or moving (use azonpress-restructure-docs), or release notes (use azonpress-changelog).'
 license: MIT
-compatibility: 'VitePress 1.6 repo, guide/<section>/<slug>.md layout with NO rewrites. Sidebar is a manual array at themeConfig.sidebar["/guide/"] in .vitepress/config.js. Screenshots at guide/public/images/. Requires Node + npm to run docs:build. Read-only until the user approves fixes.'
+compatibility: 'VitePress 1.6 repo, docs/<section>/<slug>.md layout, served at /guide/<section>/<slug> through a single docs->guide rewrite. Sidebar is a manual array at themeConfig.sidebar["/guide/"] in .vitepress/config.js. Screenshots at docs/public/images/. Requires Node + npm to run docs:build. Read-only until the user approves fixes.'
 metadata:
   project: azonpress-docs
   canonical-rules: CLAUDE.md
@@ -43,10 +43,10 @@ Must complete with `build complete`. Any warning about a dead link or unresolved
 **BLOCKER**.
 
 ### 2. Sidebar coverage — the most important check
-Every page under `guide/` (except `changelog.md`, which is in the top nav) must appear in
+Every page under `docs/` (except `changelog.md`, which is in the top nav) must appear in
 `.vitepress/config.js`.
 ```
-for f in guide/*/*.md; do
+for f in docs/*/*.md; do
   link="/${f%.md}"
   grep -q "$link'" .vitepress/config.js || echo "NOT IN SIDEBAR: $f"
 done
@@ -59,29 +59,29 @@ grep -oE "link: '/guide/[^']*'" .vitepress/config.js | sed "s/link: '//;s/'//" \
 
 ### 3. Image references resolve
 ```
-grep -rhoE '\(/guide/public/images/[^)]*\)' --include='*.md' guide index.md \
+grep -rhoE '\(/docs/public/images/[^)]*\)' --include='*.md' docs index.md \
   | tr -d '()' | sed 's|^/||' | sort -u \
   | while read p; do [ -f "$p" ] || echo "MISSING IMAGE: $p"; done
 ```
 
 ### 4. Image path form
 ```
-grep -rn '](/images/' --include='*.md' guide index.md          # wrong: skips guide/public
-grep -rnE '!\[[^]]*\]\(\.\.?/' --include='*.md' guide index.md  # wrong: relative path
+grep -rn '](/images/' --include='*.md' docs index.md          # wrong: skips docs/public
+grep -rnE '!\[[^]]*\]\(\.\.?/' --include='*.md' docs index.md  # wrong: relative path
 ```
 
 ### 5. Orphaned image folders (known state — report separately)
 ```
-for d in guide/public/images/*/*/; do
+for d in docs/public/images/*/*/; do
   sec=$(basename $(dirname "$d")); slug=$(basename "$d")
-  [ -f "guide/$sec/$slug.md" ] || echo "ORPHAN DIR: $sec/$slug"
+  [ -f "docs/$sec/$slug.md" ] || echo "ORPHAN DIR: $sec/$slug"
 done
 ```
 Baseline is ~13. Report the count and flag only anything *new* beyond the known set.
 
 ### 6. Frontmatter completeness
 ```
-for f in guide/*/*.md; do
+for f in docs/*/*.md; do
   for k in title title_tag meta_description; do
     grep -qE "^$k:" "$f" || echo "MISSING $k: $f"
   done
@@ -90,16 +90,16 @@ done
 
 ### 7. Link hygiene
 ```
-grep -rnE '\]\(\.\.?/' --include='*.md' guide index.md        # relative cross-links
-grep -rn '](/guide/' --include='*.md' guide index.md \
+grep -rnE '\]\(\.\.?/' --include='*.md' docs index.md        # relative cross-links
+grep -rn '](/guide/' --include='*.md' docs index.md \
   | grep -E '\.md\)' && echo "^ links ending in .md — should be extensionless"
 ```
 
 ### 8. Orphan pages (no inbound links)
 ```
-for f in guide/*/*.md; do
+for f in docs/*/*.md; do
   link="/${f%.md}"
-  n=$(grep -rl "$link" --include='*.md' guide index.md | grep -v "^$f$" | wc -l)
+  n=$(grep -rl "$link" --include='*.md' docs index.md | grep -v "^$f$" | wc -l)
   [ "$n" -eq 0 ] && echo "NO INBOUND LINKS: $f"
 done
 ```
@@ -107,15 +107,15 @@ Not a blocker, but a page reachable only from the sidebar is worth cross-linking
 
 ### 9. Convention spot-checks
 ```
-grep -rn '::: tip\|::: warning\|::: info' --include='*.md' guide   # not this site's style
-grep -rn '(Pro)' --include='*.md' guide                            # no tier split here
-grep -rnE '!\[(|image|screenshot|img)\]\(' --include='*.md' guide  # weak alt text
-grep -rn 'title_tag.*|.*AzonPress Documentation' --include='*.md' guide  # should be "Azonpress"
+grep -rn '::: tip\|::: warning\|::: info' --include='*.md' docs   # not this site's style
+grep -rn '(Pro)' --include='*.md' docs                            # no tier split here
+grep -rnE '!\[(|image|screenshot|img)\]\(' --include='*.md' docs  # weak alt text
+grep -rn 'title_tag.*|.*AzonPress Documentation' --include='*.md' docs  # should be "Azonpress"
 ```
 
 ### 10. Alt text presence
 ```
-grep -rcE '!\[\]\(' --include='*.md' guide | grep -v ':0$'
+grep -rcE '!\[\]\(' --include='*.md' docs | grep -v ':0$'
 ```
 
 ---
@@ -149,7 +149,7 @@ LOW (worth a look)
 KNOWN STATE (not regressions — see CLAUDE.md)
   •  Orphaned image folders: N (baseline ~13)
   •  title_tag / meta_description do not reach built HTML by design
-  •  Root public/ is unused (publicDir → guide/public)
+  •  Root public/ is unused (publicDir → docs/public)
 
 RESULT: PASS | PASS WITH WARNINGS | FAIL
 ```
@@ -176,14 +176,14 @@ Re-run the full audit after fixes and report the new score.
 ### One-shot health check
 ```
 npm run docs:build && echo "BUILD OK"
-for f in guide/*/*.md; do grep -q "/${f%.md}'" .vitepress/config.js || echo "NOT IN SIDEBAR: $f"; done
+for f in docs/*/*.md; do grep -q "/${f%.md}'" .vitepress/config.js || echo "NOT IN SIDEBAR: $f"; done
 ```
 
 ### Baseline (verified — deviations are worth investigating)
 ```
 Content pages ........... 31 (+ index.md)
 Sidebar groups .......... 9
-Image references ........ ~125, all in /guide/public/images/... form
+Image references ........ ~125, all in /docs/public/images/... form
 Image files ............. ~183 .webp
 Orphaned image dirs ..... ~13
 Pages with no image dir .. 3 (glossary, click-tracking, support — intentionally text-only)

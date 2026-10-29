@@ -15,7 +15,7 @@
  *
  * The `src` prop is a plain string and therefore does NOT go through Vite's
  * asset pipeline on its own. This site writes image paths as on-disk paths
- * (/guide/public/images/...) that only exist at build time, so `ZoomableImage`
+ * (/docs/public/images/...) that only exist at build time, so `ZoomableImage`
  * is registered in `vue.template.transformAssetUrls` in config.js to make Vite
  * hash and bundle them exactly as it does for a plain <img src>. Without that
  * entry every image 404s in production.

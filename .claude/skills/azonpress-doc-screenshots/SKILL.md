@@ -17,7 +17,7 @@ Every screenshot is produced by a script, never by hand, so the output is reprod
 | App root | `.azp-main-application` (the harness waits for it). |
 | Runner | `npm run shots -- scripts/screenshots/plans/<plan>.json` (= `node scripts/screenshots/shoot.cjs …`). Library in `scripts/screenshots/lib/`. |
 | Browser | Headless real Google Chrome via `playwright-core` (a devDependency). No download, no macOS permission. |
-| Output | `guide/public/images/<section>/<slug>/<name>.webp`, referenced in markdown as `/guide/public/images/<section>/<slug>/<name>.webp` (this repo's full on-disk form — see CLAUDE.md "Images"). Raw PNGs go to `scripts/screenshots/raw/` (gitignored). |
+| Output | `docs/public/images/<section>/<slug>/<name>.webp`, referenced in markdown as `/docs/public/images/<section>/<slug>/<name>.webp` (this repo's full on-disk form — see CLAUDE.md "Images"). Raw PNGs go to `scripts/screenshots/raw/` (gitignored). |
 | Scale | Viewport 1600 CSS px wide, device scale factor 2, so images are about 2880 px wide. Never resize output. webp quality 82. |
 | Arrow colour | `#D97706` (deep amber) with a white halo, set in `lib/annotate.cjs`. The brand yellow `#FFC700` is too pale on white. |
 
@@ -52,7 +52,7 @@ Create `scripts/screenshots/plans/<page-slug>.json`. Start from `other-settings.
 
 ```json
 {
-  "outDir": "guide/public/images/miscellaneous/other-settings",
+  "outDir": "docs/public/images/miscellaneous/other-settings",
   "viewport": { "width": 1600, "height": 1300 },
   "steps": [
     { "admin": "/settings/other_settings" },
@@ -81,7 +81,7 @@ If login loops, the site is slow: re-run. If a selector is not found, read the V
 Open each `.webp` with Read and check: no WP admin bar/menu or notices; the control is fully inside the frame; the arrow tip sits just outside the control; state is right (value filled, toggle on); size is sane. Fix the plan and re-run with `--only=`. Never hand-edit images.
 
 ### Step 6 — Place in markdown
-`![Screenshot of <what the reader sees>](/guide/public/images/<section>/<slug>/<name>.webp)` — directly after the step it illustrates, on its own line, alt text starting "Screenshot of". Never stack two images with no text between. Then run `npm run docs:build` (must be clean). Do not commit unless asked.
+`![Screenshot of <what the reader sees>](/docs/public/images/<section>/<slug>/<name>.webp)` — directly after the step it illustrates, on its own line, alt text starting "Screenshot of". Never stack two images with no text between. Then run `npm run docs:build` (must be clean). Do not commit unless asked.
 
 ### Step 7 — Leave the site as you found it
 Revert any setting you saved. Keep the plan JSON in `scripts/screenshots/plans/` as the regression fixture for the next release.

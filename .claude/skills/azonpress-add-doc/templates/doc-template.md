@@ -17,12 +17,12 @@ outcome the reader gets. Link out to a prerequisite page if one exists, e.g.
 1. Navigate to **AzonPress → <Screen>** from your WordPress dashboard.
 2. Click the **<Button Label>** button.
 
-![Descriptive alt text saying what this screenshot shows](/guide/public/images/<section>/<slug>/<name>.webp)
+![Descriptive alt text saying what this screenshot shows](/docs/public/images/<section>/<slug>/<name>.webp)
 
 3. Fill in the **<Field Label>** field.
 4. Click **Save Changes**.
 
-![Descriptive alt text](/guide/public/images/<section>/<slug>/<name>.webp)
+![Descriptive alt text](/docs/public/images/<section>/<slug>/<name>.webp)
 
 > **Note**, <a caveat, limit, or behavior the reader should know at this exact point>.
 
@@ -48,8 +48,8 @@ CHECKLIST before deleting this comment and shipping:
   [ ] title_tag ends with "| Azonpress Documentation"  (lowercase "zon")
   [ ] Single H1, matching frontmatter title
   [ ] Every UI label bolded exactly as it appears in the plugin
-  [ ] Screenshots are .webp in guide/public/images/<section>/<slug>/
-  [ ] Every image ref uses the FULL /guide/public/images/... path
+  [ ] Screenshots are .webp in docs/public/images/<section>/<slug>/
+  [ ] Every image ref uses the FULL /docs/public/images/... path
   [ ] Every image has descriptive alt text
   [ ] Cross-links use full /guide/<section>/<slug> paths, never relative
   [ ] No ::: tip / ::: warning containers, no (Pro) labels, no support boilerplate

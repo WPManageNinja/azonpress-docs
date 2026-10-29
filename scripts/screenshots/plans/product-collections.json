@@ -1,5 +1,5 @@
 {
-  "outDir": "guide/public/images/available-products-templates/product-collections",
+  "outDir": "docs/public/images/available-products-templates/product-collections",
   "viewport": {
     "width": 1600,
     "height": 1500
